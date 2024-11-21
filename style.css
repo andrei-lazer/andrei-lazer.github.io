@@ -1,0 +1,164 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px; /* Default font size */
+    line-height: 1.6; /* Improved readability */
+    color: #333; /* Dark text for contrast */
+    background-color: #f9f9f9; /* Light background */
+    padding: 20px;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #222; /* Slightly darker for headings */
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 18px;
+    line-height: 1.8; /* Increased line height for readability */
+    margin-bottom: 15px;
+}
+
+/* Links Styles */
+a {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* List Styles */
+ul, ol {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Blockquote Styles */
+blockquote {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #555;
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 5px solid #ccc;
+}
+
+/* Code Styles */
+code {
+    font-size: 18px;
+    background-color: #f4f4f4;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 20px;
+    color: #666;
+}
+
+
+/* General Navbar Styles */
+.navbar {
+    background-color: #f8f9fa; /* Light gray for a modern, neutral look */
+    color: #333; /* Dark text for good contrast */
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd; /* Subtle border for separation */
+    position: static;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Very light shadow for depth */
+}
+
+/* Container for alignment */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation menu */
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between menu items */
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px; /* Rounded corners for a modern touch */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.nav a:hover {
+    background-color: #007bff; /* Light blue hover background */
+    color: #aaa; /* White text on hover */
+}
+
+dd {
+    display: flex;
+    gap: 15px; /* Adds space between the icons */
+    align-items: center; /* Vertically centers icons if sizes differ */
+    margin: 10px 0; /* Adds spacing around the whole block */
+}
+
+dd a img {
+    transition: transform 0.2s ease; /* Adds a subtle hover effect */
+}
+
+dd a:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
