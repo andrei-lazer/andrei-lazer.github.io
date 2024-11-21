@@ -161,3 +161,26 @@ dd a:hover img {
     transform: scale(1.1); /* Slight zoom on hover */
 }
 
+a:link {
+  color: #499642;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #2F5C30;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
