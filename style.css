@@ -144,7 +144,6 @@ footer {
 
 .nav a:hover {
     background-color: #007bff; /* Light blue hover background */
-    color: #aaa; /* White text on hover */
 }
 
 dd {
