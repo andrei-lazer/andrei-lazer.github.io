@@ -1,186 +1,259 @@
-/* Global Styles */
-* {
+/* user styles */
+
+/* styles are what change the color and sizes of stuff on your site. */
+
+/* these are variables that are being used in the code
+these tended to confuse some people, so I only kept 
+the images as variables */
+
+:root {
+    /* --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg'); */
+    --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');
+    --border-thickness: 2px;
+}
+
+
+
+/* if you have the URL of a font, you can set it below */
+/* feel free to delete this if it's not your vibe */
+
+/* this seems like a lot for just one font and I would have to agree 
+but I wanted to include an example of how to include a custom font.
+If you download a font file you can upload it onto your Neocities
+and then link it! Many fonts have separate files for each style
+(bold, italic, etc. T_T) which is why there are so many!
+
+ */
+
+body {
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 30px;
     margin: 0;
-    padding: 0;
+    /* you can delete the line below if you'd prefer to not use an image */
+    background-size: 65px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    cursor: url("assets/cursor.png"), auto;
+    /* pointer: url("assets/pointer.cur"), auto; */
+}
+
+
+* {
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    font-size: 18px; /* Default font size */
-    line-height: 1.6; /* Improved readability */
-    color: #333; /* Dark text for contrast */
-    background-color: #f9f9f9; /* Light background */
+/* below this line is CSS for the layout */
+
+/* this is a CSS comment
+to uncomment a line of CSS, remove the * and the /
+before and after the text */
+
+
+/* the "container" is what wraps your entire website */
+/* if you want something (like the header) to be Wider than
+the other elements, you will need to move that div outside
+of the container */
+#container {
+    max-width: 900px;
+    /* this is the width of your layout! */
+    /* if you change the above value, scroll to the bottom
+    and change the media query according to the comment! */
+    margin: 0 auto;
+    /* this centers the entire page */
+}
+
+/* the area below is for all links on your page
+EXCEPT for the navigation */
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    cursor: url("assets/pointer.png"), auto;
+    line-height: 1;
+    display: inline;
+    /* padding: 0.2em 0.4em; /* optional spacing */ */
+    color: var(--link-color);       /* initial text color */
+    /* if you want to remove the underline
+    you can add a line below here that says:
+    text-decoration:none; */
+}
+
+a:hover {
+    color: var(--bg-color);
+    background-clip: content-box;
+    background-color: var(--link-color);
+}
+
+#header {
+    width: 100%;
+    background-color: var(--bg-color);
+    /* background-color: #ffffff */
+    
+    /* header color here! */
+    height: 150px;
+    /* this is only for a background image! */
+    /* if you want to put images IN the header, 
+    you can add them directly to the <div id="header"></div> element! */
+    background-size: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-text {
+    font-family: "Nova Square", sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+}
+
+#flex {
+    display: flex;
+}
+
+#leftSidebar {
+    order: 3;
+}
+
+aside {
+    background-color: var(--bg-color);
+    width: 200px;
+    padding: 20px;
+    font-size: smaller;
+    /* this makes the sidebar text slightly smaller */
+}
+
+/* this is the color of the main content area,
+between the sidebars! */
+main {
+    background-color: var(--bg-color);
+    flex: 1;
+    padding: 20px;
+    order: 2;
+    /* border: var(--border-thickness) dashed var(--border-color); */
+}
+
+button {
+    font-family: "Figtree", serif;
+    font-size: 16px;
+    /* font-weight: 600; */
+    padding: 0!important;
+    color: var(--link-color);
+    background: none:important;
+    background-color: var(--bg-color);
+    border: none;
+    cursor: pointer;
+    /* transition: all 0.3s ease; */
+    outline: none;
+}
+
+
+button:hover {
+    cursor: url("assets/pointer.png"), auto;
+    color: var(--bg-color);
+    background-color: var(--link-color);
+}
+
+/* what's this "order" stuff about??
+allow me to explain!
+if you're using both sidebars, the "order" value
+tells the CSS the order in which to display them.
+left sidebar is 1, content is 2, and right sidebar is 3! */
+
+footer {
+    background-color: var(--bg-color);
+    /* background color for footer */
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    /* this centers the footer text */
+}
+
+h1, h2, h3 {
+    color: var(--text-color);
+    font-family: "Nova Square", sans-serif;
+}
+
+strong {
+    /* this styles bold text */
+    color: var(--text-color);
+}
+
+/* this is just a cool box, it's the darker colored one */
+
+.box {
+    background-color: var(--bg-color);
+    border: var(--border-thickness) dashed var(--border-color);
     padding: 20px;
 }
 
-/* Heading Styles */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    color: #222; /* Slightly darker for headings */
-    margin-bottom: 15px;
+.email {
+    justify-content: center;
 }
 
-h1 {
-    font-size: 32px;
+/* BELOW THIS POINT IS MEDIA QUERY */
+
+/* so you wanna change the width of your page? 
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+ */
+
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    /* the order of the items is adjusted here for responsiveness!
+    since the sidebars would be too small on a mobile device.
+    feel free to play around with the order!
+     */
+
+    main {
+        order: 1;
+    }
+
+    #leftSidebar {
+        order: 3;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
 }
 
-h2 {
-    font-size: 28px;
-}
-
-h3 {
-    font-size: 24px;
-}
-
-h4 {
-    font-size: 20px;
-}
-
-h5 {
-    font-size: 18px;
-}
-
-h6 {
-    font-size: 16px;
-}
-
-/* Paragraph Styles */
-p {
-    font-size: 18px;
-    line-height: 1.8; /* Increased line height for readability */
-    margin-bottom: 15px;
-}
-
-/* Links Styles */
-a {
-    font-size: 18px;
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* List Styles */
-ul, ol {
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
-/* Blockquote Styles */
-blockquote {
-    font-size: 20px;
-    line-height: 1.8;
-    color: #555;
-    margin: 20px 0;
-    padding-left: 20px;
-    border-left: 5px solid #ccc;
-}
-
-/* Code Styles */
-code {
-    font-size: 18px;
-    background-color: #f4f4f4;
-    padding: 4px 8px;
-    border-radius: 4px;
-}
-
-/* Footer */
-footer {
-    font-size: 16px;
-    text-align: center;
-    padding-top: 20px;
-    color: #666;
-}
-
-
-/* General Navbar Styles */
-.navbar {
-    background-color: #f8f9fa; /* Light gray for a modern, neutral look */
-    color: #333; /* Dark text for good contrast */
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd; /* Subtle border for separation */
-    position: static;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Very light shadow for depth */
-}
-
-/* Container for alignment */
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Navigation menu */
-.nav {
+.sidebar-menu {
     list-style: none;
-    display: flex;
-    gap: 20px; /* Space between menu items */
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
-.nav li {
+.sidebar-menu li {
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: larger;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.navbar-menu li {
+    margin-bottom: 10px;
     display: inline;
 }
 
-.nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    padding: 5px 10px;
-    border-radius: 4px; /* Rounded corners for a modern touch */
-    transition: all 0.3s ease; /* Smooth hover effect */
-}
 
-.nav a:hover {
-    background-color: #007bff; /* Light blue hover background */
-}
-
-dd {
-    display: flex;
-    gap: 15px; /* Adds space between the icons */
-    align-items: center; /* Vertically centers icons if sizes differ */
-    margin: 10px 0; /* Adds spacing around the whole block */
-}
-
-dd a img {
-    transition: transform 0.2s ease; /* Adds a subtle hover effect */
-}
-
-dd a:hover img {
-    transform: scale(1.1); /* Slight zoom on hover */
-}
-
-a:link {
-  color: #499642;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #2F5C30;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}

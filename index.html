@@ -1,123 +1,65 @@
 <!DOCTYPE html>
-<!--
-    Plain-Academic by Vasilios Mavroudis
-    Released under the Simplified BSD License/FreeBSD (2-clause) License.
-    https://github.com/mavroudisv/plain-academic
--->
-
-<html lang="en">
+<html>
     <head>
-        <title>Hello! - Andrei Lazer</title>
-        <script type="text/javascript" id="MathJax-script" async
-            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-        </script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <!-- SEO -->	
-        <meta property="og:locale" content="en-UK">
-        <meta property="og:site_name" content="Andrei Lazer">
-        <meta property="og:title" content="Welcome">
-        <link rel="canonical" href="https://andrei-lazer.github.io/">
-        <meta property="og:url" content="https://andrei-lazer.github.io/">
-        <meta property="og:description" content="Personal Page">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>andrei lazer</title>
+        <link id="theme-stylesheet" rel="stylesheet" href="light.css">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="light.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="icon" type="image/x-icon" href="/assets/computer.gif">
+
+        <!-- Fonts   -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
     </head>
     <body>
 
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="container">
-                <ul class="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <!-- <li><a href="#publications">Publications</a></li> -->
-                    <li><a href="CV.pdf" target="_blank">CV</a></li>
-                </ul>
+        <div id="container">
+            <div id="header" style="height: 191px;">
+                <span id="header-text">welcome to my website</span>
             </div>
-        </nav>
 
-        <!-- Page Content -->
-        <div class="container">
-            <div class="row">
-                <!-- Contact Info on the Sidebar -->
-                <div class="col-md-3">
-                    <h1>Andrei Lazer</h1>
-                    <p>
-                    <b>lal20@st-andrews.ac.uk</b><br>
-                    University of St Andrews<br>
-                    <img src="media/pin_black.png" width="18" height="18" id="pin-icon" style="position: relative; top: -2px"> London, United Kingdom
-                    </p>
-                    <dd>
-                        <a href="https://www.linkedin.com/in/andrei-lazer/" title="LinkedIn" target="_blank">
-                            <img src="media/linkedin_black.png" width="30" height="30" alt="LinkedIn Logo">
-                        </a>
-                        <a href="https://github.com/andrei-lazer" title="GitHub" target="_blank">
-                            <img src="media/github_black.png" width="30" height="30" alt="GitHub Logo">
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=3adpPUIAAAAJ&hl=en" target="_blank">
-                            <img src="media/gscholar_black.png" width="30" height="30" alt="Google Scholar Logo">
-                        </a>
-                    </dd>
-
-                    <br>
-
-                </div>
-
-                <!-- Introduction -->
-                <div class="col-md-9">
-                    <h2 id="hello">Welcome!</h2>
-                    <p>I’m a mathematics student at the University of St Andrews, pursuing a bachelor’s degree with honors.</p>
-
-                    <p>My experiences are in computational maths, mathematical physics, and embedded security. My other interests include
-                    random systems, computer graphics, and signal processing.</p>
-                    <!-- About me -->
-                    <h2 id="about">About me</h2>
-                    <p>
-                    From June to December 2024, I worked as an automotive cryptography engineer for 
-                    <a href="https://developer.nvidia.com/drive/os" target="_blank">NVIDIA</a>,
-                    where I directed the fuzzing of the <a href="https://en.wikipedia.org/wiki/PKCS_11" target="_blank">PKCS#11</a> library. I used C
-                    to develop various parts of the library on QNX and embedded Linux.
-                    </p>
-
-                    <p>
-                    During the summer of 2023, I received a <a href="https://www.ox.ac.uk/admissions/graduate/access/uniq-plus/about" target="_blank">UNIQ+</a>
-                    research internship at the University of Oxford. I spent the summer working in the 
-                    <a href="https://www.maths.ox.ac.uk/groups/mathematical-physics" target="_blank">mathematical physics</a> group with
-                    <a href="https://www.maths.ox.ac.uk/people/christopher.couzens" target="_blank">Dr Christopher Couzens</a> on using genetic algorithms
-                    to find consistent metrics in \(AdS_4\).
-                    </p>
-
-                    <p>
-                    A few months earlier, during the final semester of my first year at St Andrews, I worked on a research project
-                    with <a href="https://danl21.github.io/" target="_blank">Dr Dan Lucas</a> at the University of St Andrews as part of the 
-                    <a href="https://www.st-andrews.ac.uk/students/academic/staris/" target="_blank">St Andrews Research Internship Scheme</a>. I
-                    applied statistical analysis methods to recreate the statistics of a turbulent flow from its unstable periodic
-                    orbits.
-                    </p>
-
-                    <!-- Publications -->
-                    <section id="publications">
-                        <h2>Publications</h2>
-                        <ul style="list-style: none; padding: 0;">
-                            <li class="paper" words="add, your, keywords, here">
-                                <a href="https://journals.aps.org/prfluids/accepted/0a075S9cIbf1840182557b1686523635ce18f62a8" target="_blank"><b>Dynamically relevant recurrent flows obtained via a nonlinear recurrence function from two-dimensional turbulence</b></a><br>
-                                <i>Ed Redfern, Andrei Lazer, Dan Lucas</i> <br>
-                                Published in <i>Physical Review Fluids</i>, 12/12/2024 <br>
-                                DOI: <a href="https://doi.org/10.1103/PhysRevFluids.9.124401" target="_blank">https://doi.org/10.1103/PhysRevFluids.9.124401</a><br>
-                                This paper introduces methods for extracting unstable periodic orbits from fluid flows and applies optimization techniques
-                                to reconstruct certain statistics of the flow using these orbits. This work resulted from an internship at the University of St Andrews.
-                            </li>
-                        </ul>
-                    </section>
-                </div>
+            <div id="headerArea">
+                <nav id="navbar" style="margin-bottom: 10px;">
+                    <ul class="navbar-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="email.html">Email</a></li>
+                    </ul>
+                </nav>
             </div>
+
+            <div id="flex">
+
+                <main>
+                    <h2>warning</h2>
+                    <p>
+                    I can't promise that this website has been recently updated. It is a fun side project of mine, but I am notoriously bad
+                    at keeping on top of these kinds of things.
+                    </p>
+
+                    <h2>about</h2> <p> I'm a maths student at the University of
+                    Oxford studying for the <a
+                        href="https://www.maths.ox.ac.uk/members/students/postgraduate-courses/msc-mmsc">MSc
+                        in MMSC</a>. I'm interested in numerical analysis, parallel
+                    computing, HPC, and almost everything else which lets me do both
+                    maths and computing.
+
+                    <h2>updates</h2>
+                    <ul>
+                        <li>In September 2026, I'll be starting an internship as a  Quantitative Technologist Intern
+                            with Qube Research Technologies.</li>
+                    </ul>
+                </main>
+            </div>
+
+            <footer id="footer" style="margin-top: 10px;"></footer>
         </div>
 
-        <!-- Other people may like it too! -->
-        <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
-
+        <script src="theme.js"></script>
     </body>
-
 </html>
