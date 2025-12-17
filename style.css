@@ -108,7 +108,7 @@ a:hover {
 #header-text {
     font-family: "Nova Square", sans-serif;
     font-weight: 400;
-    font-size: 70px;
+    font-size: 7vmin;
 }
 
 #flex {
@@ -250,10 +250,20 @@ and then subtrack it by 100. use this new number as the
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 5vw;
 }
 
 .navbar-menu li {
     margin-bottom: 10px;
     display: inline;
 }
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--bg-color);
+  background: var(--link-color);
+}
+
+::selection {
+  color: var(--bg-color);
+  background: var(--link-color);
+} 
