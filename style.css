@@ -108,8 +108,7 @@ a:hover {
 #header-text {
     font-family: "Nova Square", sans-serif;
     font-weight: 400;
-    font-size: 7vmin;
-    font-size: clamp(2rem, 7vmin, 400px)
+    font-size: clamp(30px, 7vmin, 400px);
 }
 
 #flex {
@@ -193,8 +192,9 @@ strong {
     padding: 20px;
 }
 
-.email {
-    justify-content: center;
+#email {
+    font-size: clamp(0.3em, 5vmin, 50px);
+    text-align: center;
 }
 
 /* BELOW THIS POINT IS MEDIA QUERY */
