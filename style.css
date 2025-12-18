@@ -78,8 +78,6 @@ a {
     cursor: var(--pointer);
     line-height: 1;
     display: inline;
-    /* padding: 0.2em 0.4em; /* optional spacing */ */
-    color: var(--link-color);       /* initial text color */
     /* if you want to remove the underline
     you can add a line below here that says:
     text-decoration:none; */
@@ -121,10 +119,6 @@ a:hover {
     display: flex;
 }
 
-#leftSidebar {
-    order: 3;
-}
-
 aside {
     background-color: var(--bg-color);
     width: 200px;
@@ -162,12 +156,6 @@ button:hover {
     background-color: var(--link-color);
 }
 
-/* what's this "order" stuff about??
-allow me to explain!
-if you're using both sidebars, the "order" value
-tells the CSS the order in which to display them.
-left sidebar is 1, content is 2, and right sidebar is 3! */
-
 footer {
     background-color: var(--bg-color);
     /* background color for footer */
@@ -197,7 +185,7 @@ strong {
 }
 
 #email {
-    font-size: clamp(0.3em, 5vmin, 50px);
+    font-size: clamp(0.5em, 4vmin, 50px);
     text-align: center;
 }
 
