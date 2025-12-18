@@ -149,7 +149,6 @@ button {
     outline: none;
 }
 
-
 button:hover {
     cursor: var(--pointer);
     color: var(--bg-color);
@@ -180,7 +179,7 @@ strong {
 
 .box {
     background-color: var(--bg-color);
-    border: var(--border-thickness) dashed var(--border-color);
+    /* border: var(--border-thickness) dashed var(--border-color); */
     padding: 20px;
 }
 
