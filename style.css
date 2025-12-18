@@ -10,6 +10,7 @@ the images as variables */
     /* --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg'); */
     --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');
     --border-thickness: 2px;
+    --body-font: "Syne Mono", monospace;
 }
 
 
@@ -26,7 +27,7 @@ and then link it! Many fonts have separate files for each style
  */
 
 body {
-    font-family: "Figtree", serif;
+    font-family: var(--body-font);
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 30px;
@@ -138,7 +139,7 @@ main {
 }
 
 button {
-    font-family: "Figtree", serif;
+    font-family: var(--body-font);
     font-size: 16px;
     /* font-weight: 600; */
     padding: 0!important;
@@ -222,14 +223,6 @@ and then subtrack it by 100. use this new number as the
 
     main {
         order: 1;
-    }
-
-    #leftSidebar {
-        order: 3;
-    }
-
-    #navbar ul {
-        flex-wrap: wrap;
     }
 }
 
