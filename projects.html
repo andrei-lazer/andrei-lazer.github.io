@@ -12,23 +12,25 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap" rel="stylesheet">
     </head>
     <body>
 
         <div id="container">
             <div id="header">
-                <span id="header-text">projects</span>
+                <div>
+                    <img src="assets/book.gif" alt="Image" style="display: block; height: 50px; margin: 40px auto;">
+                    <span id="header-text">~/projects</span>
+                </div>
             </div>
 
             <div id="headerArea">
                 <nav id="navbar" style="margin-bottom: 10px;">
                     <ul class="navbar-menu">
-                        <!-- <li><button id="theme-toggle">Switch theme</button></li> -->
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="email.html">Email</a></li>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="projects.html">projects</a></li>
+                        <li><a href="email.html">email</a></li>
                     </ul>
                 </nav>
             </div>
@@ -41,15 +43,13 @@
                             equation in the semi-classical regime.</a></strong>
                     <div style="font-size: smaller;">
                         <p>
-                            Dissertation for my BSc in Mathematics at the University of St Andrews. Combined time-splitting integrators
-                            with Fourier spectral methods to solve the semi-classical Schrödinger equation. The method is explicitly
-                            derived along with stability and convergence results.
+                            Dissertation for my BSc in Mathematics at the Univeristy of St Andrews. Looked at a specific type of numerical
+                            integrators for the Schrödinger equation, proved some convergence/stability results, and confirmed these results
+                            computationally.
                         </p>
-
-                        <p>
-                            Then, computational experimentation shows that this
-                            method is well suited for solutions with singularities and discontinuities.
-                        </p>
+                        <p> Click on the link and take a look at the graphs! I really enjoyed this project, and it really convinced me to go
+                        through with a master's. Shout out to my supervisor <a href="https://www.st-andrews.ac.uk/mathematics-statistics/people/ika1/">
+                            Irene Kyza</a> for pushing me to create something I'm proud of.</p>
                     </div>
 
                     <strong><a href="https://doi.org/10.1103/PhysRevFluids.9.124401", target="_blank">
@@ -61,11 +61,12 @@
                         <p>
                         Publication resulting from the StARIS internship at the University of St Andrews. See Section IV for my main
                         contributions. 
+                        I used data analysis techniques to predict certain quantities of a turbulent flow using its periodic orbits.
                         </p>
                         <p>
-                        I used data analysis techniques to find optimal weightings of periodic orbits to reconstruct
-                        certain statistics of a turbulent flow. The analysis revealed that only a small number of well-chosen periodic
-                        orbits are needed to generate a good prediction.
+                        This was my first foray into computational maths research, and I'm very thankful to my supervisor 
+                        <a href="https://danl21.github.io/">Dan Lucas</a> for all of his support.
+
                         </p>
                     </div>
 
@@ -82,7 +83,7 @@
                         </p>
                         
                         <p>
-                        This is the project which best represents my skills in C++.
+                        This is the project which best represents my C++ skills.
                         </p>
                     </div>
 
@@ -105,7 +106,7 @@
             </div>
 
             <footer id="footer" style="margin-top: 10px;">
-                <button id="theme-toggle">Switch theme</button>
+                <button id="theme-toggle">switch theme</button>
             </footer>
         </div>
 
