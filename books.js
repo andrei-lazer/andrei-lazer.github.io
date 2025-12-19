@@ -18,7 +18,6 @@ async function loadBooks(path) {
     for (const raw of lines) {
         const line = raw.trim();
 
-
         // New book entry, possibly with inline key/value
         if (line.startsWith('- ')) {
             current = {};
@@ -35,9 +34,7 @@ async function loadBooks(path) {
             continue;
         }
 
-
         if (!current || !line.includes(':')) continue;
-
 
         const idx = line.indexOf(':');
         const key = line.slice(0, idx).trim();
