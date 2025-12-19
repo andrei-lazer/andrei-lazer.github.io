@@ -6,6 +6,7 @@
         <title>andrei lazer</title>
         <link id="theme-stylesheet" rel="stylesheet" href="">
         <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="books.css" rel="stylesheet" type="text/css" media="all">
         <link rel="icon" type="image/x-icon" href="/assets/computer.gif">
     </head>
     <body>
@@ -16,8 +17,8 @@
         <div id="container">
             <div id="header">
                 <div>
-                    <img src="assets/computer.gif" alt="Image" style="display: block; height: 50px; margin: 40px auto;">
-                    <span id="header-text">~</span>
+                    <img src="assets/book2.gif" alt="Image" style="display: block; height: 50px; margin: 40px auto;">
+                    <span id="header-text">~/books</span>
                 </div>
             </div>
 
@@ -35,26 +36,8 @@
             <div id="flex">
 
                 <main>
-                    <h2>warning</h2>
-                    <p>
-                    I can't promise that this website has been recently updated. It's a fun side project of mine, but I'm notoriously bad
-                    at keeping on top of these kinds of things.
-                    </p>
-
-                    <h2>about</h2>
-
-                    <p> I'm a maths student at the University of
-                    Oxford studying for the <a
-                        href="https://www.maths.ox.ac.uk/members/students/postgraduate-courses/msc-mmsc">MSc
-                        in MMSC</a>. I'm interested in numerical analysis, parallel
-                    computing, HPC, and almost everything else which lets me do both
-                    maths and computing.
-                    </p>
-                    <p>
-
-                    My hobbies include language learning, reading, bouldering, and video games.
-                    </p>
-
+                    <div id="books" class="grid"></div>
+                    <script type="module" src="books.js"></script>
                 </main>
             </div>
 

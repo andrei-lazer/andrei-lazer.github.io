@@ -76,11 +76,8 @@ a {
     color: var(--link-color);
     text-decoration: none;
     cursor: var(--pointer);
-    line-height: 1;
+    /* line-height: 1; */
     display: inline;
-    /* if you want to remove the underline
-    you can add a line below here that says:
-    text-decoration:none; */
 }
 
 a:hover {

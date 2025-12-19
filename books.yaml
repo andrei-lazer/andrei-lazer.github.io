@@ -1,0 +1,49 @@
+title: My Library
+books:
+  - title: Stoner 
+    author: John Williams
+
+  - title: The will to change 
+    author: bell hooks
+
+  - title: The Housekeeper and the Professor
+    author: Yoko Ogawa
+
+  - title: Pachinko
+    author: Min Jin Lee
+  
+  - title: Flowers for Algernon
+    author: Daniel Keyes
+
+  - title: Young Mungo
+    author: Douglas Stuart
+
+  - title: Piranesi
+    author: Susanna Clarke
+
+  - title: East of Eden
+    author: John Steinbeck
+
+  - title: Arrête avec tes mensonges
+    author: Philippe Besson
+
+  - title: The Third Lie
+    author: Ágota Kristóf
+
+  - title: Giovanni's Room
+    author: James Baldwin
+
+  - title: Zami, a new spelling of my name
+    author: Audre Lorde
+
+  - title: The Master and Margarita
+    author: Mikhail Bulgakov
+
+  - title: One Hundred Years of Solitude
+    author: Gabriel García Márquez
+
+  - title: Gun, with Occasional Music
+    author: Jonathan Lethem
+
+  - title: The Night Circus
+    author: Erin Morgenstern

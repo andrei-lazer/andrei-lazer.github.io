@@ -1,0 +1,21 @@
+/* body { */
+/*     font-size: 0.9rem; */
+/*     padding: 2rem; */
+/* } */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    gap: 1.5rem;
+}
+
+.book {
+    text-align: center;
+    font-size: 0.6em;
+}
+
+.book img {
+    width: 100%;
+    border-radius: 0px;
+    background: var(--bg-color);
+}
