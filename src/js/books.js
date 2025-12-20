@@ -63,10 +63,11 @@ async function init() {
             <a href="${link}", style="background:var(--bg-color);" target="_blank">
             <img src="covers/${coverFile}" alt="${book.title}">
             </a>
-            <a href="${link}" target="_blank">
-            ${book.title}
-            </a>
             `;
+            // <a href="${link}" target="_blank">
+            // ${book.title}
+            // </a>
+            // `;
 
         container.appendChild(div);
     }

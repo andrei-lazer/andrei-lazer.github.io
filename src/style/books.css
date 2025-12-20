@@ -12,9 +12,12 @@
 }
 
 .book img {
-    width: 100%;
-    border-radius: 0px;
+    width: 150px;
+    height: 230px;
     background: var(--bg-color);
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: var(--text-color);
 }
 
 main {
