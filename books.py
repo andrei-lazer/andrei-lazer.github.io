@@ -7,16 +7,10 @@ import yaml
 COVERS_DIR = Path('covers')
 COVERS_DIR.mkdir(exist_ok=True)
 
-
-
-
 def slugify(text: str) -> str:
     text = text.lower()
     text = re.sub(r'[^a-z0-9]+', '-', text)
     return re.sub(r'-+', '-', text).strip('-')
-
-
-
 
 with open('books.yaml', 'r') as f:
     data = yaml.safe_load(f)

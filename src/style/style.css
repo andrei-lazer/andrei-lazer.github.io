@@ -14,8 +14,8 @@ the images as variables */
     --header-font: "BIZ UDMincho", serif;
     --body-font: "Courier Prime", monospace;
     --header-font: "Courier Prime", monospace;
-    --cursor: url("assets/wii-cursor.cur"), auto;
-    --pointer: url("assets/wii-pointer.cur"), auto;
+    --cursor: url("/assets/wii-cursor.cur"), auto;
+    --pointer: url("/assets/wii-pointer.cur"), auto;
 
 }
 
@@ -226,10 +226,9 @@ and then subtrack it by 100. use this new number as the
 }
 
 .navbar-menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
+    justify-items: space-between; 
+    flex-wrap: wrap;
     justify-content: center;
     gap: 5vw;
 }

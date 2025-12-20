@@ -1,8 +1,8 @@
  const toggleButton = document.getElementById("theme-toggle");
  const stylesheet = document.getElementById("theme-stylesheet");
  
- const LIGHT = "light.css";
- const DARK = "dark.css";
+ const LIGHT = "/src/style/light.css";
+ const DARK = "/src/style/dark.css";
  
 // Load saved theme
 const savedTheme = localStorage.getItem("theme");
@@ -11,7 +11,7 @@ if (savedTheme) {
 }
  
 toggleButton.addEventListener("click", () => {
-  const newTheme = stylesheet.href.includes("light.css")
+  const newTheme = stylesheet.href.includes(LIGHT)
     ? DARK
     : LIGHT;
   stylesheet.href = newTheme;
