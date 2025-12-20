@@ -1,16 +1,22 @@
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 150px);
+    display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
+    justify-content: center;
 }
 
 .book {
     text-align: center;
     font-size: 0.6em;
+    width: 150px;
 }
 
 .book img {
     width: 100%;
     border-radius: 0px;
     background: var(--bg-color);
+}
+
+main {
+    justify-content: center;
 }
