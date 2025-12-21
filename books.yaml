@@ -10,6 +10,7 @@ books:
 
   - title: "Operating Systems: Three Easy Pieces"
     author: Remzi H. Arpaci-Dusseau
+    link: "https://pages.cs.wisc.edu/~remzi/OSTEP/"
 
   - title: The Housekeeper and the Professor
     author: Yoko Ogawa
