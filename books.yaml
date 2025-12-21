@@ -8,6 +8,9 @@ books:
     author: bell hooks
     link: "https://www.librarything.com/work/2102662/300637081"
 
+  - title: "Operating Systems: Three Easy Pieces"
+    author: Remzi H. Arpaci-Dusseau
+
   - title: The Housekeeper and the Professor
     author: Yoko Ogawa
     link: "https://www.librarything.com/work/5263983/t/The-Housekeeper-and-the-Professor"
@@ -71,11 +74,3 @@ books:
   - title: Schoolgirl
     author: Osamu Dazai
     link: "https://www.librarything.com/work/11742588/book/300637076"
-
-  - title: On Earth We're Briefly Gorgeous
-    author: Ocean Vuong
-    link: "https://www.librarything.com/work/22536591/book/300637173"
-
-  - title: Norwegian Wood
-    author: Haruki Murakami
-    link: "https://www.librarything.com/work/5860/book/300637186"
