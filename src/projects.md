@@ -29,10 +29,10 @@ This was my first foray into computational maths research, and I'm very thankful
 
 ### [Order Book](https://github.com/andrei-lazer/order-book)
 
-Price-time priority order book written in C++. Implemented Add, Cancel and Match events for Good-Till-Cancel
+Price-time priority order book written in <span style="white-space:nowrap;">C++</span>. Implemented Add, Cancel and Match events for Good-Till-Cancel
 orders. Unit testing is done with Google test.
 
-This is the project which best represents my C++ skills.
+This is the project which best represents my <span style="white-space:nowrap;">C++</span> skills.
 
 
 ### [Pong for the 3DS](https://github.com/andrei-lazer/pong-3ds)
