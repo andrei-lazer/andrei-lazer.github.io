@@ -26,6 +26,12 @@ This was my first foray into computational maths research, and I'm very thankful
 
 ## fun
 
+### [This Website]()
+
+This is currently my most maintained project. I started out using just HTML and CSS, but now I've
+recently switched over to using the static site generator [11ty](https://www.11ty.dev/). While I'll
+probably never pivot into web development, it's good fun.
+
 
 ### [Order Book](https://github.com/andrei-lazer/order-book)
 
@@ -42,3 +48,4 @@ was quite fun to do.
 
 It's just a very basic and quite buggy Pong clone on the 3DS. I learned a lot about C++ and it motivated me to work
 on better projects.
+
