@@ -1,0 +1,25 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.book {
+    text-align: center;
+    font-size: 0.6em;
+    width: 150px;
+}
+
+.book img {
+    width: 150px;
+    height: 230px;
+    background: var(--bg-color);
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: var(--text-color);
+}
+
+#main {
+    justify-content: center;
+}

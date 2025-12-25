@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/book2.gif">
+
+
+        <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <title>andrei&#39;s books</title>
+    </head>
+
+    <body>
+        <body>
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/scripts/themeSwitch.js"></script>
+
+    <div id="container">
+        <div id="header">
+            <div>
+                <picture><source type="image/webp" srcset="/img/LArqkDC2Dc-20.webp 20w"><img src="/img/LArqkDC2Dc-20.gif" alt="image" class="gif-icon" width="20" height="20"></picture>
+                <div id="header-text">books</div>
+            </div>
+        </div>
+
+        <div id="headerArea">
+            <nav id="navbar" style="margin-bottom: 10px;">
+                <div class="navbar-menu">
+                    <a href="/index.html">home</a>
+                    <a href="/projects">projects</a>
+                    <a href="/email">email</a>
+                    <a href="/books">books</a>
+                </div>
+            </nav>
+        </div>
+
+        
+<link id="theme-stylesheet" rel="stylesheet" href="/style/books.css">
+
+<div id="main">
+    <div id="books" class="grid">
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/169174/300637089" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/F5SF87A8tz-305.webp 305w"><img src="/books/F5SF87A8tz-305.gif" alt="Stoner" width="305" height="500"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/2102662/300637081" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/ru9pfcrPgb-309.webp 309w"><img src="/books/ru9pfcrPgb-309.gif" alt="The Will to Change" width="309" height="475"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/mMmbofj8mK-333.webp 333w"><img src="/books/mMmbofj8mK-333.gif" alt="Operating Systems: Three Easy Pieces" width="333" height="500"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/5263983/t/The-Housekeeper-and-the-Professor" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/gkxctnhHml-185.webp 185w"><img src="/books/gkxctnhHml-185.gif" alt="The Housekeeper and the Professor" width="185" height="278"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/17833481/book/300637062" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/Pt-kY06PH_-333.webp 333w"><img src="/books/Pt-kY06PH_-333.gif" alt="Pachinko" width="333" height="500"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/2516333/book/300637057" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/I-PtEgVUtP-303.webp 303w"><img src="/books/I-PtEgVUtP-303.gif" alt="Flowers for Algernon" width="303" height="500"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/27237276/book/300637080" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/-OyqopnQkl-336.webp 336w"><img src="/books/-OyqopnQkl-336.gif" alt="Young Mungo" width="336" height="500"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/23754927/book/300637105" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/HrlgAR1k5Y-353.webp 353w"><img src="/books/HrlgAR1k5Y-353.gif" alt="Piranesi" width="353" height="500"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/2499/book/300637091" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/2rFC5Ooo6I-337.webp 337w"><img src="/books/2rFC5Ooo6I-337.gif" alt="East of Eden" width="337" height="500"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/22808971/book/300637079" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/d53ILaG4-u-305.webp 305w"><img src="/books/d53ILaG4-u-305.gif" alt="Arrête avec tes mensonges" width="305" height="500"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/996791/book/300637126" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/szqaoQtckY-308.webp 308w"><img src="/books/szqaoQtckY-308.gif" alt="The Third Lie" width="308" height="475"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/8089/book/300637130" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/IMheasQDlw-297.webp 297w"><img src="/books/IMheasQDlw-297.gif" alt="Giovanni's Room" width="297" height="475"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/3728592/book/301702847" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/GxkR1mrG_B-260.webp 260w"><img src="/books/GxkR1mrG_B-260.gif" alt="Le Comte de Monte Cristo" width="260" height="400"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/8116/book/300637136" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/8Ckk-1IC_I-320.webp 320w"><img src="/books/8Ckk-1IC_I-320.gif" alt="Zami, a new spelling of my name" width="320" height="475"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/10151/book/300637189" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/0iGVJQw9AS-303.webp 303w"><img src="/books/0iGVJQw9AS-303.gif" alt="The Master and Margarita" width="303" height="500"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/5864/book/300637142" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/rhlfRutccY-332.webp 332w"><img src="/books/rhlfRutccY-332.gif" alt="One Hundred Years of Solitude" width="332" height="500"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/15685/book/300637107" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/PBHd69jrgi-319.webp 319w"><img src="/books/PBHd69jrgi-319.gif" alt="Gun, with Occasional Music" width="319" height="500"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/12049600/book/300637197" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/xZ_j7LRwW7-326.webp 326w"><img src="/books/xZ_j7LRwW7-326.gif" alt="The Night Circus" width="326" height="500"></picture>
+            </a>
+        </div>
+        
+        <div class="book">
+            <a href="https://www.librarything.com/work/11742588/book/300637076" ,="" style="background:var(--bg-color);" target="_blank">
+                <picture><source type="image/webp" srcset="/books/grqnY4Q9gN-347.webp 347w"><img src="/books/grqnY4Q9gN-347.gif" alt="Schoolgirl" width="347" height="500"></picture>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+        <footer id="footer" style="margin-top: 10px;"></footer>
+    </div>
+
+</body>
+
+    </body>
+</html>

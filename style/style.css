@@ -1,0 +1,224 @@
+/* user styles */
+
+/* styles are what change the color and sizes of stuff on your site. */
+
+/* these are variables that are being used in the code
+these tended to confuse some people, so I only kept 
+the images as variables */
+
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --border-thickness: 2px;
+    --header-font: "BIZ UDMincho", serif;
+    --body-font: "Courier Prime", monospace;
+    --header-font: "Courier Prime", monospace;
+    --cursor: url("/assets/wii-cursor.cur"), auto;
+    --pointer: url("/assets/wii-pointer.cur"), auto;
+
+}
+
+body {
+    font-family: var(--body-font);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 30px;
+    margin: 0;
+    font-smooth: never;
+    text-rendering: optimizeSpeed;
+    /* you can delete the line below if you'd prefer to not use an image */
+    background-size: 65px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    cursor: var(--cursor);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* the "container" is what wraps your entire website */
+/* if you want something (like the header) to be Wider than
+the other elements, you will need to move that div outside
+of the container */
+#container {
+    max-width: 900px;
+    /* this is the width of your layout! */
+    /* if you change the above value, scroll to the bottom
+    and change the media query according to the comment! */
+    margin: 0 auto;
+    /* this centers the entire page */
+}
+
+/* the area below is for all links on your page
+EXCEPT for the navigation */
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    cursor: var(--pointer);
+    /* line-height: 1; */
+    display: inline;
+}
+
+a:hover {
+    color: var(--bg-color);
+    background-clip: content-box;
+    background-color: var(--link-color);
+}
+
+#header {
+    width: 100%;
+    background-color: var(--bg-color);
+    
+    /* header color here! */
+    padding-top: 30vh;
+    padding-bottom: 30px;
+    /* height: 100vh; */
+    /* height: 150px; */
+    /* this is only for a background image! */
+    /* if you want to put images IN the header, 
+    you can add them directly to the <div id="header"></div> element! */
+    background-size: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-text {
+    font-family: var(--header-font);
+    font-weight: 400;
+    font-size: clamp(1.2em, 7vmin, 400px);
+    text-align: center;
+}
+
+#flex {
+    display: flex;
+}
+
+aside {
+    background-color: var(--bg-color);
+    width: 200px;
+    padding: 20px;
+    font-size: smaller;
+    /* this makes the sidebar text slightly smaller */
+}
+
+/* this is the color of the main content area,
+between the sidebars! */
+#main {
+    background-color: var(--bg-color);
+    flex: 1;
+    padding: 20px;
+    order: 2;
+    /* border: var(--border-thickness) dashed var(--border-color); */
+}
+
+button {
+    font-family: var(--body-font);
+    font-size: 16px;
+    /* font-weight: 600; */
+    padding: 0!important;
+    color: var(--link-color);
+    background: none:important;
+    background-color: var(--bg-color);
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    cursor: var(--pointer);
+    color: var(--bg-color);
+    background-color: var(--link-color);
+}
+
+footer {
+    background-color: var(--bg-color);
+    /* background color for footer */
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    /* this centers the footer text */
+}
+
+h1, h2, h3 {
+    color: var(--text-color);
+    font-family: var(--header-font);
+}
+
+
+strong {
+    /* this styles bold text */
+    color: var(--text-color);
+}
+
+/* this is just a cool box, it's the darker colored one */
+
+.box {
+    background-color: var(--bg-color);
+    /* border: var(--border-thickness) dashed var(--border-color); */
+    padding: 20px;
+}
+
+#email {
+    font-size: clamp(0.5em, 4vmin, 50px);
+    text-align: center;
+}
+
+/* BELOW THIS POINT IS MEDIA QUERY */
+
+/* so you wanna change the width of your page? 
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+ */
+
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+
+.navbar-menu {
+    display: flex;
+    justify-items: space-between; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.navbar-menu li {
+    margin-bottom: 10px;
+    display: inline;
+}
+
+
+/* change text selection styling */
+::-moz-selection {
+  color: var(--bg-color);
+  background: var(--link-color);
+}
+
+::selection {
+  color: var(--bg-color);
+  background: var(--link-color);
+} 
+
+.gif-icon {
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 40px auto;
+}
+
+p {
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/computer.gif">
+
+
+        <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <title>andrei&#39;s website</title>
+    </head>
+
+    <body>
+        <body>
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/scripts/themeSwitch.js"></script>
+
+    <div id="container">
+        <div id="header">
+            <div>
+                <picture><source type="image/webp" srcset="/img/k13cFlG-Ov-20.webp 20w"><img src="/img/k13cFlG-Ov-20.gif" alt="image" class="gif-icon" width="20" height="20"></picture>
+                <div id="header-text">welcome</div>
+            </div>
+        </div>
+
+        <div id="headerArea">
+            <nav id="navbar" style="margin-bottom: 10px;">
+                <div class="navbar-menu">
+                    <a href="/index.html">home</a>
+                    <a href="/projects">projects</a>
+                    <a href="/email">email</a>
+                    <a href="/books">books</a>
+                </div>
+            </nav>
+        </div>
+
+        
+<div id="flex">
+    <div id="main">
+        <h2>warning</h2>
+<p>I can't promise that this website has been recently updated. It's a fun side project of mine, but I'm notoriously bad
+at keeping on top of these kinds of things.</p>
+<h2>about</h2>
+<p>I'm a maths student at the University of
+Oxford studying for the
+<a href="https://www.maths.ox.ac.uk/members/students/postgraduate-courses/msc-mmsc">MSc in MMSC</a>. I'm interested in numerical analysis, parallel
+computing, HPC, and almost everything else which lets me do both
+maths and computing.</p>
+
+    </div>
+</div>
+
+
+
+        <footer id="footer" style="margin-top: 10px;"></footer>
+    </div>
+
+</body>
+
+    </body>
+</html>
