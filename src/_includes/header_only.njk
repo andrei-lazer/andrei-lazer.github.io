@@ -1,0 +1,35 @@
+---
+layout: preamble_only.njk
+---
+<body>
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/scripts/themeSwitch.js"></script>
+
+    <div id="container">
+        <div id="header">
+            <div>
+                <img src="/assets/{{ icon }}" alt="image" class="gif-icon">
+                <div id="header-text">{{ header }}</div>
+            </div>
+        </div>
+
+        <div id="headerArea">
+            <nav id="navbar" style="margin-bottom: 10px;">
+                <div class="navbar-menu">
+                    <a href="/index.html">home</a>
+                    <a href="/projects">projects</a>
+                    <a href="/email">email</a>
+                    <a href="/books">books</a>
+                </div>
+            </nav>
+        </div>
+
+        {{content | safe}}
+
+
+        <footer id="footer" style="margin-top: 10px;"></footer>
+    </div>
+
+</body>

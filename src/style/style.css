@@ -19,16 +19,6 @@ the images as variables */
 
 }
 
-/* if you have the URL of a font, you can set it below */
-/* feel free to delete this if it's not your vibe */
-
-/* this seems like a lot for just one font and I would have to agree 
-but I wanted to include an example of how to include a custom font.
-If you download a font file you can upload it onto your Neocities
-and then link it! Many fonts have separate files for each style
-(bold, italic, etc. T_T) which is why there are so many!
-*/
-
 body {
     font-family: var(--body-font);
     font-optical-sizing: auto;
@@ -48,13 +38,6 @@ body {
 * {
     box-sizing: border-box;
 }
-
-/* below this line is CSS for the layout */
-
-/* this is a CSS comment
-to uncomment a line of CSS, remove the * and the /
-before and after the text */
-
 
 /* the "container" is what wraps your entire website */
 /* if you want something (like the header) to be Wider than
@@ -126,7 +109,7 @@ aside {
 
 /* this is the color of the main content area,
 between the sidebars! */
-main {
+#main {
     background-color: var(--bg-color);
     flex: 1;
     padding: 20px;
@@ -167,6 +150,7 @@ h1, h2, h3 {
     font-family: var(--header-font);
 }
 
+
 strong {
     /* this styles bold text */
     color: var(--text-color);
@@ -202,27 +186,6 @@ and then subtrack it by 100. use this new number as the
     aside {
         width: 100%;
     }
-
-    /* the order of the items is adjusted here for responsiveness!
-    since the sidebars would be too small on a mobile device.
-    feel free to play around with the order!
-     */
-
-    main {
-        order: 1;
-    }
-}
-
-.sidebar-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar-menu li {
-    margin-bottom: 10px;
-    padding: 0;
-    font-size: larger;
 }
 
 .navbar-menu {
@@ -238,7 +201,9 @@ and then subtrack it by 100. use this new number as the
     display: inline;
 }
 
-::-moz-selection { /* Code for Firefox */
+
+/* change text selection styling */
+::-moz-selection {
   color: var(--bg-color);
   background: var(--link-color);
 }
@@ -247,3 +212,13 @@ and then subtrack it by 100. use this new number as the
   color: var(--bg-color);
   background: var(--link-color);
 } 
+
+.gif-icon {
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 40px auto;
+}
+
+p {
+}

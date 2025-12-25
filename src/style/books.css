@@ -20,6 +20,6 @@
     outline-color: var(--text-color);
 }
 
-main {
+#main {
     justify-content: center;
 }

@@ -1,0 +1,20 @@
+---
+layout: header_only.njk
+icon: book2.gif
+title: andrei's books
+header: books
+---
+
+<link id="theme-stylesheet" rel="stylesheet" href="/style/books.css">
+
+<div id="main">
+    <div id="books" class="grid">
+        {% for book in bookCovers %}
+        <div class="book">
+            <a href="{{ book.link }}", style="background:var(--bg-color);" target="_blank">
+                <img src="{{ book.cover }}" alt="{{ book.title }}">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
