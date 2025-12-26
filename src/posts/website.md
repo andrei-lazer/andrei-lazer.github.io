@@ -29,3 +29,4 @@ And some sites I either took inspiration from, or just thought were cool:
 - [masonarmand.com](https://masonarmand.com/)
 - [daliwali.neocities.org](https://daliwali.neocities.org/)
 - [yazo.ink](https://yazo.ink/)
+- [durdraw.org](https://durdraw.org/)
