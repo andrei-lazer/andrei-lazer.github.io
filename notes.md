@@ -4,3 +4,4 @@
 - Icons: https://pixelsafari.neocities.org/favicon/2
 - Background textures: https://textures.neocities.org/
     - https://hekate2.github.io/website-tools/archive/backgrounds.html
+- Game data: https://gamesdb.launchbox-app.com/
