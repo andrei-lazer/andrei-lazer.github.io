@@ -10,6 +10,11 @@
     "cover": "https://images.launchbox-app.com//4cb9edd8-e68f-4823-83e9-074b08216859.jpg"
   },
   {
+    "title": "Dark Souls III",
+    "link": "https://store.steampowered.com/app/374320",
+    "cover": "https://images.launchbox-app.com//3395b5b8-c045-4b91-9c23-efd223086848.jpg"
+  },
+  {
     "title": "The Elder Scrolls V: Skyrim",
     "link": "https://store.steampowered.com/app/72850/The_Elder_Scrolls_V_Skyrim/",
     "cover": "https://images.launchbox-app.com//0316634a-65a8-4fe6-8cbd-016e89129b74.jpg"
@@ -25,9 +30,9 @@
     "cover": "https://images.launchbox-app.com//c3b89dda-414c-4a0d-935c-8f7e37684fd1.jpg"
   },
   {
-    "title": "Dark Souls III",
-    "link": "https://store.steampowered.com/app/374320",
-    "cover": "https://images.launchbox-app.com//3395b5b8-c045-4b91-9c23-efd223086848.jpg"
+    "title": "NieR:Automata",
+    "link": "https://store.steampowered.com/app/524220/NieRAutomata/",
+    "cover": "https://images.launchbox-app.com//b59f78c1-4caf-4373-824f-5c1a7c102083.jpg"
   },
   {
     "title": "Outer Wilds",
