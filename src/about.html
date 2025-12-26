@@ -1,0 +1,43 @@
+---
+layout: markdown.njk
+icon: book2.gif
+title: about andrei
+header: about
+---
+
+<link id="theme-stylesheet" rel="stylesheet" href="/style/books.css">
+
+<h2>about me</h2>
+<p>
+I'm Andrei Lazer, a maths student at the University of Oxford studying for the
+<a target="_blank" href="https://www.maths.ox.ac.uk/members/students/postgraduate-courses/msc-mmsc">MSc in MMSC</a>.
+I'm interested in numerical analysis, parallel computing, HPC, and almost
+everything else which lets me do both maths and computing.
+</p>
+
+<p>
+Next year, I'll be working as a Quantitative Developer for <a href="https://www.qube-rt.com/">
+    Qube Research & Technologies</a>, where I'll mostly be coding in Python.
+</p>
+
+<p>
+Outside of maths, I'm interested in almost all parts of software development.
+I've previously interned as an embedded developer for automotives, most of my
+<a href="/posts">personal projects</a> are in C++, and I've spent an outrageous amount of time on
+this website coding in JavaScript, HTML and CSS.
+</p>
+
+<h2>books</h2>
+<p>
+These are some of my favourite books. Click the covers for links.
+</p>
+
+<div id="books" class="grid">
+    {% for book in bookCovers %}
+    <div class="book">
+        <a href="{{ book.link }}", style="background:var(--bg-color);" target="_blank">
+            <img src="{{ book.cover }}" alt="{{ book.title }}">
+        </a>
+    </div>
+    {% endfor %}
+</div>
