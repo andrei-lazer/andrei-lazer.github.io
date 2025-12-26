@@ -1,0 +1,56 @@
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/">
+
+
+        <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <title>Dynamically relevant recurrent flows obtained via a nonlinear recurrence function from two-dimensional turbulence</title>
+    </head>
+
+
+<body>
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/scripts/themeSwitch.js"></script>
+
+
+    <div id="container">
+        <div id="container">
+            <div id="flex">
+                <div id="main">
+                    <h3 style="display: inline;"><a href="https://doi.org/10.1103/PhysRevFluids.9.124401">Dynamically relevant recurrent flows obtained via a nonlinear recurrence function from two-dimensional turbulence</a></h3>
+                    <a href="https://doi.org/10.1103/PhysRevFluids.9.124401">(Link)</a>
+                    <p>This was my first (and possibly only) paper! This resulted from the
+<a href="https://www.st-andrews.ac.uk/students/academic/staris/">StARIS</a> internship at the University of St
+Andrews. My only contributions are the majority of Section IV, where I used <span style="white-space:nowrap;">k-means</span> clustering,
+pruning, and regression techniques to predict certain quantities of a turbulent flow.</p>
+<p>This was my first foray into computational maths research, and I am extremely thankful to my
+supervisor <a href="https://danl21.github.io/">Dan Lucas</a> for all of his support and mentorship. I would not
+be where I am now without his help.</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>

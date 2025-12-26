@@ -25,8 +25,6 @@ body {
     font-style: normal;
     font-size: 30px;
     margin: 0;
-    font-smooth: never;
-    text-rendering: optimizeSpeed;
     /* you can delete the line below if you'd prefer to not use an image */
     background-size: 65px;
     color: var(--text-color);
@@ -161,7 +159,8 @@ strong {
 .box {
     background-color: var(--bg-color);
     /* border: var(--border-thickness) dashed var(--border-color); */
-    padding: 20px;
+    margin: 20px;
+    padding: 2vmin;
 }
 
 #email {
@@ -218,7 +217,4 @@ and then subtrack it by 100. use this new number as the
     height: 50px;
     width: 50px;
     margin: 40px auto;
-}
-
-p {
 }

@@ -1,0 +1,52 @@
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/">
+
+
+        <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <title>Order Book</title>
+    </head>
+
+
+<body>
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/scripts/themeSwitch.js"></script>
+
+
+    <div id="container">
+        <div id="container">
+            <div id="flex">
+                <div id="main">
+                    <h3 style="display: inline;"><a href="https://github.com/andrei-lazer/order-book">Order Book</a></h3>
+                    <a href="https://github.com/andrei-lazer/order-book">(Link)</a>
+                    <p>Price-time priority order book written in <span style="white-space:nowrap;">C++</span>. Implemented Add, Cancel and Match events for Good-Till-Cancel
+orders. Unit testing is done with Google test.</p>
+<p>This is the project which best represents my <span style="white-space:nowrap;">C++</span> skills.</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
