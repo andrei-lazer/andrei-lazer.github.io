@@ -2,6 +2,11 @@
 
 {{ head(icon, name) }}
 
+{% if header %}
+{% else %}
+{% set header = name %}
+{% endif %}
+
 <body>
 
     {{ theme_switcher() }}
@@ -11,8 +16,13 @@
         <div id="container">
             <div id="flex">
                 <div id="main">
-                    <h3 style="display: inline;"><a href="{{ link }}" target="_blank">{{ name }}</a></h3>
+                    {% if link %}
+                    <h1 style="display: inline;"><a href="{{ link }}" target="_blank">{{ header }}</a></h1>
                     <a href="{{ link }}" target="_blank">(Link)</a>
+                    {% else %}
+                    <h1 style="display: inline;">{{ header }}</h1>
+                    {% endif %}
+
                     {{ content | safe }}
 
                     <a href="#" onclick="history.go(-1)">go back</a>
