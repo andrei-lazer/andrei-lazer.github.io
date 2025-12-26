@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-name: my thoughts on Neovim
+name: My thoughts on Neovim
 date: 2025-12-26 
 tags:
     - personal
