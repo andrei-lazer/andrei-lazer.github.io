@@ -15,7 +15,9 @@
 {% macro gif_header(icon, text) %}
     <div id="header">
         <div>
+            {% if icon %}
             <img src="/assets/{{ icon }}" alt="image" class="gif-icon">
+            {% endif %}
             <div id="header-text">{{ text }}</div>
         </div>
     </div>

@@ -72,14 +72,8 @@ a:hover {
     background-color: var(--bg-color);
     
     /* header color here! */
-    padding-top: 30vh;
+    /* padding-top: 30vh; */
     padding-bottom: 30px;
-    /* height: 100vh; */
-    /* height: 150px; */
-    /* this is only for a background image! */
-    /* if you want to put images IN the header, 
-    you can add them directly to the <div id="header"></div> element! */
-    background-size: 100%;
 
     display: flex;
     align-items: center;
