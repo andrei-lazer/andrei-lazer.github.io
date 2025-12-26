@@ -9,6 +9,11 @@
     text-align: center;
     font-size: 0.6em;
     width: 150px;
+    transition: transform .16s; /* animation */
+}
+
+.book:hover {
+    transform: scale(1.03);
 }
 
 .book img {
@@ -19,6 +24,7 @@
     outline-width: 1px;
     outline-color: var(--text-color);
 }
+
 
 #main {
     justify-content: center;
