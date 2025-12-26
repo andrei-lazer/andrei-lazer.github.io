@@ -11,7 +11,7 @@ export default async function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/scripts");
 
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-        formats: ["gif", "webp"],
+        formats: ["webp", "gif"],
         sharpOptions: {
             animated: true
         },
