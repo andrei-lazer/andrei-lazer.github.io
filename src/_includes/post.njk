@@ -1,0 +1,22 @@
+{% from "macros.njk" import navbar, gif_header, theme_switcher, head %}
+
+{{ head(icon, name) }}
+
+<body>
+
+    {{ theme_switcher() }}
+
+    <div id="container">
+        <div id="container">
+            <div id="flex">
+                <div id="main">
+                    <h3 style="display: inline;"><a href="{{ link }}">{{ name }}</a></h3>
+                    <a href="{{ link }}">(Link)</a>
+                    {{ content | safe }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>

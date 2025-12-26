@@ -1,11 +1,14 @@
 ---
-layout: preamble_only.njk
 icon: mail.gif
 title: andrei's email
 ---
 
+{% from "macros.njk" import head %}
+
+{{ head(icon, title) }}
+
 <body>
-    <script src="/scripts/themeSwitch.js"></script>
+    <body>
     <div id="container", style="min-height: 93vh; align-items: center; display: flex;">
         <div id="main">
             <div class="box", style="justify-content: center; text-align: center;">
@@ -15,6 +18,7 @@ title: andrei's email
             </div>
         </div>
     </div>
-    <footer id="footer" style="margin-top: 10px;"></footer>
+    
+    </body>
 
 </body>

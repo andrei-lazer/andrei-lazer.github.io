@@ -1,0 +1,25 @@
+{% from "macros.njk" import navbar, gif_header, theme_switcher, head, footer %}
+
+{{ head(icon, title) }}
+
+<body>
+    {{ theme_switcher() }}
+
+    <div id="container">
+
+        {{ gif_header(icon, header) }}
+
+        {{ navbar() }}
+
+        <div id="container">
+            <div id="flex">
+                <div id="main">
+                    {{ content | safe }}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+{{ footer(footer_content) }}

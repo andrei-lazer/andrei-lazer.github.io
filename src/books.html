@@ -1,20 +1,46 @@
 ---
-layout: header_only.njk
 icon: book2.gif
 title: andrei's books
 header: books
 ---
 
+{% from "macros.njk" import head, theme_switcher, gif_header, navbar %}
+
+{{ head(icon, title) }}
+
 <link id="theme-stylesheet" rel="stylesheet" href="/style/books.css">
 
-<div id="main">
-    <div id="books" class="grid">
-        {% for book in bookCovers %}
-        <div class="book">
-            <a href="{{ book.link }}", style="background:var(--bg-color);" target="_blank">
-                <img src="{{ book.cover }}" alt="{{ book.title }}">
-            </a>
-        </div>
-        {% endfor %}
+<body>
+
+    {{ theme_switcher() }}
+
+    <div id="container">
+
+        {{ gif_header(icon, header) }}
+
+        {{ navbar() }}
+
+        <body>
+            <div id="container">
+                <div id="flex">
+                    <div id="main">
+                        <div id="books" class="grid">
+                            {% for book in bookCovers %}
+                            <div class="book">
+                                <a href="{{ book.link }}", style="background:var(--bg-color);" target="_blank">
+                                    <img src="{{ book.cover }}" alt="{{ book.title }}">
+                                </a>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <footer id="footer" style="margin-top: 10px;"></footer>
+            </div>
+        </body>
+
+        <footer id="footer" style="margin-top: 10px;"></footer>
     </div>
-</div>
+
+</body>
