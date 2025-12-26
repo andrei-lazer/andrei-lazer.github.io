@@ -38,7 +38,9 @@
         </script>
 
         <link id="theme-stylesheet" rel="stylesheet" href="">
+        {% if icon %}
         <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/{{ icon }}">
+        {% endif %}
 
 
         <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
