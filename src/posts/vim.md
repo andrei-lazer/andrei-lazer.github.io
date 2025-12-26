@@ -6,9 +6,9 @@ tags:
     - personal
 ---
 
-I use [Neovim](https://neovim.io/) by the way, and I wanted to write a post about why I use it.
+I use [Neovim](https://neovim.io/) btw, and this is a blog post about it.
 
-## tldr: use vim motions, and here's my config
+## TLDR: use vim motions, and here's my config
 I think everyone should learn vim motions. For the amount of time it takes to learn (maybe a week if
 you're a full-time dev?), it will save you so much time and frustration. Even if you're still an
 Eclipse fan in 2025, I'd highly recommend learning the basics of vim motions.
@@ -22,14 +22,14 @@ I use Neovim over vim because I prefer lua over vimscript, and there are a lot o
 plugins. Unless you're really into some weird niche thing vim has kept since 1976, I'd recommend you
 also use Neovim.
 
-## why not VSCode?
+## Why not VSCode?
 
 The main reason I use Neovim over VSCode is (surprise surprise) the customizability. Its entire
 design philosophy is built around the idea that every part of the editor should be modifiable and
 extensible. Neovim in particular uses lua as its scripting language, which means if you're able to
 code something in lua, you can get it to run in your editor.
 
-Also, Neovim (can) very nicely follow the [Unix philosphy](https://en.wikipedia.org/wiki/Unix_philosophy).
+Also, Neovim (can) very nicely follow the [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy).
 As a very picky person, I much prefer being able to pick separate tools. For example, VSCode all but
 forces you to use their terminal, but Neovim has great interoperability with [tmux](https://github.com/tmux/tmux/wiki).
 
@@ -38,13 +38,13 @@ wouldn't recommend Neovim. However, if you're even a little bit curious, I'd rea
 it a shot. Here are some resources I used to get started:
 
 - [Josean Martinez](https://www.youtube.com/@joseanmartinez)
-    - [Full Neovim setup (most updated version](https://www.youtube.com/watch?v=oBiBEx7L000&t=161s)
+    - [Full Neovim setup (most updated version)](https://www.youtube.com/watch?v=oBiBEx7L000&t=161s)
     - [Full Neovim setup (the one I used)](https://www.youtube.com/watch?v=6pAG3BHurdM&t=4325s&pp=ygUPam9zZWFuIG1hcnRpbmV6)
     - [dotfiles management](https://www.youtube.com/watch?v=06x3ZhwrrwA&pp=ygUPam9zZWFuIG1hcnRpbmV6)
 - [TJ DeVries](https://www.youtube.com/@teej_dv)
     - [Neovim setup guide](https://www.youtube.com/watch?v=m8C0Cq9Uv9o&t=89s&pp=ygUGbmVvdmlt)
     - [oil.nvim](https://www.youtube.com/watch?v=-r1mMg-yVZE&pp=ygUGbmVvdmlt)
 - Miscllaneous videos
-    - [New native lsp runthrough](https://www.youtube.com/watch?v=HLp879ZDhVc&pp=ygUGbmVvdmlt)
+    - [New native lsp run-through](https://www.youtube.com/watch?v=HLp879ZDhVc&pp=ygUGbmVvdmlt)
     - [The perfect Neovim setup for Python](https://www.youtube.com/watch?v=4BnVeOUeZxc&list=PL05iK6gnYad1sb4iQyqsim_Jc_peZdNXf&index=4&pp=iAQB)
     - [The perfect Neovim setup for C++](https://www.youtube.com/watch?v=lsFoZIg-oDs&list=PL05iK6gnYad1sb4iQyqsim_Jc_peZdNXf&index=6&pp=iAQB)

@@ -5,16 +5,13 @@ title: andrei's website
 header: welcome
 ---
 
-<p>
 This is my website! I'm a UK-based student and soon-to-be quantitative
-developer. Check out the about me section for more info, or the posts section
+developer. Check out the about section for more info, or the posts section
 to see some of my projects. I prefer to be contacted via 
 <a href="/email">email</a>, since I rarely check anything else.
-</p>
 
-<h2>warning</h2>
+## warning
 
-<p>
 I can't promise that this website has been recently updated. It's a fun side project of mine, but I'm notoriously bad
-at keeping on top of these kinds of things.
-</p>
+at keeping on top of these kinds of things. Paradoxically, it is also always under development, so parts of it might be
+broken.
