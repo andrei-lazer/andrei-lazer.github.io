@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-name: My bachelor's thesis
+name: Bachelor's dissertation
 
 link: /assets/docs/sta-diss.pdf
 
