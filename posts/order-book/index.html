@@ -17,7 +17,6 @@
         <link id="theme-stylesheet" rel="stylesheet" href="">
         
 
-
         <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
 
         <title>A simple matching engine for limit orders</title>
@@ -49,14 +48,15 @@
 
                     <p>In August 2025, I started seriously aiming for quantitative finance roles, and so
 decided to create what is probably the most common quant dev project.</p>
-<p>This is a price-time priority matching engine written in <span style="white-space:nowrap;">C++</span>. I implemented basic functionality for Good-Till-Cancel limit
-orders. Unit testing is done with Google test.</p>
+<p>This is a price-time priority matching engine written in <nobr>C++</nobr>. I implemented basic
+functionality for Good-Till-Cancel limit orders. Unit testing is done with Google test.</p>
 <p>The design of this order book is largely influenced by <a href="https://web.archive.org/web/20110219163448/http://howtohft.wordpress.com/2011/02/15/how-to-build-a-fast-limit-order-book/">this
 article</a>
-from 2011, especially the use of ordered maps for storing limits,
-and a lock-free ring buffer for updating external observers.</p>
+from 2011, especially the use of ordered maps for storing limits, and a lock-free ring buffer for
+updating external observers.</p>
 <p>It's quite a small project, but it took me a good amount of effort due to my relative lack of
-experience with C++ at the time. This is the project which best represents my <span style="white-space:nowrap;">C++</span> skills.</p>
+experience with C++ at the time. This is the project which best represents my <nobr>C++</nobr>
+skills.</p>
 <p>Potential future to-dos:</p>
 <ul>
 <li>Add more order types (Fill-Or-Kill, Market Orders, Stop Orders)</li>
