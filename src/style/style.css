@@ -23,7 +23,7 @@ body {
     font-family: var(--body-font);
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 30px;
+    font-size: clamp(20px, 3vmin,30px);
     margin: 0;
     /* you can delete the line below if you'd prefer to not use an image */
     background-size: 65px;
