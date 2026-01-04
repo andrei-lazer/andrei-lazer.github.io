@@ -1,15 +1,9 @@
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-}
 
 .book {
     text-align: center;
     font-size: 0.6em;
     width: 150px;
-    transition: transform .16s; /* animation */
+    transition: transform .1s; /* animation */
 }
 
 .book:hover {
