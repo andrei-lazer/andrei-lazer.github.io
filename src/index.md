@@ -16,11 +16,5 @@ I can't promise that this website has been recently updated. It's a fun side pro
 at keeping on top of these kinds of things. Paradoxically, it is also always under development, so parts of it might be
 broken.
 
-
-
-{% from "macros.njk" import footer %}
-{{ footer('
-Total visitors: <span id="visitorCount">...</span>
-') }}
-
-<script src="scripts/hitCount.js"></script>
+{% from "macros.njk" import full_footer %}
+{{ full_footer()}}
