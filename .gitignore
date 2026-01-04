@@ -1,5 +1,5 @@
 .cache
 _site
 node_modules/
-*/.env
+*.env
 CNAME

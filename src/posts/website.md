@@ -1,13 +1,13 @@
 ---
 layout: post.njk
-name: This Website!
+name: Hello World
 link: /
 date: 2025-12-01
 tags:
     - personal
 ---
 
-This is currently my most maintained project. While I'm unlikely to ever pivot into web development,
+This website is currently my most maintained project. While I'm unlikely to ever pivot into web development,
 front end development is very rewarding. There's nothing else with quite the same visual feedback
 loop.
 
@@ -30,3 +30,4 @@ And some sites I either took inspiration from, or just thought were cool:
 - [daliwali.neocities.org](https://daliwali.neocities.org/)
 - [yazo.ink](https://yazo.ink/)
 - [durdraw.org](https://durdraw.org/)
+- [jasoncameron.dev](https://jasoncameron.dev/about)

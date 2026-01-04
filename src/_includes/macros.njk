@@ -16,7 +16,9 @@
     <div id="header">
         <div>
             {% if icon %}
-            <img src="/assets/{{ icon }}" alt="image" class="gif-icon">
+            <img src="/assets/{{ icon }}" alt={{ icon }} class="gif-icon">
+            {% else %}
+            <img src="/assets/computer.gif" alt="computer.gif" class="gif-icon">
             {% endif %}
             <div id="header-text">{{ text }}</div>
         </div>
@@ -40,6 +42,8 @@
         <link id="theme-stylesheet" rel="stylesheet" href="">
         {% if icon %}
         <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/{{ icon }}">
+        {% else %}
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/computer.gif">
         {% endif %}
 
         <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
