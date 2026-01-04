@@ -157,8 +157,10 @@ strong {
 /* this is just a cool box, it's the darker colored one */
 
 .box {
+    display: inline-block;
+    width: flex;
     background-color: var(--bg-color);
-    /* border: var(--border-thickness) dashed var(--border-color); */
+    border: var(--border-thickness) dashed var(--border-color);
     margin: 20px;
     padding: 2vmin;
 }
@@ -217,4 +219,12 @@ and then subtrack it by 100. use this new number as the
     height: 50px;
     width: 50px;
     margin: 40px auto;
+}
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
 }

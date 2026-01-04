@@ -15,6 +15,3 @@ to see some of my projects. I prefer to be contacted via
 I can't promise that this website has been recently updated. It's a fun side project of mine, but I'm notoriously bad
 at keeping on top of these kinds of things. Paradoxically, it is also always under development, so parts of it might be
 broken.
-
-{% from "macros.njk" import full_footer %}
-{{ full_footer()}}

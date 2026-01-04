@@ -44,7 +44,7 @@ it a shot. Here are some resources I used to get started:
 - [TJ DeVries](https://www.youtube.com/@teej_dv)
     - [Neovim setup guide](https://www.youtube.com/watch?v=m8C0Cq9Uv9o&t=89s&pp=ygUGbmVvdmlt)
     - [oil.nvim](https://www.youtube.com/watch?v=-r1mMg-yVZE&pp=ygUGbmVvdmlt)
-- Miscllaneous videos
+- Miscellaneous videos
     - [New native lsp run-through](https://www.youtube.com/watch?v=HLp879ZDhVc&pp=ygUGbmVvdmlt)
     - [The perfect Neovim setup for Python](https://www.youtube.com/watch?v=4BnVeOUeZxc&list=PL05iK6gnYad1sb4iQyqsim_Jc_peZdNXf&index=4&pp=iAQB)
     - [The perfect Neovim setup for C++](https://www.youtube.com/watch?v=lsFoZIg-oDs&list=PL05iK6gnYad1sb4iQyqsim_Jc_peZdNXf&index=6&pp=iAQB)

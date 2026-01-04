@@ -18,9 +18,10 @@ if (!visited) {
 fetch(apiURL)
     .then(response => response.json())
     .then(data => {
-        document.getElementById('visitorCount').textContent = data.value;
+        if (document.getElementById("visitorCount")) {
+            document.getElementById('visitorCount').textContent = data.value;
+        }
     })
     .catch(error => {
-        console.error('Error fetching visitor count:', error);
-        document.getElementById('visitorCount').textContent = 'error';
+        console.log('Error fetching visitor count:', error);
     });

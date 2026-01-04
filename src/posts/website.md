@@ -24,7 +24,7 @@ Here are some resources I used for this project:
 
 And some sites I either took inspiration from, or just thought were cool:
 - [misterdizzy.neocities.org](https://misterdizzy.neocities.org/)
-- [dimmden.dev](https://dimden.dev/)
+- [dimden.dev](https://dimden.dev/)
 - [www.thestopbits.net](https://www.thestopbits.net/)
 - [masonarmand.com](https://masonarmand.com/)
 - [daliwali.neocities.org](https://daliwali.neocities.org/)
