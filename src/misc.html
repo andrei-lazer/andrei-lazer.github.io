@@ -1,11 +1,11 @@
 ---
 layout: markdown.njk
-icon: computer.gif
+icon: eye.gif
 title: andrei's miscellanea
 header: miscellanea
 ---
 
-Here are some random things without a place.
+This page is for all the random things I don't have another place for.
 
 <div style="justify-content:center;">
     <div class="grid">
@@ -14,7 +14,6 @@ Here are some random things without a place.
             <div>visitor count:<nobr> <span id="visitorCount">...</span></div>
             <script type="module" src="/scripts/hitCount.js"></script>
         </div>
-
 
         <div class="box">
             <div>
@@ -30,6 +29,33 @@ Here are some random things without a place.
                 <script type="text/javascript" src="https://francophonering.neocities.org/onionring-widget.js"></script>
             </div>
         </div>
-
     </div>
 </div>
+
+<h2>books i like</h2>
+
+<div id="books" class="grid">
+    {% for book in bookCovers %}
+    <div class="book">
+        <a href="{{ book.link }}", style="background:var(--bg-color);" target="_blank">
+            <img src="{{ book.cover }}" alt="{{ book.title }}">
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+
+<link id="theme-stylesheet" rel="stylesheet" href="/style/books.css">
+
+<h2>video games i like</h2>
+
+<div id="books" class="grid">
+    {% for game in my_games %}
+    <div class="book">
+        <a href="{{ game.link }}", style="background:var(--bg-color);" target="_blank">
+            <img src="{{ game.cover }}" alt="{{ game.name }}">
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
