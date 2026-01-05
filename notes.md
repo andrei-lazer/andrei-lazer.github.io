@@ -5,3 +5,6 @@
 - Background textures: https://textures.neocities.org/
     - https://hekate2.github.io/website-tools/archive/backgrounds.html
 - Game data: https://gamesdb.launchbox-app.com/
+- 88x31 buttons:
+    - https://anlucas.neocities.org/88x31Buttons
+    - https://yesterweb.org/graphics/buttons
