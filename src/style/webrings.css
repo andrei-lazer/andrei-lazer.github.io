@@ -1,17 +1,49 @@
-.shring {
+/* general */
+.webring a {
+    all: unset;
 }
 
-.hotline {
+.webring a:hover {
+    all: unset;
+    cursor: var(--pointer);
+}
+
+/* shring */
+#shring {
+    border: var(--border-thickness) dashed var(--border-color);
+    color: var(--text-color);
+}
+
+#shring a {
+    color: var(--link-color);
+    text-decoration: none;
+    /* line-height: 1; */
+    display: inline;
+}
+
+#shring a:hover {
+    color: var(--bg-color);
+    background-clip: content-box;
+    background-color: var(--link-color);
+}
+
+/* hotline ring  */
+#hotline {
     background: #FA9ABA;
     border: none;
     color: white;
 }
-.hotline a {
+#hotline a {
     color: white;
     text-decoration: underline;
 }
-.hotline a:hover {
+#hotline a:hover {
     background: none;
 }
 
-
+/* wayward webring */
+#wayward {
+    background: #F6F0FF;
+    border: #938893;
+    color: #704C8B;
+}
