@@ -2,7 +2,7 @@
 .book {
     text-align: center;
     font-size: 0.6em;
-    width: 150px;
+    width: 100px;
     transition: transform .1s; /* animation */
 }
 
@@ -11,13 +11,14 @@
 }
 
 .book img {
-    width: 150px;
-    height: 230px;
+    width: 100px;
+    height: 153px;
     background: var(--bg-color);
     outline-style: solid;
     outline-width: 1px;
     outline-color: var(--text-color);
 }
+
 
 
 #main {

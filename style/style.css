@@ -147,13 +147,10 @@ h1, h2, h3 {
     font-family: var(--header-font);
 }
 
-
 strong {
     /* this styles bold text */
     color: var(--text-color);
 }
-
-/* this is just a cool box, it's the darker colored one */
 
 .box {
     display: inline-block;
@@ -190,14 +187,13 @@ and then subtrack it by 100. use this new number as the
     justify-items: space-between; 
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5vw;
+    gap: 3vw;
 }
 
 .navbar-menu li {
     margin-bottom: 10px;
     display: inline;
 }
-
 
 /* change text selection styling */
 ::-moz-selection {
@@ -217,10 +213,15 @@ and then subtrack it by 100. use this new number as the
     margin: 40px auto;
 }
 
-
 .grid {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
+}
+
+.button88x31 {
+    max-height: 31px;
+    max-width: 88px;
+    background: var(--bg-color);
 }
