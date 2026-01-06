@@ -1,0 +1,17 @@
+.shring {
+}
+
+.hotline {
+    background: #FA9ABA;
+    border: none;
+    color: white;
+}
+.hotline a {
+    color: white;
+    text-decoration: underline;
+}
+.hotline a:hover {
+    background: none;
+}
+
+

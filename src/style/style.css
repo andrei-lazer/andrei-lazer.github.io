@@ -161,8 +161,8 @@ strong {
     width: flex;
     background-color: var(--bg-color);
     border: var(--border-thickness) dashed var(--border-color);
-    margin: 20px;
-    padding: 2vmin;
+    /* margin: 2vmin; */
+    padding: 1vmin;
 }
 
 #email {
