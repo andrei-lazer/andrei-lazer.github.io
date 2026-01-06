@@ -3,3 +3,4 @@ _site
 node_modules/
 *.env
 CNAME
+src/posts/WIP-*
