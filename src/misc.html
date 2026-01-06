@@ -8,6 +8,10 @@ header: miscellanea
 This page is for all the random things I don't have another place for.
 
 
+<h2>my button</h2>
+If you'd like to link to my page, please use this button!
+<img src="/assets/buttons/me_88x31.gif" alt="my button">
+
 <h2>webrings <a name="webrings"></a></h2>
 
 <link id="theme-stylesheet" rel="stylesheet" href="/style/webrings.css">
@@ -42,41 +46,46 @@ This page is for all the random things I don't have another place for.
     </div>
 </div>
 
+<h2>buttons</h2>
+These are some <a href="https://neonaut.neocities.org/cyber/88x31">88x31 buttons</a>, split into
+ones that link to other websites, and ones that don't.
+
+<h3>other people's sites</h3>
+
+{% for button in buttons %}
+<a href="{{ button.link }}"><img class="button88x31" src="{{ button.img_src }}" alt="{{ button.alt }}"></a>
+{% endfor %}
+
+<h3>random buttons</h3>
+
+<img class="button88x31" src="assets/buttons/3ds_88x31.png" alt="3ds">
+<img class="button88x31" src="assets/buttons/wii_88x31.png" alt="wii">
+<img class="button88x31" src="assets/buttons/design_passion_88x31.gif" alt="web design is my passion">
+<img class="button88x31" src="assets/buttons/vim_88x31.gif" alt="vim">
+<img class="button88x31" src="assets/buttons/romania_88x15.gif" alt="romania">
+
+<link id="theme-stylesheet" rel="stylesheet" href="/style/books.css">
+
 <h2>books i like</h2>
 
 <div id="books" class="grid">
     {% for book in bookCovers %}
     <div class="book">
-        <a href="{{ book.link }}", style="background:var(--bg-color);" target="_blank">
+        <a href="{{ book.link }}" style="background:var(--bg-color);" target="_blank">
             <img src="{{ book.cover }}" alt="{{ book.title }}">
         </a>
     </div>
     {% endfor %}
 </div>
 
-
-<link id="theme-stylesheet" rel="stylesheet" href="/style/books.css">
-
 <h2>video games i like</h2>
 
 <div id="books" class="grid">
     {% for game in my_games %}
     <div class="book">
-        <a href="{{ game.link }}", style="background:var(--bg-color);" target="_blank">
+        <a href="{{ game.link }}" style="background:var(--bg-color);" target="_blank">
             <img src="{{ game.cover }}" alt="{{ game.name }}">
         </a>
     </div>
     {% endfor %}
-</div>
-
-<h2>buttons</h2>
-
-<div style="justify-content:center;">
-    <div class="grid">
-        <img src="assets/buttons/3ds_88x31.png" alt="3ds">
-        <img src="assets/buttons/wii_88x31.png" alt="wii">
-        <img src="assets/buttons/design_passion_88x31.gif" alt="web design is my passion">
-        <img src="assets/buttons/vim_88x31.gif" alt="vim">
-        <img src="assets/buttons/romania_88x15.gif" alt="romania">
-    </div>
 </div>

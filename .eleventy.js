@@ -2,7 +2,7 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 export default async function(eleventyConfig) {
     // Order matters, put this at the top of your configuration file.
-    eleventyConfig.setInputDirectory("src");
+        eleventyConfig.setInputDirectory("src");
     eleventyConfig.setQuietMode(true);
     eleventyConfig.addPassthroughCopy("src/assets")
     eleventyConfig.addPassthroughCopy("src/assets/docs")
@@ -35,3 +35,4 @@ export default async function(eleventyConfig) {
         templateFormats: ["html", "njk", "md", "webp"], // include your template formats
     };
 };
+

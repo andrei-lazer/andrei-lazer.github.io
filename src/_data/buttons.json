@@ -1,0 +1,37 @@
+[
+    {
+        "alt": "brennan day",
+        "img_src": "https://brennan.day/assets/images/brennan-day.gif",
+        "link": "https://brennan.day/"
+    },
+    {
+        "alt": "daryl sun's journal",
+        "img_src": "https://cdn.darylsun.page/img/button/darylsun88x31-new.webp",
+        "link": "https://blog.darylsun.page/"
+    },
+    {
+        "alt": "88x31",
+        "img_src": "https://neonaut.neocities.org/images/buttons/neocitizens/88by31.png",
+        "link": "https://88by31.neocities.org/"
+    },
+    {
+        "alt": "2bit",
+        "img_src": "https://2bit.neocities.org/2bit_button.png",
+        "link": "http://2bit.neocities.org/"
+    },
+    {
+        "alt": "asterion",
+        "img_src": "https://neonaut.neocities.org/images/buttons/neocitizens/asterion.png",
+        "link": "https://asterion.neocities.org/"
+    },
+    {
+        "alt": "blob garden",
+        "img_src": "https://neonaut.neocities.org/images/buttons/neocitizens/blobgarden.gif",
+        "link": "https://blobgarden.neocities.org/"
+    },
+    {
+        "alt": "Craftinatorics",
+        "img_src": "https://craftinatorics.com/img/craftinatorics_button.gif",
+        "link": "https://craftinatorics.neocities.org/"
+    }
+]

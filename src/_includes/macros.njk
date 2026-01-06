@@ -7,6 +7,7 @@
                 <a href="/now">now</a>
                 <a href="/posts">posts</a>
                 <a href="/misc">misc</a>
+                <a href="/links">links</a>
                 <a href="/email">email</a>
             </div>
         </nav>
@@ -65,4 +66,18 @@
 {% macro footer(content) %}
 <hr>
 <footer id="footer" style="margin-top: 10px;">{{ content | safe }}</footer>
+{% endmacro %}
+
+
+{% macro book_grid(bookCovers) %}
+<link id="theme-stylesheet" rel="stylesheet" href="/style/books.css">
+<div id="books" class="grid">
+    {% for book in bookCovers %}
+    <div class="book">
+        <a href="{{ book.link }}" style="background:var(--bg-color);" target="_blank">
+            <img src="{{ book.cover }}" alt="{{ book.title }}">
+        </a>
+    </div>
+    {% endfor %}
+</div>
 {% endmacro %}

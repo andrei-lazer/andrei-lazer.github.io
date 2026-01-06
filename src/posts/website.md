@@ -31,3 +31,5 @@ And some sites I either took inspiration from, or just thought were cool:
 - [yazo.ink](https://yazo.ink/)
 - [durdraw.org](https://durdraw.org/)
 - [jasoncameron.dev](https://jasoncameron.dev/about)
+- [blog.darylsun.page](https://blog.darylsun.page/)
+- [brennan.day](https://brennan.day/)
