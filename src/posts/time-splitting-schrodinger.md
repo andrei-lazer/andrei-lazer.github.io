@@ -16,8 +16,8 @@ spectral methods for the Schrödinger equation in the semi-classical regime*.
 I looked at a specific class of numerical integrators for the Schrödinger equation, proved some
 convergence/stability results, and confirmed these results computationally.
 
-Click on the link in the title to see the entire project, or click [here](/assets/diss_graphs.png)
-for some graphs completely out of context.
+Click on the link in the title to see the entire project, or click [here](/assets/docs/diss_graphs.png)
+for some very out-of-context graphs.
 
 I enjoyed this project so much that it convinced me to go
 through with a master's. Shout out to my supervisor 

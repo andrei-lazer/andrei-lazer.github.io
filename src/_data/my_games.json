@@ -30,11 +30,6 @@
     "cover": "https://images.launchbox-app.com//c3b89dda-414c-4a0d-935c-8f7e37684fd1.jpg"
   },
   {
-    "title": "NieR:Automata",
-    "link": "https://store.steampowered.com/app/524220/NieRAutomata/",
-    "cover": "https://images.launchbox-app.com//b59f78c1-4caf-4373-824f-5c1a7c102083.jpg"
-  },
-  {
     "title": "Outer Wilds",
     "link": "https://store.steampowered.com/app/753640",
     "cover": "https://images.launchbox-app.com//c2fd35e2-7c7f-4f1f-b116-321fb6bbba12.jpg"
@@ -48,15 +43,5 @@
     "title": "Bully: Scholarship Edition",
     "link": "https://store.steampowered.com/app/12200/Bully_Scholarship_Edition/",
     "cover": "https://images.launchbox-app.com//36643e9d-1297-453c-8ecf-c7567b7a969c.png"
-  },
-  {
-    "title": "The Witcher 3: Wild Hunt",
-    "link": "https://store.steampowered.com/app/292030",
-    "cover": "https://images.launchbox-app.com//7d1315f2-7340-42ee-8758-4d18cf6935d2.jpg"
-  },
-  {
-    "title": "Balatro",
-    "link": "https://store.steampowered.com/app/2379780/Balatro/",
-    "cover": "https://images.launchbox-app.com//17b9c319-c206-4600-97fc-7d73425a8914.jpg"
   }
 ]

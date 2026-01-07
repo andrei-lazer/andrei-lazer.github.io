@@ -6,7 +6,7 @@ header: welcome
 ---
 
 This is my website! I'm a UK-based student and soon-to-be quantitative developer. Check out
-[about](/about) for more info, [now](/now) for what I'm up to "now", or [posts](/posts) to see
+[about](/about) for more info, [now](/now) for what I'm up to now, or [posts](/posts) to see
 some of my projects. I prefer to be contacted via [email](/email), since I rarely check anything
 else.
 

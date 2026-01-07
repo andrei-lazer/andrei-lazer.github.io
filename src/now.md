@@ -5,7 +5,7 @@ title: andrei now
 header: now
 ---
 
-This is my [now page](https://nownownow.com/about)! Last updated 5 January 2026.
+This is my "[now page](https://nownownow.com/about)". Last updated 5 January 2026.
 
 ## reading
 
@@ -25,7 +25,8 @@ I've got my first round of exams for my master's degree in 10 days. My modules a
 Solutions to PDEs](https://courses.maths.ox.ac.uk/course/view.php?id=6069), and [Applied
 PDEs](https://courses.maths.ox.ac.uk/course/view.php?id=6072). I'm also doing a research project on
 the [cutting stock problem](https://en.wikipedia.org/wiki/Cutting_stock_problem) for my [Integer
-Programming](https://courses.maths.ox.ac.uk/course/view.php?id=6068) class.
+Programming](https://courses.maths.ox.ac.uk/course/view.php?id=6068) class, which I will post on
+here if it ends up being any good.
 
 The jump from my undergrad is very significant, but I'm quite enjoying it. I still can't wait to
 never study for an exam again though.

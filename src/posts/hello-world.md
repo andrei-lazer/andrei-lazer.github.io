@@ -20,16 +20,6 @@ Here are some resources I used for this project:
 - [Jaydan Urwin's 11ty Crash Course](https://www.youtube.com/watch?v=uzM5lETc6Sg&list=PLtLXFsdHI8JTwScHvB924dY3PNwNJjjuW)
 - [Github Pages Docs](https://docs.github.com/en/pages)
 - [W3Schools](https://www.w3schools.com/html/)
-- [ChatGPT](https://chatgpt.com/) (only occasionally)
 
-And some sites I either took inspiration from, or just thought were cool:
-- [misterdizzy.neocities.org](https://misterdizzy.neocities.org/)
-- [dimden.dev](https://dimden.dev/)
-- [www.thestopbits.net](https://www.thestopbits.net/)
-- [masonarmand.com](https://masonarmand.com/)
-- [daliwali.neocities.org](https://daliwali.neocities.org/)
-- [yazo.ink](https://yazo.ink/)
-- [durdraw.org](https://durdraw.org/)
-- [jasoncameron.dev](https://jasoncameron.dev/about)
-- [blog.darylsun.page](https://blog.darylsun.page/)
-- [brennan.day](https://brennan.day/)
+[Here](/links#personal-websites) are some websites I think are cool and have probably taken
+inspiration from.
