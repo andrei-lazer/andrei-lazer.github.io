@@ -33,8 +33,10 @@ A list of links to other places on the internet.
 - [Someone in a lot of webrings](https://baccyflap.com/rsp/)
 
 ## 88x31 buttons
-- [Neonaut's huge archive](https://neonaut.neocities.org/cyber/88x31)
-- [A.N. Lucas' retro buttons](https://anlucas.neocities.org/88x31Buttons)
-- [Yesterweb's modern buttons](https://yesterweb.org/graphics/buttons)
+- [The 88x31 Button Database](https://88x31db.com/)
+- [The Cyber Vanguard](https://cyber.dabamos.de/88x31/index.html)
+- [Neonaut](https://neonaut.neocities.org/cyber/88x31)
+- [A.N. Lucas](https://anlucas.neocities.org/88x31Buttons)
+- [Yesterweb](https://yesterweb.org/graphics/buttons)
 
 
