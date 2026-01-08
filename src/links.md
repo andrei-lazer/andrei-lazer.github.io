@@ -23,7 +23,9 @@ A list of links to other places on the internet.
 - [blog.darylsun.page](https://blog.darylsun.page/)
 - [brennan.day](https://brennan.day/)
 
-## website related
+## site resources
+- [Sadgirl's Layout Builder](https://codepen.io/sadness97/full/XJbLxNj) - I used this as the
+  starting layout for this site.
 - [32-Bit Cafe Resource List for the Personal Web](https://discourse.32bit.cafe/t/resources-list-for-the-personal-web/49)
 - [Textures](https://textures.neocities.org/)
 - [More textures](https://hekate2.github.io/website-tools/archive/backgrounds.html)
