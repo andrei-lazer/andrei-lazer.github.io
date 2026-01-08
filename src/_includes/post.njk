@@ -1,6 +1,7 @@
 ---
 icon: quill.gif
 ---
+
 {% from "macros.njk" import navbar, gif_header, theme_switcher, head %}
 
 {{ head(icon, name) }}
@@ -10,27 +11,24 @@ icon: quill.gif
 {% set header = name %}
 {% endif %}
 
+
 <body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/style/posts.css">
 
     {{ theme_switcher() }}
 
     <div id="container">
+        {% if link %}
+        <h1 style="display: inline;"><a href="{{ link }}" target="_blank">{{ header }}</a></h1>
+        <a href="{{ link }}" target="_blank">(Link)</a>
+        {% else %}
+        <h1 style="display: inline;">{{ header }}</h1>
+        {% endif %}
 
-        <div id="container">
-            <div id="flex">
-                <div id="main">
-                    {% if link %}
-                    <h1 style="display: inline;"><a href="{{ link }}" target="_blank">{{ header }}</a></h1>
-                    <a href="{{ link }}" target="_blank">(Link)</a>
-                    {% else %}
-                    <h1 style="display: inline;">{{ header }}</h1>
-                    {% endif %}
+        <div id="main">
+            {{ content | safe }}
 
-                    {{ content | safe }}
-
-                    <a href="#" onclick="history.go(-1)">go back</a>
-                </div>
-            </div>
+            <a href="#" onclick="history.go(-1)">go back</a>
         </div>
     </div>
 </body>

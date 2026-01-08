@@ -19,14 +19,12 @@ body {
     font-style: normal;
     font-size: clamp(30px, 3vmin, 40px);
     margin: 0;
-    /* you can delete the line below if you'd prefer to not use an image */
     background-size: 65px;
     color: var(--text-color);
     background-color: var(--bg-color);
     cursor: var(--cursor);
     transition: var(--transition);
 }
-
 
 * {
     box-sizing: border-box;
@@ -44,9 +42,6 @@ of the container */
     margin: 0 auto;
     /* this centers the entire page */
 }
-
-/* the area below is for all links on your page
-EXCEPT for the navigation */
 
 a {
     color: var(--link-color);

@@ -7,10 +7,6 @@ header: links
 
 A list of links to other places on the internet.
 
-## uncategorized
-- [Marginalia Search](https://marginalia-search.com/) - a small web search engine.
-- [Free game data API](https://gamesdb.launchbox-app.com/)
-
 ## <a name="personal-websites"></a> personal websites i think are cool
 - [misterdizzy.neocities.org](https://misterdizzy.neocities.org/)
 - [dimden.dev](https://dimden.dev/)
@@ -41,4 +37,7 @@ A list of links to other places on the internet.
 - [A.N. Lucas](https://anlucas.neocities.org/88x31Buttons)
 - [Yesterweb](https://yesterweb.org/graphics/buttons)
 
-
+## uncategorized
+- [Marginalia Search](https://marginalia-search.com/) - a small web search engine.
+- [Free game data API](https://gamesdb.launchbox-app.com/)
+- [Wallpapers](https://wallhaven.cc/search?q=greyscale%20landscape&categories=110&purity=100&sorting=relevance&order=desc&page=3)
