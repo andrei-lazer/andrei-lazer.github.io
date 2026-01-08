@@ -1,13 +1,4 @@
-/* user styles */
-
-/* styles are what change the color and sizes of stuff on your site. */
-
-/* these are variables that are being used in the code
-these tended to confuse some people, so I only kept 
-the images as variables */
-
 /* importing fonts */
-/* @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 :root {
@@ -19,7 +10,7 @@ the images as variables */
     /* --header-font: "Courier Prime", monospace; */
     --cursor: url("/assets/wii-cursor.cur"), auto;
     --pointer: url("/assets/wii-pointer.cur"), auto;
-
+    --transition: color, background 0.2s ease-in-out;
 }
 
 body {
@@ -33,6 +24,7 @@ body {
     color: var(--text-color);
     background-color: var(--bg-color);
     cursor: var(--cursor);
+    transition: var(--transition);
 }
 
 
@@ -71,7 +63,6 @@ a:hover {
 
 #header {
     width: 100%;
-    background-color: var(--bg-color);
     
     /* header color here! */
     /* padding-top: 30vh; */
@@ -80,6 +71,8 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--transition);
+    transition: var(--transition);
 }
 
 #header-text {
@@ -93,31 +86,20 @@ a:hover {
     display: flex;
 }
 
-aside {
-    background-color: var(--bg-color);
-    width: 200px;
-    padding: 20px;
-    font-size: smaller;
-    /* this makes the sidebar text slightly smaller */
-}
-
 /* this is the color of the main content area,
 between the sidebars! */
 #main {
-    background-color: var(--bg-color);
+    transition: var(--transition);
     flex: 1;
     padding: 20px;
     order: 2;
-    /* border: var(--border-thickness) dashed var(--border-color); */
 }
 
 button {
     font-family: var(--body-font);
     font-size: 16px;
-    /* font-weight: 600; */
     padding: 0!important;
     color: var(--link-color);
-    background: none:important;
     background-color: var(--bg-color);
     border: none;
     outline: none;
@@ -132,7 +114,6 @@ button:hover {
 footer {
     display: flex;
     width: 100%;
-    background-color: var(--bg-color);
     width: 100%;
     height: 50px;
     padding: 10px;
