@@ -1,6 +1,5 @@
 ---
 layout: markdown.njk
-icon: computer.gif
 title: andrei's website
 header: welcome
 ---

@@ -8,9 +8,6 @@ header: miscellanea
 This page is for all the random things I don't have another place for.
 
 
-<h2>my button</h2>
-If you'd like to link to my page, please use this button!
-<img src="/assets/buttons/me_88x31.gif" alt="my button">
 
 <h2>webrings <a name="webrings"></a></h2>
 
@@ -41,6 +38,10 @@ If you'd like to link to my page, please use this button!
 <!-- </div> -->
 
 <h2>buttons</h2>
+
+If you'd like to link to my page, please use this button!
+<img src="/assets/buttons/me_88x31.gif" alt="my button">
+
 These are some <a href="https://neonaut.neocities.org/cyber/88x31">88x31 buttons</a>.
 
 <h3>other people's buttons</h3>
@@ -61,24 +62,20 @@ These are some <a href="https://neonaut.neocities.org/cyber/88x31">88x31 buttons
 
 <h2>my favourite books</h2>
 
-<div id="books" class="grid">
+<div class="books grid">
     {% for book in bookCovers %}
-    <div class="book">
-        <a href="{{ book.link }}" style="background:var(--bg-color);" target="_blank">
-            <img src="{{ book.cover }}" alt="{{ book.title }}">
-        </a>
-    </div>
+    <a href="{{ book.link }}" target="_blank">
+        <img src="{{ book.cover }}" alt="{{ book.title }}">
+    </a>
     {% endfor %}
 </div>
 
 <h2>my favourite video games</h2>
 
-<div id="books" class="grid">
+<div class="books grid">
     {% for game in my_games %}
-    <div class="book">
-        <a href="{{ game.link }}" style="background:var(--bg-color);" target="_blank">
-            <img src="{{ game.cover }}" alt="{{ game.name }}">
-        </a>
-    </div>
+    <a href="{{ game.link }}" target="_blank">
+        <img src="{{ game.cover }}" alt="{{ game.name }}">
+    </a>
     {% endfor %}
 </div>

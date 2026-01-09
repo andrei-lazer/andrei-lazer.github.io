@@ -5,7 +5,7 @@ title: andrei's links
 header: links
 ---
 
-A list of links to other places on the internet.
+A list of links to other places on the internet. Basically my bookmarks.
 
 ## <a name="personal-websites"></a> personal websites i think are cool
 - [misterdizzy.neocities.org](https://misterdizzy.neocities.org/)
@@ -29,6 +29,7 @@ A list of links to other places on the internet.
   page are from here.
 - [Font guide](https://gaily-novelry.neocities.org/Guides/font-guide )
 - [Someone in a lot of webrings](https://baccyflap.com/rsp/)
+- [Flexbox labs](https://flexboxlabs.netlify.app/) - code generator for flex boxes. Suuper cool
 
 ## 88x31 buttons
 - [The 88x31 Button Database](https://88x31db.com/)

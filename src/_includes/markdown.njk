@@ -5,18 +5,12 @@
 <body>
     {{ theme_switcher() }}
 
-    <div id="container">
+    <div id="main">
 
         {{ gif_header(icon, header) }}
-
         {{ navbar() }}
 
-        <div id="flex">
-            <div id="main">
-                {{ content | safe }}
-            </div>
-        </div>
-
+        {{ content | safe }}
     </div>
     <script type="module" src="/scripts/hitCount.js"></script>
 </body>

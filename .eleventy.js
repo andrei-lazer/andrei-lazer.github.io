@@ -1,4 +1,5 @@
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import footnote_plugin from 'markdown-it-footnote';
 
 export default async function(eleventyConfig) {
     // Order matters, put this at the top of your configuration file.
@@ -9,6 +10,7 @@ export default async function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/style")
     eleventyConfig.addPassthroughCopy("src/assets");
     eleventyConfig.addPassthroughCopy("src/scripts");
+    eleventyConfig.addPassthroughCopy("src/robots.txt");
 
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
         formats: ["webp", "gif"],
@@ -16,6 +18,8 @@ export default async function(eleventyConfig) {
             animated: true
         },
     });
+
+    eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(footnote_plugin));
 
     eleventyConfig.addCollection("posts", function(collectionApi) {
         return collectionApi.getFilteredByGlob("src/posts/**/*.md");

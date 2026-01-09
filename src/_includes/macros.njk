@@ -1,7 +1,6 @@
 {% macro navbar() %}
     <div id="headerArea">
-        <nav id="navbar" style="margin-bottom: 10px;">
-            <div class="navbar-menu">
+        <nav >
                 <a href="/index.html">home</a>
                 <a href="/about">about</a>
                 <a href="/now">now</a>
@@ -9,29 +8,29 @@
                 <a href="/misc">misc</a>
                 <a href="/links">links</a>
                 <a href="/email">email</a>
-            </div>
         </nav>
     </div>
 {% endmacro %}
 
 
 {% macro gif_header(icon, text) %}
-    <div id="header">
-        <div>
-            {% if icon %}
-            <img src="/assets/{{ icon }}" alt={{ icon }} class="gif-icon">
-            {% else %}
-            <img src="/assets/computer.gif" alt="computer.gif" class="gif-icon">
-            {% endif %}
-            <div id="header-text">{{ text }}</div>
-        </div>
-    </div>
+<div id="header">
+    {% if icon %}
+    <img src="/assets/{{ icon }}" alt={{ icon }} class="gif-icon">
+    {% else %}
+    <img src="/assets/computer.gif" alt="computer.gif" class="gif-icon">
+    {% endif %}
+    <span id="header-text">{{ text }}</span>
+</div>
 {% endmacro %}
 
 {% macro head(icon, title) %}
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords"
+            content="math,coding,quant,development,languages">
+
         <script>
             // Determine initial theme
             const savedTheme = localStorage.getItem("theme");
@@ -42,7 +41,6 @@
             document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
         </script>
 
-        <link id="theme-stylesheet" rel="stylesheet" href="">
         {% if icon %}
         <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/{{ icon }}">
         {% else %}
@@ -50,6 +48,8 @@
         {% endif %}
 
         <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
 
         <title>{{ title }}</title>
     </head>
