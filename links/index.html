@@ -4,6 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
         <script>
             // Determine initial theme
             const savedTheme = localStorage.getItem("theme");
@@ -14,12 +16,13 @@
             document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
         </script>
 
-        <link id="theme-stylesheet" rel="stylesheet" href="">
         
         <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/url.gif">
         
 
         <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
 
         <title>andrei&#39;s links</title>
     </head>
@@ -33,23 +36,19 @@
     <script src="/scripts/themeSwitch.js"></script>
 
 
-    <div id="container">
+    <div id="main">
 
         
-    <div id="header">
-        <div>
-            
-            <picture><source type="image/webp" srcset="/img/F1Ev_Vn20f-20.webp 20w"><img src="/img/F1Ev_Vn20f-20.gif" alt="url.gif" class="gif-icon" width="20" height="20"></picture>
-            
-            <div id="header-text">links</div>
-        </div>
-    </div>
-
+<div id="header">
+    
+    <picture><source type="image/webp" srcset="/img/F1Ev_Vn20f-20.webp 20w"><img src="/img/F1Ev_Vn20f-20.gif" alt="url.gif" class="gif-icon" width="20" height="20"></picture>
+    
+    <span id="header-text">links</span>
+</div>
 
         
     <div id="headerArea">
-        <nav id="navbar" style="margin-bottom: 10px;">
-            <div class="navbar-menu">
+        <nav>
                 <a href="/index.html">home</a>
                 <a href="/about">about</a>
                 <a href="/now">now</a>
@@ -57,14 +56,11 @@
                 <a href="/misc">misc</a>
                 <a href="/links">links</a>
                 <a href="/email">email</a>
-            </div>
         </nav>
     </div>
 
 
-        <div id="flex">
-            <div id="main">
-                <p>A list of links to other places on the internet.</p>
+        <p>A list of links to other places on the internet. Basically my bookmarks.</p>
 <h2><a name="personal-websites"></a> personal websites i think are cool</h2>
 <ul>
 <li><a href="https://misterdizzy.neocities.org/">misterdizzy.neocities.org</a></li>
@@ -89,6 +85,7 @@ starting layout for this site.</li>
 page are from here.</li>
 <li><a href="https://gaily-novelry.neocities.org/Guides/font-guide">Font guide</a></li>
 <li><a href="https://baccyflap.com/rsp/">Someone in a lot of webrings</a></li>
+<li><a href="https://flexboxlabs.netlify.app/">Flexbox labs</a> - code generator for flex boxes. Suuper cool</li>
 </ul>
 <h2>88x31 buttons</h2>
 <ul>
@@ -104,9 +101,6 @@ page are from here.</li>
 <li><a href="https://gamesdb.launchbox-app.com/">Free game data API</a></li>
 <li><a href="https://wallhaven.cc/search?q=greyscale%20landscape&amp;categories=110&amp;purity=100&amp;sorting=relevance&amp;order=desc&amp;page=3">Wallpapers</a></li>
 </ul>
-
-            </div>
-        </div>
 
     </div>
     <script type="module" src="/scripts/hitCount.js"></script>

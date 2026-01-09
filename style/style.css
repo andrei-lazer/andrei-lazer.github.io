@@ -1,6 +1,7 @@
 /* importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+
 :root {
     --border-thickness: 2px;
     --header-font: "BIZ UDMincho", serif;
@@ -30,24 +31,11 @@ body {
     box-sizing: border-box;
 }
 
-/* the "container" is what wraps your entire website */
-/* if you want something (like the header) to be Wider than
-the other elements, you will need to move that div outside
-of the container */
-#container {
-    max-width: 900px;
-    /* this is the width of your layout! */
-    /* if you change the above value, scroll to the bottom
-    and change the media query according to the comment! */
-    margin: 0 auto;
-    /* this centers the entire page */
-}
-
 a {
     color: var(--link-color);
-    text-decoration: none;
     cursor: var(--pointer);
     display: inline;
+    text-decoration: none;
 }
 
 a:hover {
@@ -64,17 +52,15 @@ a:hover {
     padding-bottom: 30px;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: var(--transition);
+    vertical-align: middle;
     transition: var(--transition);
 }
 
 #header-text {
     font-family: var(--header-font);
     font-weight: 400;
-    font-size: clamp(1.2em, 7vmin, 400px);
-    text-align: center;
+    font-size: max(1.2em, 7vmin);
+    margin-left: 0.5em;
 }
 
 #flex {
@@ -86,13 +72,14 @@ between the sidebars! */
 #main {
     transition: var(--transition);
     flex: 1;
-    padding: 20px;
-    order: 2;
+    padding: 1em;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 button {
     font-family: var(--body-font);
-    font-size: 16px;
+    font-size: 0.5em;
     padding: 0!important;
     color: var(--link-color);
     background-color: var(--bg-color);
@@ -110,7 +97,7 @@ footer {
     display: flex;
     width: 100%;
     width: 100%;
-    height: 50px;
+    height: 3em;
     padding: 10px;
     text-align: center;
     justify-content: center;
@@ -123,11 +110,6 @@ h1, h2, h3 {
     font-family: var(--header-font);
 }
 
-strong {
-    /* this styles bold text */
-    color: var(--text-color);
-}
-
 .box {
     display: inline-block;
     width: flex;
@@ -135,38 +117,21 @@ strong {
 }
 
 #email {
-    font-size: clamp(0.5em, 4vmin, 50px);
+    /* font-size: max(0.5em, 4vmin); */
+    font-size: 1.2em;
     text-align: center;
 }
 
-/* BELOW THIS POINT IS MEDIA QUERY */
 
-/* so you wanna change the width of your page? 
-by default, the container width is 900px.
-in order to keep things responsive, take your new height,
-and then subtrack it by 100. use this new number as the 
-"max-width" value below
- */
-
-@media only screen and (max-width: 800px) {
-    #flex {
-        flex-wrap: wrap;
-    }
-
-    aside {
-        width: 100%;
-    }
-}
-
-.navbar-menu {
+nav {
     display: flex;
     justify-items: space-between; 
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 3vw;
 }
 
-.navbar-menu li {
+nav a {
     margin-bottom: 10px;
     display: inline;
 }
@@ -183,17 +148,15 @@ and then subtrack it by 100. use this new number as the
 } 
 
 .gif-icon {
-    display: block;
+    display: inline;
     height: 50px;
     width: 50px;
-    margin: 40px auto;
 }
 
 .grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
+    gap: 0.8em;
 }
 
 .button88x31 {

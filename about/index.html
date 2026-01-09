@@ -4,6 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
         <script>
             // Determine initial theme
             const savedTheme = localStorage.getItem("theme");
@@ -14,12 +16,13 @@
             document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
         </script>
 
-        <link id="theme-stylesheet" rel="stylesheet" href="">
         
         <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/crab.gif">
         
 
         <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
 
         <title>about andrei</title>
     </head>
@@ -33,23 +36,19 @@
     <script src="/scripts/themeSwitch.js"></script>
 
 
-    <div id="container">
+    <div id="main">
 
         
-    <div id="header">
-        <div>
-            
-            <picture><source type="image/webp" srcset="/img/pWsBZN6ANv-20.webp 20w"><img src="/img/pWsBZN6ANv-20.gif" alt="crab.gif" class="gif-icon" width="20" height="20"></picture>
-            
-            <div id="header-text">about</div>
-        </div>
-    </div>
-
+<div id="header">
+    
+    <picture><source type="image/webp" srcset="/img/pWsBZN6ANv-20.webp 20w"><img src="/img/pWsBZN6ANv-20.gif" alt="crab.gif" class="gif-icon" width="20" height="20"></picture>
+    
+    <span id="header-text">about</span>
+</div>
 
         
     <div id="headerArea">
-        <nav id="navbar" style="margin-bottom: 10px;">
-            <div class="navbar-menu">
+        <nav>
                 <a href="/index.html">home</a>
                 <a href="/about">about</a>
                 <a href="/now">now</a>
@@ -57,17 +56,11 @@
                 <a href="/misc">misc</a>
                 <a href="/links">links</a>
                 <a href="/email">email</a>
-            </div>
         </nav>
     </div>
 
 
-        <div id="flex">
-            <div id="main">
-                
-<h2>about me</h2>
-
-<p>
+        <p>
   I'm Andrei Lazer, a maths student at the University of Oxford studying for the
   <a href="https://www.maths.ox.ac.uk/members/students/postgraduate-courses/msc-mmsc" target="_blank" rel="noopener">
     MSc in MMSC</a>.
@@ -77,15 +70,12 @@
 
 <p>
 Next year, I'll be interning as a Quantitative Developer for <a href="https://www.qube-rt.com/" target="_blank" rel="noopener"> Qube Research & Technologies</a>, where I'll mostly be coding
-in Python. I previously interned at NVIDIA in the <a href="https://developer.nvidia.com/drive" target="_blank" rel="noopener"> automotive department</a>, where I worked on <a href="https://en.wikipedia.org/wiki/Fuzzing" target="_blank" rel="noopener"> fuzz testing</a> for
+in Python. I previously interned at NVIDIA in the <a href="https://developer.nvidia.com/drive" target="_blank" rel="noopener"> automotive department</a>, where I worked on <a href="https://en.wikipedia.org/wiki/Fuzzing" target="_blank" rel="noopener"> fuzz testing</a>
 their <a href="https://en.wikipedia.org/wiki/PKCS_11" target="_blank" rel="noopener"> cryptography
 library</a>.
 </p>
 
 
-
-            </div>
-        </div>
 
     </div>
     <script type="module" src="/scripts/hitCount.js"></script>

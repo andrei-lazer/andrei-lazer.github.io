@@ -4,6 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
         <script>
             // Determine initial theme
             const savedTheme = localStorage.getItem("theme");
@@ -14,12 +16,13 @@
             document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
         </script>
 
-        <link id="theme-stylesheet" rel="stylesheet" href="">
         
         <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/clock.gif">
         
 
         <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
 
         <title>andrei now</title>
     </head>
@@ -33,23 +36,19 @@
     <script src="/scripts/themeSwitch.js"></script>
 
 
-    <div id="container">
+    <div id="main">
 
         
-    <div id="header">
-        <div>
-            
-            <picture><source type="image/webp" srcset="/img/_XdwuWRARx-20.webp 20w"><img src="/img/_XdwuWRARx-20.gif" alt="clock.gif" class="gif-icon" width="20" height="20"></picture>
-            
-            <div id="header-text">now</div>
-        </div>
-    </div>
-
+<div id="header">
+    
+    <picture><source type="image/webp" srcset="/img/_XdwuWRARx-20.webp 20w"><img src="/img/_XdwuWRARx-20.gif" alt="clock.gif" class="gif-icon" width="20" height="20"></picture>
+    
+    <span id="header-text">now</span>
+</div>
 
         
     <div id="headerArea">
-        <nav id="navbar" style="margin-bottom: 10px;">
-            <div class="navbar-menu">
+        <nav>
                 <a href="/index.html">home</a>
                 <a href="/about">about</a>
                 <a href="/now">now</a>
@@ -57,14 +56,11 @@
                 <a href="/misc">misc</a>
                 <a href="/links">links</a>
                 <a href="/email">email</a>
-            </div>
         </nav>
     </div>
 
 
-        <div id="flex">
-            <div id="main">
-                <p>This is my &quot;<a href="https://nownownow.com/about">now page</a>&quot;. Last updated 5 January 2026.</p>
+        <p>This is my &quot;<a href="https://nownownow.com/about">now page</a>&quot;. Last updated 5 January 2026.</p>
 <h2>reading</h2>
 <p>Currently reading <a href="https://www.librarything.com/work/1032856/t/Butchers-Crossing">Butcher's
 Crossing</a> by John Williams.
@@ -83,9 +79,6 @@ Programming</a> class, which I will post on
 here if it ends up being any good.</p>
 <p>The jump from my undergrad is very significant, but I'm quite enjoying it. I still can't wait to
 never study for an exam again though.</p>
-
-            </div>
-        </div>
 
     </div>
     <script type="module" src="/scripts/hitCount.js"></script>

@@ -4,6 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
         <script>
             // Determine initial theme
             const savedTheme = localStorage.getItem("theme");
@@ -14,12 +16,13 @@
             document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
         </script>
 
-        <link id="theme-stylesheet" rel="stylesheet" href="">
         
         <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/quill.gif">
         
 
         <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
 
         <title>andrei&#39;s posts</title>
     </head>
@@ -33,23 +36,19 @@
     <script src="/scripts/themeSwitch.js"></script>
 
 
-    <div id="container">
+    <div id="main">
 
         
-    <div id="header">
-        <div>
-            
-            <picture><source type="image/webp" srcset="/img/S2TzgOW515-20.webp 20w"><img src="/img/S2TzgOW515-20.gif" alt="quill.gif" class="gif-icon" width="20" height="20"></picture>
-            
-            <div id="header-text">posts</div>
-        </div>
-    </div>
-
+<div id="header">
+    
+    <picture><source type="image/webp" srcset="/img/S2TzgOW515-20.webp 20w"><img src="/img/S2TzgOW515-20.gif" alt="quill.gif" class="gif-icon" width="20" height="20"></picture>
+    
+    <span id="header-text">posts</span>
+</div>
 
         
     <div id="headerArea">
-        <nav id="navbar" style="margin-bottom: 10px;">
-            <div class="navbar-menu">
+        <nav>
                 <a href="/index.html">home</a>
                 <a href="/about">about</a>
                 <a href="/now">now</a>
@@ -57,14 +56,11 @@
                 <a href="/misc">misc</a>
                 <a href="/links">links</a>
                 <a href="/email">email</a>
-            </div>
         </nav>
     </div>
 
 
-        <div id="flex">
-            <div id="main">
-                
+        
 <h2>academic</h2>
 
 
@@ -115,9 +111,6 @@
 </p>
 
 
-
-            </div>
-        </div>
 
     </div>
     <script type="module" src="/scripts/hitCount.js"></script>

@@ -1,24 +1,15 @@
-
-.book {
-    text-align: center;
-    font-size: 0.6em;
-    width: 100px;
-    transition: transform .1s; /* animation */
+.books img:hover {
+    transform: scale(1.06);
 }
 
-.book:hover {
-    transform: scale(1.03);
-}
-
-.book img {
+.books img {
     width: 100px;
-    height: 153px;
-    background: var(--bg-color);
+    height: 155px;
     outline-style: solid;
     outline-width: 1px;
     outline-color: var(--text-color);
 }
 
 #main {
-    justify-content: center;
+    /* justify-content: center; */
 }

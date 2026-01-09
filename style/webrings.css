@@ -35,7 +35,7 @@
 }
 #hotline a {
     color: white;
-    text-decoration: underline;
+    text-decoration: underline solid;
 }
 #hotline a:hover {
     background: none;

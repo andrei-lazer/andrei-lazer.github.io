@@ -5,6 +5,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
         <script>
             // Determine initial theme
             const savedTheme = localStorage.getItem("theme");
@@ -15,12 +17,13 @@
             document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
         </script>
 
-        <link id="theme-stylesheet" rel="stylesheet" href="">
         
         <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/quill.gif">
         
 
         <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
 
         <title>Thoughts on Neovim</title>
     </head>
@@ -41,13 +44,11 @@
     <script src="/scripts/themeSwitch.js"></script>
 
 
-    <div id="container">
+    <div id="main">
         
         <h1 style="display: inline;">Thoughts on Neovim</h1>
         
-
-        <div id="main">
-            <p>I use <a href="https://neovim.io/">Neovim</a> btw, and this is a blog post about it.</p>
+        <p>I use <a href="https://neovim.io/">Neovim</a> btw, and this is a blog post about it.</p>
 <h2>TLDR: use vim motions, and here's my config</h2>
 <p>I think everyone should learn vim motions. For the amount of time it takes to learn (maybe a week if
 you're a full-time dev?), it will save you so much time and frustration. Even if you're still an
@@ -93,7 +94,6 @@ it a shot. Here are some resources I used to get started:</p>
 </ul>
 
 
-            <a href="#" onclick="history.go(-1)">go back</a>
-        </div>
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
     </div>
 </body>

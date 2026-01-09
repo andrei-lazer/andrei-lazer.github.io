@@ -5,6 +5,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
         <script>
             // Determine initial theme
             const savedTheme = localStorage.getItem("theme");
@@ -15,12 +17,13 @@
             document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
         </script>
 
-        <link id="theme-stylesheet" rel="stylesheet" href="">
         
         <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/quill.gif">
         
 
         <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
 
         <title>A simple matching engine for limit orders</title>
     </head>
@@ -41,14 +44,12 @@
     <script src="/scripts/themeSwitch.js"></script>
 
 
-    <div id="container">
+    <div id="main">
         
         <h1 style="display: inline;"><a href="https://github.com/andrei-lazer/order-book" target="_blank">A simple matching engine for limit orders</a></h1>
         <a href="https://github.com/andrei-lazer/order-book" target="_blank">(Link)</a>
         
-
-        <div id="main">
-            <p>In August 2025, I started seriously aiming for quantitative finance roles, and so
+        <p>In August 2025, I started seriously aiming for quantitative finance roles, and so
 decided to create what is probably the most common quant dev project.</p>
 <p>This is a price-time priority matching engine written in <nobr>C++</nobr>. I implemented basic
 functionality for Good-Till-Cancel limit orders. Unit testing is done with Google test.</p>
@@ -67,7 +68,6 @@ skills.</p>
 </ul>
 
 
-            <a href="#" onclick="history.go(-1)">go back</a>
-        </div>
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
     </div>
 </body>
