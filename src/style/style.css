@@ -164,3 +164,15 @@ nav a {
     max-width: 88px;
     background: var(--bg-color);
 }
+
+/* content: "🗗"; */
+
+
+.external::after {
+  display: inline-block;
+  content: "↗";
+  font-size: 0.65em;      /* smaller */
+  line-height: 1;         /* avoids extra vertical space */
+  vertical-align: super;  /* superscript-like positioning */
+  margin-left: 0.1em;    /* small gap from the link text */
+}

@@ -1,5 +1,6 @@
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import footnote_plugin from 'markdown-it-footnote';
+import mila from "markdown-it-link-attributes";
 
 export default async function(eleventyConfig) {
     // Order matters, put this at the top of your configuration file.
@@ -19,7 +20,19 @@ export default async function(eleventyConfig) {
         },
     });
 
-    eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(footnote_plugin));
+    eleventyConfig.amendLibrary("md", (mdLib) => mdLib
+        .use(footnote_plugin)
+        .use(mila, {
+            matcher(href, config) {
+                return href.startsWith("https:");
+            },
+            attrs: {
+                target: "_blank",
+                rel: "noopener",
+                class: "external"
+            },
+        })
+    );
 
     eleventyConfig.addCollection("posts", function(collectionApi) {
         return collectionApi.getFilteredByGlob("src/posts/**/*.md");
