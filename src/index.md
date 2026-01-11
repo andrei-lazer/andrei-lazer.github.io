@@ -1,7 +1,7 @@
 ---
 layout: markdown.njk
 title: andrei's website
-header: welcome
+header: andrei lazer
 ---
 
 This is my website! I'm a UK-based student and soon-to-be quantitative developer. Check out
