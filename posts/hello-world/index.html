@@ -1,0 +1,72 @@
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/quill.gif">
+        
+
+        <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
+
+        <title>Hello World</title>
+    </head>
+
+
+
+
+
+
+
+<body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/style/posts.css">
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/scripts/themeSwitch.js"></script>
+
+
+    <div id="main">
+        
+        <h1 style="display: inline;"><a href="/" target="_blank">Hello World</a></h1>
+        <a href="/" target="_blank">(Link)</a>
+        
+        <p>This website is currently my most maintained project. While I'm unlikely to ever pivot into web development,
+front end development is very rewarding. There's nothing else with quite the same visual feedback
+loop.</p>
+<p>I started out using just HTML and CSS, but now I've recently switched over to using the static site
+generator <a href="https://www.11ty.dev/" target="_blank" rel="noopener" class="external">11ty</a>. It's hosted on <a href="https://docs.github.com/en/pages" target="_blank" rel="noopener" class="external">Github
+Pages</a>, and uses a free student domain from
+<a href="https://nc.me/" target="_blank" rel="noopener" class="external">namecheap</a>. The visitor counter on the home page uses the <a href="https://v2.jasoncameron.dev/abacus/" target="_blank" rel="noopener" class="external">abacus
+API</a> for the counter.</p>
+<p>Here are some resources I used for this project:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=uzM5lETc6Sg&amp;list=PLtLXFsdHI8JTwScHvB924dY3PNwNJjjuW" target="_blank" rel="noopener" class="external">Jaydan Urwin's 11ty Crash Course</a></li>
+<li><a href="https://docs.github.com/en/pages" target="_blank" rel="noopener" class="external">Github Pages Docs</a></li>
+<li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener" class="external">W3Schools</a></li>
+</ul>
+<p><a href="/links#personal-websites">Here</a> are some websites I think are cool and have probably taken
+inspiration from.</p>
+
+
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
+    </div>
+</body>

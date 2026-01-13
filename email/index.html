@@ -1,0 +1,40 @@
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/mail.gif">
+        
+
+        <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
+
+        <title>andrei&#39;s email</title>
+    </head>
+
+
+<body>
+    <div id="container" ,="" style="min-height: 90vh; align-items: center; display: flex;">
+        <div id="main" style="justify-content: center; text-align: center;">
+            <a href="mailto:andrei.lucian.lazer@gmail.com"><picture><source type="image/webp" srcset="/img/scB7AqMn9V-14.webp 14w"><img src="/img/scB7AqMn9V-14.gif" alt="Image" class="gif-icon" width="14" height="15"></picture></a>
+            <p id="email">andrei.lucian.lazer@gmail.com</p>
+            <a href="#" onclick="history.go(-1)">go back</a>
+        </div>
+    </div>
+</body>

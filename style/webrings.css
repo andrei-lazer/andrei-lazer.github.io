@@ -1,0 +1,68 @@
+/* general */
+#webrings {
+    display: flex;
+    flex-direction: row;
+}
+
+.webring {
+    margin: 10px;
+}
+
+.webring a {
+    all: unset;
+}
+
+
+.webring a:hover {
+    all: unset;
+    cursor: var(--pointer);
+}
+
+/* shring */
+#shring {
+    border: var(--border-thickness) dashed var(--border-color);
+    color: var(--text-color);
+}
+
+#shring a {
+    color: var(--link-color);
+    text-decoration: none;
+    /* line-height: 1; */
+    display: inline;
+}
+
+#shring a:hover {
+    color: var(--bg-color);
+    background-clip: content-box;
+    background-color: var(--link-color);
+}
+
+/* hotline ring  */
+#hotline {
+    background: #FA9ABA;
+    border: none;
+    color: white;
+}
+#hotline a {
+    color: white;
+    text-decoration: underline solid;
+}
+#hotline a:hover {
+    background: none;
+}
+
+#euro {
+    display: inline-block;
+    vertical-align: middle;
+    border: var(--border-thickness) solid #E5B905;
+    background: #003399!important
+}
+
+#euroring {
+    background: #003399!important
+}
+
+#euroring td {
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+}

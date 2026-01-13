@@ -1,0 +1,60 @@
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/quill.gif">
+        
+
+        <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
+
+        <title>Pong for the 3DS</title>
+    </head>
+
+
+
+
+
+
+
+<body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/style/posts.css">
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/scripts/themeSwitch.js"></script>
+
+
+    <div id="main">
+        
+        <h1 style="display: inline;"><a href="https://github.com/andrei-lazer/pong-3ds" target="_blank">Pong for the 3DS</a></h1>
+        <a href="https://github.com/andrei-lazer/pong-3ds" target="_blank">(Link)</a>
+        
+        <p>Important: This code does not represent my current abilities, but I thought I would include this
+because it was quite fun to do. Click the link to see some gameplay.</p>
+<p>It's just a very basic and quite buggy Pong clone on the 3DS. I learned a lot about C++ and it
+motivated me to work on better projects.</p>
+
+
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
+    </div>
+</body>

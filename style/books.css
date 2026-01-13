@@ -1,0 +1,15 @@
+.books img:hover {
+    transform: scale(1.06);
+}
+
+.books img {
+    width: 100px;
+    height: 155px;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: var(--text-color);
+}
+
+#main {
+    /* justify-content: center; */
+}

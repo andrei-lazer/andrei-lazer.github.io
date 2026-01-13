@@ -1,0 +1,67 @@
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/quill.gif">
+        
+
+        <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
+
+        <title>Bachelor&#39;s dissertation</title>
+    </head>
+
+
+
+
+
+
+
+<body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/style/posts.css">
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/scripts/themeSwitch.js"></script>
+
+
+    <div id="main">
+        
+        <h1 style="display: inline;"><a href="/assets/docs/sta-diss.pdf" target="_blank">Bachelor&#39;s dissertation</a></h1>
+        <a href="/assets/docs/sta-diss.pdf" target="_blank">(Link)</a>
+        
+        <p>This is my dissertation for my <a href="https://www.st-andrews.ac.uk/subjects/mathematics/mathematics-bsc/" target="_blank" rel="noopener" class="external">BSc in Mathematics at the University of St
+Andrews</a>, titled <em>Time-splitting
+spectral methods for the Schrödinger equation in the semi-classical regime</em>.</p>
+<p>I looked at a specific class of numerical integrators for the Schrödinger equation, proved some
+convergence/stability results, and confirmed these results computationally.</p>
+<p>Click on the link in the title to see the entire project, or click <a href="/assets/docs/diss_graphs.png">here</a>
+for some very out-of-context graphs.</p>
+<p>I enjoyed this project so much that it convinced me to go
+through with a master's. Shout out to my supervisor
+<a href="https://www.st-andrews.ac.uk/mathematics-statistics/people/ika1/" target="_blank" rel="noopener" class="external">Irene Kyza</a> for pushing me to create
+something I'm proud of.</p>
+
+
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
+    </div>
+</body>

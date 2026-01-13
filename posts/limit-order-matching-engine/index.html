@@ -1,0 +1,73 @@
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/quill.gif">
+        
+
+        <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
+
+        <title>A simple matching engine for limit orders</title>
+    </head>
+
+
+
+
+
+
+
+<body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/style/posts.css">
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/scripts/themeSwitch.js"></script>
+
+
+    <div id="main">
+        
+        <h1 style="display: inline;"><a href="https://github.com/andrei-lazer/order-book" target="_blank">A simple matching engine for limit orders</a></h1>
+        <a href="https://github.com/andrei-lazer/order-book" target="_blank">(Link)</a>
+        
+        <p>In August 2025, I started seriously aiming for quantitative finance roles, and so
+decided to create what is probably the most common quant dev project.</p>
+<p>This is a price-time priority matching engine written in <nobr>C++</nobr>. I implemented basic
+functionality for Good-Till-Cancel limit orders. Unit testing is done with Google test.</p>
+<p>The design of this order book is largely influenced by <a href="https://web.archive.org/web/20110219163448/http://howtohft.wordpress.com/2011/02/15/how-to-build-a-fast-limit-order-book/" target="_blank" rel="noopener" class="external">this
+article</a>
+from 2011, especially the use of ordered maps for storing limits, and a lock-free ring buffer for
+updating external observers.</p>
+<p>It's quite a small project, but it took me a good amount of effort due to my relative lack of
+experience with C++ at the time. This is the project which best represents my <nobr>C++</nobr>
+skills.</p>
+<p>Potential future to-dos:</p>
+<ul>
+<li>Add more order types (Fill-Or-Kill, Market Orders, Stop Orders)</li>
+<li>Create a more thorough API for getting order data.</li>
+<li>Test its performance much more thoroughly using realistic sample data and better profiling tools.</li>
+</ul>
+
+
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
+    </div>
+</body>

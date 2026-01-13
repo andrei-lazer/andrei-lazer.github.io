@@ -1,0 +1,99 @@
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/quill.gif">
+        
+
+        <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
+
+        <title>Thoughts on Neovim</title>
+    </head>
+
+
+
+
+
+
+
+<body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/style/posts.css">
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/scripts/themeSwitch.js"></script>
+
+
+    <div id="main">
+        
+        <h1 style="display: inline;">Thoughts on Neovim</h1>
+        
+        <p>I use <a href="https://neovim.io/" target="_blank" rel="noopener" class="external">Neovim</a> btw, and this is a blog post about it.</p>
+<h2>TLDR: use vim motions, and here's my config</h2>
+<p>I think everyone should learn vim motions. For the amount of time it takes to learn (maybe a week if
+you're a full-time dev?), it will save you so much time and frustration. Even if you're still an
+Eclipse fan in 2025, I'd highly recommend learning the basics of vim motions.</p>
+<p>Also, here's my <a href="https://github.com/andrei-lazer/dotfiles/tree/main/.config/nvim" target="_blank" rel="noopener" class="external">Neovim config</a>.</p>
+<p>Read on if you're really interested in my very generic opinions on Neovim.</p>
+<h2>Neovim vs vim</h2>
+<p>I use Neovim over vim because I prefer lua over vimscript, and there are a lot of Neovim-only
+plugins. Unless you're really into some weird niche thing vim has kept since 1976, I'd recommend you
+also use Neovim.</p>
+<h2>Why not VSCode?</h2>
+<p>The main reason I use Neovim over VSCode is (surprise surprise) the customizability. Its entire
+design philosophy is built around the idea that every part of the editor should be modifiable and
+extensible. Neovim in particular uses lua as its scripting language, which means if you're able to
+code something in lua, you can get it to run in your editor.</p>
+<p>Also, Neovim (can) very nicely follow the <a href="https://en.wikipedia.org/wiki/Unix_philosophy" target="_blank" rel="noopener" class="external">Unix philosophy</a>.
+As a very picky person, I much prefer being able to pick separate tools. For example, VSCode all but
+forces you to use their terminal, but Neovim has great interoperability with <a href="https://github.com/tmux/tmux/wiki" target="_blank" rel="noopener" class="external">tmux</a>.</p>
+<p>If you know you're not into messing with config files for ages or optimizing your keybinds, then I probably
+wouldn't recommend Neovim. However, if you're even a little bit curious, I'd really recommend giving
+it a shot. Here are some resources I used to get started:</p>
+<ul>
+<li><a href="https://www.youtube.com/@joseanmartinez" target="_blank" rel="noopener" class="external">Josean Martinez</a>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=oBiBEx7L000&amp;t=161s" target="_blank" rel="noopener" class="external">Full Neovim setup (most updated version)</a></li>
+<li><a href="https://www.youtube.com/watch?v=6pAG3BHurdM&amp;t=4325s&amp;pp=ygUPam9zZWFuIG1hcnRpbmV6" target="_blank" rel="noopener" class="external">Full Neovim setup (the one I used)</a></li>
+<li><a href="https://www.youtube.com/watch?v=06x3ZhwrrwA&amp;pp=ygUPam9zZWFuIG1hcnRpbmV6" target="_blank" rel="noopener" class="external">dotfiles management</a></li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/@teej_dv" target="_blank" rel="noopener" class="external">TJ DeVries</a>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=m8C0Cq9Uv9o&amp;t=89s&amp;pp=ygUGbmVvdmlt" target="_blank" rel="noopener" class="external">Neovim setup guide</a></li>
+<li><a href="https://www.youtube.com/watch?v=-r1mMg-yVZE&amp;pp=ygUGbmVvdmlt" target="_blank" rel="noopener" class="external">oil.nvim</a></li>
+</ul>
+</li>
+<li>Miscellaneous videos
+<ul>
+<li><a href="https://www.youtube.com/watch?v=HLp879ZDhVc&amp;pp=ygUGbmVvdmlt" target="_blank" rel="noopener" class="external">New native lsp run-through</a></li>
+<li><a href="https://www.youtube.com/watch?v=4BnVeOUeZxc&amp;list=PL05iK6gnYad1sb4iQyqsim_Jc_peZdNXf&amp;index=4&amp;pp=iAQB" target="_blank" rel="noopener" class="external">The perfect Neovim setup for Python</a></li>
+<li><a href="https://www.youtube.com/watch?v=lsFoZIg-oDs&amp;list=PL05iK6gnYad1sb4iQyqsim_Jc_peZdNXf&amp;index=6&amp;pp=iAQB" target="_blank" rel="noopener" class="external">The perfect Neovim setup for C++</a></li>
+</ul>
+</li>
+</ul>
+
+
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
+    </div>
+</body>
