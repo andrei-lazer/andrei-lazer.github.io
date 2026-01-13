@@ -1,6 +1,7 @@
 /* general */
 #webrings {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -65,4 +66,18 @@
 #euroring td {
     padding-top: 0px!important;
     padding-bottom: 0px!important;
+    color: white!important;
+}
+
+#francophone {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/330px-Flag_of_France.svg.png");
+    background-size: cover;
+    color: black!important;
+    border: var(--border-thickness) solid var(--border-color);
+}
+
+#francophonering td {
+    color: black!important;
+    filter: invert(1);
+    mix-blend-mode: difference;
 }
