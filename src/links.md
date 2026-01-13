@@ -18,6 +18,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [jasoncameron.dev](https://jasoncameron.dev/about)
 - [blog.darylsun.page](https://blog.darylsun.page/)
 - [brennan.day](https://brennan.day/)
+- [elswhere.neocities.org](https://elswhere.neocities.org/home/)
 
 ## site resources
 - [Sadgirl's Layout Builder](https://codepen.io/sadness97/full/XJbLxNj) - I used this as the
@@ -39,7 +40,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [A.N. Lucas](https://anlucas.neocities.org/88x31Buttons)
 - [Yesterweb](https://yesterweb.org/graphics/buttons)
 
-## music i'm enjoying
+## study music
 - [Entomongaku - Chypho](https://www.youtube.com/watch?v=GPZYeLzDE-Y)
 - [taiwanese pop mix](https://www.youtube.com/watch?v=mCfpS4zP_P4&t=730s)
 - [Courtyard - Mason Armand](https://www.youtube.com/watch?v=1KP_mzVVl3c)

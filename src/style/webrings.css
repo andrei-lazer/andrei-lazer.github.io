@@ -1,7 +1,17 @@
 /* general */
+#webrings {
+    display: flex;
+    flex-direction: row;
+}
+
+.webring {
+    margin: 10px;
+}
+
 .webring a {
     all: unset;
 }
+
 
 .webring a:hover {
     all: unset;
@@ -41,9 +51,18 @@
     background: none;
 }
 
-/* wayward webring */
-#wayward {
-    background: #F6F0FF;
-    border: #938893;
-    color: #704C8B;
+#euro {
+    display: inline-block;
+    vertical-align: middle;
+    border: var(--border-thickness) solid #E5B905;
+    background: #003399!important
+}
+
+#euroring {
+    background: #003399!important
+}
+
+#euroring td {
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
 }
