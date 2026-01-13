@@ -1,6 +1,7 @@
 .cache
 _site
-node_modules/
+**/node_modules/**
+**/old_*
 *.env
 CNAME
 src/posts/WIP-*

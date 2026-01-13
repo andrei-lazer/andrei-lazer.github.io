@@ -49,7 +49,7 @@ export default async function(eleventyConfig) {
     return {
         markdownTemplateEngine: "njk", // <-- use Nunjucks for Markdown
         htmlTemplateEngine: "njk",     // <-- use Nunjucks for HTML
-        templateFormats: ["html", "njk", "md", "webp"], // include your template formats
+        templateFormats: ["html", "njk", "md"], // include your template formats
     };
 };
 
