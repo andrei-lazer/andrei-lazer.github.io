@@ -5,7 +5,7 @@ title: about andrei
 header: about
 ---
 
-I’m **Andrei Lazer**, a maths student at the University of Oxford studying for the [MSc in
+I’m Andrei Lazer, a maths student at the University of Oxford studying for the [MSc in
 MMSC](https://www.maths.ox.ac.uk/members/students/postgraduate-courses/msc-mmsc).
 
 I’m interested in numerical analysis, parallel computing, HPC, and almost anything else that lets me do both maths and

@@ -50,3 +50,4 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [Free game data API](https://gamesdb.launchbox-app.com/)
 - [Wallpapers](https://wallhaven.cc/search?q=greyscale%20landscape&categories=110&purity=100&sorting=relevance&order=desc&page=3)
 - [fmhy](https://fmhy.net/)
+- [How to export Typst to HTML](https://1024th.top/posts/typst/typst-html-export)

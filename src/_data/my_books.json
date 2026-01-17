@@ -5,6 +5,12 @@
         "link": "https://www.librarything.com/work/169174/300637089"
     },
     {
+        "title": "Butcher's Crossing",
+        "author": "John Williams",
+        "link": "https://www.librarything.com/work/1032856/t/Butchers-Crossing",
+        "cover_url": "https://pics.cdn.librarything.com/picsizes/88/62/8862845-b-h400-w0-pv25_596e303868774141414a4142_v5.jpg"
+    },
+    {
         "title": "The Will to Change",
         "author": "bell hooks",
         "link": "https://www.librarything.com/work/2102662/300637081"
@@ -25,12 +31,6 @@
         "link": "https://www.librarything.com/work/17833481/book/300637062"
     },
     {
-        "title": "Flowers for Algernon",
-        "author": "Daniel Keyes",
-        "link": "https://www.librarything.com/work/2516333/book/300637057",
-        "cover_url": "https://covers.openlibrary.org/b/id/12947669-L.jpg"
-    },
-    {
         "title": "Young Mungo",
         "author": "Douglas Stuart",
         "link": "https://www.librarything.com/work/27237276/book/300637080"
@@ -41,11 +41,6 @@
         "link": "https://www.librarything.com/work/23754927/book/300637105"
     },
     {
-        "title": "Arrête avec tes mensonges",
-        "author": "Philippe Besson",
-        "link": "https://www.librarything.com/work/22808971/book/300637079"
-    },
-    {
         "title": "The Third Lie",
         "author": "Ágota Kristóf",
         "link": "https://www.librarything.com/work/996791/book/300637126"
@@ -54,10 +49,4 @@
         "title": "Giovanni's Room",
         "author": "James Baldwin",
         "link": "https://www.librarything.com/work/8089/book/300637130"
-    },
-    {
-        "title": "Gun, with Occasional Music",
-        "author": "Jonathan Lethem",
-        "link": "https://www.librarything.com/work/15685/book/300637107"
-    }
-]
+    }]
