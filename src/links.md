@@ -44,6 +44,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [Entomongaku - Chypho](https://www.youtube.com/watch?v=GPZYeLzDE-Y)
 - [taiwanese pop mix](https://www.youtube.com/watch?v=mCfpS4zP_P4&t=730s)
 - [Courtyard - Mason Armand](https://www.youtube.com/watch?v=1KP_mzVVl3c)
+- [吉川洋一郎 - アクア・ファンタジー](https://www.youtube.com/watch?v=f-6lSzJWq98)
 
 ## uncategorized
 - [Marginalia Search](https://marginalia-search.com/) - a small web search engine.
