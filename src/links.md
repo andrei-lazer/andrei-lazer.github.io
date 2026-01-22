@@ -33,6 +33,9 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [Flexbox labs](https://flexboxlabs.netlify.app/) - code generator for flex boxes. Super cool
 - [What's wrong with your code](https://web.archive.org/web/20240324055049/https://cutcodedown.com/article/whats_wrong_with_YOUR_website_index)
 
+## coding
+- [Logging in Python](https://www.dash0.com/guides/logging-in-python)
+
 ## 88x31 buttons
 - [The 88x31 Button Database](https://88x31db.com/)
 - [The Cyber Vanguard](https://cyber.dabamos.de/88x31/index.html)
@@ -45,6 +48,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [taiwanese pop mix](https://www.youtube.com/watch?v=mCfpS4zP_P4&t=730s)
 - [Courtyard - Mason Armand](https://www.youtube.com/watch?v=1KP_mzVVl3c)
 - [吉川洋一郎 - アクア・ファンタジー](https://www.youtube.com/watch?v=f-6lSzJWq98)
+- [ds and wii era frutiger aero](https://www.youtube.com/watch?v=0yiwxIuXmdk)
 
 ## uncategorized
 - [Marginalia Search](https://marginalia-search.com/) - a small web search engine.

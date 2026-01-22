@@ -10,7 +10,7 @@ some of my projects. I prefer to be contacted via [email](/email), since I rarel
 else.
 
 This website has had <span id="visitorCount">an unknown number of</span> visitors, and is part
-of 4 [webrings](/misc#webrings).
+of 2 [webrings](/misc#webrings).
 
 ## warning
 
