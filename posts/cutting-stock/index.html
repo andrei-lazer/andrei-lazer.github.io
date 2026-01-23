@@ -1,0 +1,64 @@
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/assets/quill.gif">
+        
+
+        <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href="">
+
+        <title>A Cutting Stock Problem</title>
+    </head>
+
+
+
+
+
+
+
+<body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/style/posts.css">
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/scripts/themeSwitch.js"></script>
+
+
+    <div id="main">
+        
+        <h1 style="display: inline;"><a href="./report.html" target="_blank">A Cutting Stock Problem</a></h1>
+        <a href="./report.html" target="_blank">(Link)</a>
+        
+        <p>This is a report I wrote for <a href="https://courses.maths.ox.ac.uk/course/view.php?id=6068" target="_blank" rel="noopener" class="external">B6.3 Integer
+Programming</a> as part of my <a href="https://www.maths.ox.ac.uk/members/students/postgraduate-courses/msc-mmsc" target="_blank" rel="noopener" class="external">MSc in
+MMSC</a>. It's on the
+binary cutting stock problem, a one-dimensional integer programming problem. I used an algorithm
+called branch-and-price, and implemented it (quite hurriedly) in Python.</p>
+<p>It is written in <a href="https://typst.app/" target="_blank" rel="noopener" class="external">typst</a> and compiled using their <em>very</em> incomplete HTML
+function, so there are quite a few rendering issues, but it should be mostly comprehensible. Check
+it out <a href="./report.html">here</a>!</p>
+
+
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
+    </div>
+</body>
