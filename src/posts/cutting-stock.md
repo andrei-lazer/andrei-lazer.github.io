@@ -1,10 +1,10 @@
 ---
 layout: post.njk
-name: The Cutting Stock Problem
+name: A Cutting Stock Problem
 date: 2026-01-23
 link: ./report.html
 tags:
-    - personal
+    - academic
 ---
 
 This is a report I wrote for [B6.3 Integer
