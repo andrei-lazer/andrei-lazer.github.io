@@ -1,14 +1,14 @@
 /* importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
 
 
 :root {
     --border-thickness: 2px;
     --header-font: "BIZ UDMincho", serif;
-    /* --body-font: "Courier Prime", monospace; */
     --body-font: "VT323", monospace;
     --header-font: var(--body-font);
-    /* --header-font: "Courier Prime", monospace; */
+    --code-font: "Fira Mono", monospace;
     --cursor: url("/assets/wii-cursor.cur"), auto;
     --pointer: url("/assets/wii-pointer.cur"), auto;
     --transition: color, background 0.2s ease-in-out;
@@ -29,6 +29,12 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+code {
+    font-family: var(--code-font);
+    font-size: 0.9em;
+    
 }
 
 a {
