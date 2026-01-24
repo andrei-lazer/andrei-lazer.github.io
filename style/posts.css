@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
 
 #main {
-    font-family: "Reddit Mono", monospace;
+    font-family: "Ovo", serif;
     font-size: 0.8em;
 }
 
