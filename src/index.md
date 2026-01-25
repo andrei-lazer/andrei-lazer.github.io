@@ -1,6 +1,6 @@
 ---
 layout: markdown.njk
-title: andrei's website
+title: andrei lazer
 header: andrei lazer
 ---
 
