@@ -1,6 +1,6 @@
 ---
 layout: markdown.njk
-icon: url.gif
+icon: mouse.gif
 title: andrei's links
 header: links
 ---
