@@ -1,0 +1,18 @@
+---
+icon: hamster.gif
+permalink: 404.html
+title: lost with andrei
+---
+{% from "macros.njk" import head %}
+
+{{ head(icon, title) }}
+
+<body>
+    <div id="container", style="min-height: 90vh; align-items: center; display: flex;">
+        <div id="main" style="justify-content: center; text-align: center;">
+            <img src="/assets/hamster.gif" alt="Image" class="gif-icon">
+            <p id="email">404: you're lost!</p>
+            <a href="/">go home</a>
+        </div>
+    </div>
+</body>
