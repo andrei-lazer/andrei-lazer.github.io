@@ -7,6 +7,27 @@ header: links
 
 A list of links to other places on the internet. Basically my bookmarks.
 
+
+## youtube channels
+- [Sheafification of G](https://www.youtube.com/@SheafificationOfG)
+- [Acerola](https://www.youtube.com/@Acerola_t)
+- [Michael Penn](https://www.youtube.com/@MichaelPennMath)
+- [Sebastian Lague](https://www.youtube.com/@SebastianLague)
+- [Laurie Wired](https://www.youtube.com/@lauriewired)
+- [Morphocular](https://www.youtube.com/@morphocular)
+- [Percia Verlin](https://www.youtube.com/@percish)
+- [Horses](https://www.youtube.com/@HorsesOnYT)
+
+## coding
+- [Logging in Python](https://www.dash0.com/guides/logging-in-python)
+
+## study music
+- [Entomongaku - Chypho](https://www.youtube.com/watch?v=GPZYeLzDE-Y)
+- [taiwanese pop mix](https://www.youtube.com/watch?v=mCfpS4zP_P4&t=730s)
+- [Courtyard - Mason Armand](https://www.youtube.com/watch?v=1KP_mzVVl3c)
+- [吉川洋一郎 - アクア・ファンタジー](https://www.youtube.com/watch?v=f-6lSzJWq98)
+- [ds and wii era frutiger aero](https://www.youtube.com/watch?v=0yiwxIuXmdk)
+
 ## <a name="personal-websites"></a> personal websites i think are cool
 - [misterdizzy.neocities.org](https://misterdizzy.neocities.org/)
 - [dimden.dev](https://dimden.dev/)
@@ -20,7 +41,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [brennan.day](https://brennan.day/)
 - [elswhere.neocities.org](https://elswhere.neocities.org/home/)
 
-## site resources
+## website resources
 - [Sadgirl's Layout Builder](https://codepen.io/sadness97/full/XJbLxNj) - I used this as the
   starting layout for this site.
 - [32-Bit Cafe Resource List for the Personal Web](https://discourse.32bit.cafe/t/resources-list-for-the-personal-web/49)
@@ -30,11 +51,8 @@ A list of links to other places on the internet. Basically my bookmarks.
   page are from here.
 - [Font guide](https://gaily-novelry.neocities.org/Guides/font-guide )
 - [Someone in a lot of webrings](https://baccyflap.com/rsp/)
-- [Flexbox labs](https://flexboxlabs.netlify.app/) - code generator for flex boxes. Super cool
+- [Flexbox labs](https://flexboxlabs.netlify.app/) - code generator for flex boxes. Super cool.
 - [What's wrong with your code](https://web.archive.org/web/20240324055049/https://cutcodedown.com/article/whats_wrong_with_YOUR_website_index)
-
-## coding
-- [Logging in Python](https://www.dash0.com/guides/logging-in-python)
 
 ## 88x31 buttons
 - [The 88x31 Button Database](https://88x31db.com/)
@@ -43,12 +61,6 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [A.N. Lucas](https://anlucas.neocities.org/88x31Buttons)
 - [Yesterweb](https://yesterweb.org/graphics/buttons)
 
-## study music
-- [Entomongaku - Chypho](https://www.youtube.com/watch?v=GPZYeLzDE-Y)
-- [taiwanese pop mix](https://www.youtube.com/watch?v=mCfpS4zP_P4&t=730s)
-- [Courtyard - Mason Armand](https://www.youtube.com/watch?v=1KP_mzVVl3c)
-- [吉川洋一郎 - アクア・ファンタジー](https://www.youtube.com/watch?v=f-6lSzJWq98)
-- [ds and wii era frutiger aero](https://www.youtube.com/watch?v=0yiwxIuXmdk)
 
 ## uncategorized
 - [Marginalia Search](https://marginalia-search.com/) - a small web search engine.
