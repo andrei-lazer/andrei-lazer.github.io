@@ -26,7 +26,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [taiwanese pop mix](https://www.youtube.com/watch?v=mCfpS4zP_P4&t=730s)
 - [Courtyard - Mason Armand](https://www.youtube.com/watch?v=1KP_mzVVl3c)
 - [吉川洋一郎 - アクア・ファンタジー](https://www.youtube.com/watch?v=f-6lSzJWq98)
-- [ds and wii era frutiger aero](https://www.youtube.com/watch?v=0yiwxIuXmdk)
+- [wind96 - Plume Valley](https://www.youtube.com/watch?v=MFBOtWq7dsE)
 
 ## <a name="personal-websites"></a> personal websites i think are cool
 - [misterdizzy.neocities.org](https://misterdizzy.neocities.org/)

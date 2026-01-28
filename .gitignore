@@ -5,3 +5,4 @@ _site
 *.env
 CNAME
 src/posts/WIP-*
+todo.md

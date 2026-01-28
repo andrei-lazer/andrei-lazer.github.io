@@ -1,6 +1,7 @@
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import footnote_plugin from 'markdown-it-footnote';
 import mila from "markdown-it-link-attributes";
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 
 export default async function(eleventyConfig) {
     // Order matters, put this at the top of your configuration file.
@@ -19,6 +20,7 @@ export default async function(eleventyConfig) {
             animated: true
         },
     });
+	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
     eleventyConfig.amendLibrary("md", (mdLib) => mdLib
         .use(footnote_plugin)

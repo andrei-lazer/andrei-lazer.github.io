@@ -1,10 +1,9 @@
 ---
-layout: post.njk
 name: Pong for the 3DS
 link: https://github.com/andrei-lazer/pong-3ds
 date: 2025-08-15
 tags:
-    - personal
+    - fun
 ---
 
 Important: This code does not represent my current abilities, but I thought I would include this

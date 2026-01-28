@@ -1,4 +1,6 @@
 ---
+eleventyNavigation:
+    key: Posts
 layout: markdown.njk
 icon: quill.gif
 title: andrei's posts
@@ -19,7 +21,7 @@ summary: Dissertation
 
 <h2>fun</h2>
 
-{% for post in collections.personal | reverse %}
+{% for post in collections.fun | reverse %}
 
 <p>
 <a href="{{ post.url }}">{{ post.data.name }}</a> <br>

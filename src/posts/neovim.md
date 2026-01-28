@@ -1,9 +1,8 @@
 ---
-layout: post.njk
 name: Thoughts on Neovim
 date: 2025-12-26 
 tags:
-    - personal
+    - fun
 ---
 
 I use [Neovim](https://neovim.io/) btw, and this is a blog post about it.

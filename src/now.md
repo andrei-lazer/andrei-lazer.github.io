@@ -18,7 +18,7 @@ of choice.
 I did a research project on the [cutting stock
 problem](https://en.wikipedia.org/wiki/Cutting_stock_problem) for my [Integer
 Programming](https://courses.maths.ox.ac.uk/course/view.php?id=6068) class, and I've posted it
-[here](/posts/cutting-stock/report.html).
+[here](/posts/cutting-stock/).
 
 
 I recently had my first exams for my master's! They were extremely tough. I expected the jump from my

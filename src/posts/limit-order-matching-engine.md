@@ -1,10 +1,9 @@
 ---
-layout: post.njk
 name: A simple matching engine for limit orders
 link: https://github.com/andrei-lazer/order-book
 date: 2025-08-10
 tags:
-    - personal
+    - fun
 ---
 
 In {{ date | formatDate }}, I started seriously aiming for quantitative finance roles, and so

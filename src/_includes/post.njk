@@ -1,8 +1,13 @@
 ---
 icon: quill.gif
+eleventyComputed:
+  eleventyNavigation:
+    key: "{{ key | default(name) }}"
+    parent: "{{ parent }}"
 ---
 
 {% from "macros.njk" import navbar, gif_header, theme_switcher, head %}
+
 
 {{ head(icon, name) }}
 
@@ -17,6 +22,19 @@ icon: quill.gif
     {{ theme_switcher() }}
 
     <div id="main">
+
+        <p>
+        {% if eleventyNavigation and eleventyNavigation.key %}
+            {% set navPages = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, { includeSelf: true }) %}
+            <nav id="breadcrumb">
+                {%- for entry in navPages %}
+                    > <a href="{{ entry.url }}">{{ entry.title }}</a>
+                {%- endfor %}
+            </nav>
+        {% endif %}
+        </p>
+
+
         {% if link %}
         <h1 style="display: inline;"><a href="{{ link }}" target="_blank">{{ header }}</a></h1>
         <a href="{{ link }}" target="_blank">(Link)</a>

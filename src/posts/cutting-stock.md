@@ -1,6 +1,5 @@
 ---
-layout: post.njk
-name: A Cutting Stock Problem
+name: A cutting stock problem
 date: 2026-01-23
 link: ./report.html
 tags:

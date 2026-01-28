@@ -9,3 +9,7 @@
     font-family: var(--body-font);
     font-size: 1.25em;
 }
+
+#breadcrumb {
+    font-family: var(--header-font);
+}

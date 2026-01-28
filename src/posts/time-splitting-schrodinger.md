@@ -1,6 +1,5 @@
 ---
-layout: post.njk
-name: Bachelor's dissertation
+name: Numerical methods for the Schrödinger equation
 
 link: /assets/docs/sta-diss.pdf
 
@@ -12,6 +11,8 @@ tags:
 This is my dissertation for my [BSc in Mathematics at the University of St
 Andrews](https://www.st-andrews.ac.uk/subjects/mathematics/mathematics-bsc/), titled *Time-splitting
 spectral methods for the Schrödinger equation in the semi-classical regime*.
+
+
 
 I looked at a specific class of numerical integrators for the Schrödinger equation, proved some
 convergence/stability results, and confirmed these results computationally.

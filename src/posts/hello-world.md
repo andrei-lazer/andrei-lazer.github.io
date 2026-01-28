@@ -1,10 +1,9 @@
 ---
-layout: post.njk
 name: Hello World
 link: /
 date: 2025-12-01
 tags:
-    - personal
+    - fun
 ---
 
 This website is currently my most maintained project. While I'm unlikely to ever pivot into web development,
