@@ -127,7 +127,7 @@ h1, h2, h3 {
 }
 
 
-nav {
+#navbar {
     display: flex;
     justify-items: space-between; 
     flex-wrap: wrap;
@@ -135,7 +135,7 @@ nav {
     gap: 3vw;
 }
 
-nav a {
+#navbar a {
     margin-bottom: 10px;
     display: inline;
 }
