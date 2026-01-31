@@ -28,7 +28,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [吉川洋一郎 - アクア・ファンタジー](https://www.youtube.com/watch?v=f-6lSzJWq98)
 - [wind96 - Plume Valley](https://www.youtube.com/watch?v=MFBOtWq7dsE)
 
-## <a name="personal-websites"></a> personal websites i think are cool
+## <a name="personal-websites"></a> websites i think are cool
 - [misterdizzy.neocities.org](https://misterdizzy.neocities.org/)
 - [dimden.dev](https://dimden.dev/)
 - [www.thestopbits.net](https://www.thestopbits.net/)

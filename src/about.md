@@ -5,13 +5,14 @@ title: about andrei
 header: about
 ---
 
-I’m Andrei Lazer, a maths student at the University of Oxford studying for the [MSc in
-MMSC](https://www.maths.ox.ac.uk/members/students/postgraduate-courses/msc-mmsc).
+Quick fun facts:
+- I’m doing a master's in maths in the UK, focused on numerical analysis, random systems, and optimization.
+- I can speak English, Romanian, French, Mandarin, and German (in sharply decreasing order).
 
-I’m interested in numerical analysis, parallel computing, HPC, and almost anything else that lets me do both maths and
-computing.
+Personally, I'm interested in almost all parts of computer science and maths, and enjoy being below
+average at web development and bash scripting. I want to get into homelabbing and mechanical
+keyboards when I have the disposable income to waste.
 
-Next year, I’ll be interning as a Quantitative Developer for [Qube Research & Technologies](https://www.qube-rt.com/),
-where I’ll mostly be coding in Python. I previously interned at NVIDIA in the [automotive
-department](https://developer.nvidia.com/drive), where I worked on [fuzz testing](https://en.wikipedia.org/wiki/Fuzzing)
-their [cryptography library](https://en.wikipedia.org/wiki/PKCS_11).
+I've previously interned as a researcher in computational maths, as well as an embedded developer in
+automotives. I'll be shifting into software development for trading when I finish my degree.
+
