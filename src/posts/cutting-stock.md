@@ -16,5 +16,3 @@ It is written in [typst](https://typst.app/) and compiled using their _very_ inc
 function, so there are quite a few rendering issues, but it should be mostly comprehensible. The
 report is [here](./report.html), and the code is
 [here](https://github.com/andrei-lazer/cutting-stock-bnp).
-
-
