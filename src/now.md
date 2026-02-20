@@ -5,12 +5,12 @@ title: andrei now
 header: now
 ---
 
-This is my "[now page](https://nownownow.com/about)". Last updated 31 January 2026.
+This is my "[now page](https://nownownow.com/about)". Last updated 20 February 2026.
 
 ## reading
 
-I'm about halfway through the first book of [The Mistborn Trilogy](https://www.librarything.com/work/9190082/t/The-Mistborn-Trilogy)
-by Brandon Sanderson, and really enjoying it. It's a great way to relax after studying.
+I've been zooming through the [Mistborn Trilogy](https://www.librarything.com/work/9190082/t/The-Mistborn-Trilogy)
+by Brandon Sanderson. It's quickly become one of my favourite fantasy series.
 
 ## uni
 
@@ -19,15 +19,9 @@ problem](https://en.wikipedia.org/wiki/Cutting_stock_problem) for my [Integer
 Programming](https://courses.maths.ox.ac.uk/course/view.php?id=6068) class, and I've posted it
 [here](/posts/cutting-stock/).
 
-This term I'm studying 
-[Continuous Optimisation](https://courses.maths.ox.ac.uk/course/view.php?id=6141), 
-[Nonlinear Dynamics and Chaos](https://courses.maths.ox.ac.uk/course/view.php?id=6089), 
-[Further Partial Differential Equations](https://courses.maths.ox.ac.uk/course/view.php?id=6288), and 
-[Further Mathematical Methods](https://courses.maths.ox.ac.uk/course/view.php?id=6289).
-
-I'm also doing a few more projects.
-- Another project similar to the integer programming one, this time on reinforcement learning for
-  finance as part of an [Optimal Control module](https://courses.maths.ox.ac.uk/course/view.php?id=6131).
+This term I'm doing a few more projects.
+- Another project similar to the integer programming one, this time on [deep Q-learning](https://en.wikipedia.org/wiki/Q-learning#Function_approximation)
+  as part of an [Optimal Control module](https://courses.maths.ox.ac.uk/course/view.php?id=6131).
 - Two group projects: one on stochastic modelling of infectious diseases, and one on
   [PINNs](https://en.wikipedia.org/wiki/Physics-informed_neural_networks).
 
