@@ -3,6 +3,7 @@ name: A cutting stock problem
 date: 2026-01-23
 link: ./report.html
 tags:
+    - posts
     - academic
 ---
 

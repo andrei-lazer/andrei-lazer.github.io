@@ -3,6 +3,7 @@ name: Predicting turbulent flows using unstable periodic orbits
 link: https://doi.org/10.1103/PhysRevFluids.9.124401
 date: 2024-12-12
 tags:
+    - posts
     - academic
 ---
 

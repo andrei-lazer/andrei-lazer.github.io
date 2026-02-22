@@ -5,6 +5,7 @@ link: /assets/docs/sta-diss.pdf
 
 date: 2025-06-01
 tags:
+    - posts
     - academic
 ---
 

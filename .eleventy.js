@@ -2,10 +2,11 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import footnote_plugin from 'markdown-it-footnote';
 import mila from "markdown-it-link-attributes";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
 export default async function(eleventyConfig) {
     // Order matters, put this at the top of your configuration file.
-        eleventyConfig.setInputDirectory("src");
+    eleventyConfig.setInputDirectory("src");
     eleventyConfig.setQuietMode(true);
     eleventyConfig.addPassthroughCopy("src/assets")
     eleventyConfig.addPassthroughCopy("src/assets/docs")
@@ -47,6 +48,27 @@ export default async function(eleventyConfig) {
         const year = d.getFullYear();
         return `${month} ${year}`;
     });
+
+    // RSS config
+    eleventyConfig.addPlugin(feedPlugin, {
+		type: "atom", // or "rss", "json"
+		outputPath: "/feed.xml",
+		collection: {
+			name: "posts", // iterate over `collections.posts`
+			limit: 0,     // 0 means no limit
+		},
+		metadata: {
+			language: "en",
+			title: "andrei's posts",
+			subtitle: "blog posts and projects abound maths, computer science, and languages.",
+			base: "https://andreilazer.me/",
+			author: {
+				name: "Andrei Lazer",
+				email: "andrei.lucian.lazer@gmail.com",
+			}
+		}
+	});
+
 
     return {
         markdownTemplateEngine: "njk", // <-- use Nunjucks for Markdown
