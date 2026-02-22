@@ -1,5 +1,5 @@
 ---
-name: A cutting stock problem
+title: A cutting stock problem
 date: 2026-01-23
 link: ./report.html
 tags:

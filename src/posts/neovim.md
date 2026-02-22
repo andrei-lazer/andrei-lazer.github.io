@@ -1,5 +1,5 @@
 ---
-name: Thoughts on Neovim
+title: Thoughts on Neovim
 date: 2025-12-26 
 tags:
     - posts

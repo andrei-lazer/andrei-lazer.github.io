@@ -1,5 +1,5 @@
 ---
-name: Hello World
+title: Hello World
 link: /
 date: 2025-12-01
 tags:

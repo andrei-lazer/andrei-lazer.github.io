@@ -1,5 +1,5 @@
 ---
-name: Pong for the 3DS
+title: Pong for the 3DS
 link: https://github.com/andrei-lazer/pong-3ds
 date: 2025-08-15
 tags:

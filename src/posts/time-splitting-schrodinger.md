@@ -1,5 +1,5 @@
 ---
-name: Numerical methods for the Schrödinger equation
+title: Numerical methods for the Schrödinger equation
 
 link: /assets/docs/sta-diss.pdf
 

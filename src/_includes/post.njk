@@ -2,18 +2,18 @@
 icon: quill.gif
 eleventyComputed:
   eleventyNavigation:
-    key: "{{ key | default(name) }}"
+    key: "{{ key | default(title) }}"
     parent: "{{ parent }}"
 ---
 
 {% from "macros.njk" import navbar, gif_header, theme_switcher, head %}
 
 
-{{ head(icon, name) }}
+{{ head(icon, title) }}
 
 {% if header %}
 {% else %}
-{% set header = name %}
+{% set header = title %}
 {% endif %}
 
 <body>
