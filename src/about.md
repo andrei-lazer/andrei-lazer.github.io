@@ -6,7 +6,7 @@ header: about
 ---
 
 Quick fun facts:
-- I’m doing a master's in maths in the UK, focused on numerical analysis, random systems, and optimization.
+- I’m doing a master's in maths in the UK, focused on numerical analysis, random systems, and optimisation.
 - I can speak English, Romanian, French, Mandarin, and German (in sharply decreasing order).
 
 Personally, I'm interested in almost all parts of computer science and maths, and enjoy being below

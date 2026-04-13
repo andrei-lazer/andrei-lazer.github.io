@@ -24,7 +24,7 @@ also use Neovim.
 
 ## Why not VSCode?
 
-The main reason I use Neovim over VSCode is (surprise surprise) the customizability. Its entire
+The main reason I use Neovim over VSCode is (surprise surprise) the customisability. Its entire
 design philosophy is built around the idea that every part of the editor should be modifiable and
 extensible. Neovim in particular uses lua as its scripting language, which means if you're able to
 code something in lua, you can get it to run in your editor.
@@ -33,7 +33,7 @@ Also, Neovim (can) very nicely follow the [Unix philosophy](https://en.wikipedia
 As a very picky person, I much prefer being able to pick separate tools. For example, VSCode all but
 forces you to use their terminal, but Neovim has great interoperability with [tmux](https://github.com/tmux/tmux/wiki).
 
-If you know you're not into messing with config files for ages or optimizing your keybinds, then I probably
+If you know you're not into messing with config files for ages or optimising your key bindings, then I probably
 wouldn't recommend Neovim. However, if you're even a little bit curious, I'd really recommend giving
 it a shot. Here are some resources I used to get started:
 

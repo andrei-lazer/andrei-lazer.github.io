@@ -62,7 +62,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [Yesterweb](https://yesterweb.org/graphics/buttons)
 
 
-## uncategorized
+## uncategorised
 - [Marginalia Search](https://marginalia-search.com/) - a "small web" search engine.
 - [Free game data API](https://gamesdb.launchbox-app.com/)
 - [Wallpapers](https://wallhaven.cc/)
