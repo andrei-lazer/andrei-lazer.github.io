@@ -43,14 +43,14 @@ Eclipse fan in 2025, I&#39;d highly recommend learning the basics of vim motions
 plugins. Unless you&#39;re really into some weird niche thing vim has kept since 1976, I&#39;d recommend you
 also use Neovim.&lt;/p&gt;
 &lt;h2&gt;Why not VSCode?&lt;/h2&gt;
-&lt;p&gt;The main reason I use Neovim over VSCode is (surprise surprise) the customizability. Its entire
+&lt;p&gt;The main reason I use Neovim over VSCode is (surprise surprise) the customisability. Its entire
 design philosophy is built around the idea that every part of the editor should be modifiable and
 extensible. Neovim in particular uses lua as its scripting language, which means if you&#39;re able to
 code something in lua, you can get it to run in your editor.&lt;/p&gt;
 &lt;p&gt;Also, Neovim (can) very nicely follow the &lt;a href=&quot;https://en.wikipedia.org/wiki/Unix_philosophy&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; class=&quot;external&quot;&gt;Unix philosophy&lt;/a&gt;.
 As a very picky person, I much prefer being able to pick separate tools. For example, VSCode all but
 forces you to use their terminal, but Neovim has great interoperability with &lt;a href=&quot;https://github.com/tmux/tmux/wiki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; class=&quot;external&quot;&gt;tmux&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;If you know you&#39;re not into messing with config files for ages or optimizing your keybinds, then I probably
+&lt;p&gt;If you know you&#39;re not into messing with config files for ages or optimising your key bindings, then I probably
 wouldn&#39;t recommend Neovim. However, if you&#39;re even a little bit curious, I&#39;d really recommend giving
 it a shot. Here are some resources I used to get started:&lt;/p&gt;
 &lt;ul&gt;
