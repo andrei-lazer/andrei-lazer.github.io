@@ -10,7 +10,8 @@ some of my projects. I prefer to be contacted via [email](/email), since I rarel
 else.
 
 This website has had <span id="visitorCount">an unknown number of</span> visitors, and is part
-of 2 [webrings](/misc#webrings).
+of 2 [webrings](/misc#webrings). Sign my 
+[guestbook](http://users2.smartgb.com/g/g.php?a=s&i=g26-41058-b3)!
 
 ## warning
 

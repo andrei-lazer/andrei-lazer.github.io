@@ -51,7 +51,7 @@ A list of links to other places on the internet. Basically my bookmarks.
   page are from here.
 - [Font guide](https://gaily-novelry.neocities.org/Guides/font-guide )
 - [Someone in a lot of webrings](https://baccyflap.com/rsp/)
-- [Flexbox labs](https://flexboxlabs.netlify.app/) - code generator for flex boxes. Super cool.
+- [Flexbox labs](https://flexboxlabs.netlify.app/) - code generator for flex boxes.
 - [What's wrong with your code](https://web.archive.org/web/20240324055049/https://cutcodedown.com/article/whats_wrong_with_YOUR_website_index)
 
 ## 88x31 buttons
@@ -63,8 +63,8 @@ A list of links to other places on the internet. Basically my bookmarks.
 
 
 ## uncategorized
-- [Marginalia Search](https://marginalia-search.com/) - a small web search engine.
+- [Marginalia Search](https://marginalia-search.com/) - a "small web" search engine.
 - [Free game data API](https://gamesdb.launchbox-app.com/)
-- [Wallpapers](https://wallhaven.cc/search?q=greyscale%20landscape&categories=110&purity=100&sorting=relevance&order=desc&page=3)
+- [Wallpapers](https://wallhaven.cc/)
 - [fmhy](https://fmhy.net/)
 - [How to export Typst to HTML](https://1024th.top/posts/typst/typst-html-export)
