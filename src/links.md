@@ -30,7 +30,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 ## retro gaming
 - [ROM patching](https://www.marcrobledo.com/RomPatcher.js/)
 - [Vimm's Lair](https://vimm.net/)
-- [CHD creator](https://chd.emulationonline.com/) - alternative to chdman
+- [CHD creator](https://chd.emulationonline.com/) - chdman client in the browser
 
 ## study music
 - [Entomongaku - Chypho](https://www.youtube.com/watch?v=GPZYeLzDE-Y)
@@ -54,14 +54,14 @@ A list of links to other places on the internet. Basically my bookmarks.
 
 ## website resources
 - [Sadgirl's Layout Builder](https://codepen.io/sadness97/full/XJbLxNj) - starting layout for this
-  site.
+  site
 - [32-Bit Cafe Resource List for the Personal Web](https://discourse.32bit.cafe/t/resources-list-for-the-personal-web/49)
 - [Textures](https://textures.neocities.org/)
 - [More textures](https://hekate2.github.io/website-tools/archive/backgrounds.html)
-- [Favicons](https://pixelsafari.neocities.org/favicon/) - animated pixel art icons.
+- [Favicons](https://pixelsafari.neocities.org/favicon/) - animated pixel art icons
 - [Font guide](https://gaily-novelry.neocities.org/Guides/font-guide )
 - [Someone in a lot of webrings](https://baccyflap.com/rsp/)
-- [Flexbox labs](https://flexboxlabs.netlify.app/) - code generator for flex boxes.
+- [Flexbox labs](https://flexboxlabs.netlify.app/) - code generator for flex boxes
 - [What's wrong with your code](https://web.archive.org/web/20240324055049/https://cutcodedown.com/article/whats_wrong_with_YOUR_website_index)
 
 ## 88x31 buttons
@@ -73,7 +73,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 
 
 ## uncategorised
-- [Marginalia Search](https://marginalia-search.com/) - a "small web" search engine.
+- [Marginalia Search](https://marginalia-search.com/) - a "small web" search engine
 - [Free game data API](https://gamesdb.launchbox-app.com/)
 - [Wallpapers](https://wallhaven.cc/)
 - [fmhy](https://fmhy.net/)
