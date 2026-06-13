@@ -16,6 +16,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [Laurie Wired](https://www.youtube.com/@lauriewired)
 - [Morphocular](https://www.youtube.com/@morphocular)
 - [Percia Verlin](https://www.youtube.com/@percish)
+- [F.D Signifier](https://www.youtube.com/@FDSignifire)
 - [Horses](https://www.youtube.com/@HorsesOnYT)
 
 ## coding
@@ -29,7 +30,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 ## retro gaming
 - [ROM patching](https://www.marcrobledo.com/RomPatcher.js/)
 - [Vimm's Lair](https://vimm.net/)
-- [CHD creator](https://chd.emulationonline.com/)
+- [CHD creator](https://chd.emulationonline.com/) - alternative to chdman
 
 ## study music
 - [Entomongaku - Chypho](https://www.youtube.com/watch?v=GPZYeLzDE-Y)
@@ -52,13 +53,12 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [elswhere.neocities.org](https://elswhere.neocities.org/home/)
 
 ## website resources
-- [Sadgirl's Layout Builder](https://codepen.io/sadness97/full/XJbLxNj) - I used this as the
-  starting layout for this site.
+- [Sadgirl's Layout Builder](https://codepen.io/sadness97/full/XJbLxNj) - starting layout for this
+  site.
 - [32-Bit Cafe Resource List for the Personal Web](https://discourse.32bit.cafe/t/resources-list-for-the-personal-web/49)
 - [Textures](https://textures.neocities.org/)
 - [More textures](https://hekate2.github.io/website-tools/archive/backgrounds.html)
-- [Favicons](https://pixelsafari.neocities.org/favicon/) - all of the animated icons used on this
-  page are from here.
+- [Favicons](https://pixelsafari.neocities.org/favicon/) - animated pixel art icons.
 - [Font guide](https://gaily-novelry.neocities.org/Guides/font-guide )
 - [Someone in a lot of webrings](https://baccyflap.com/rsp/)
 - [Flexbox labs](https://flexboxlabs.netlify.app/) - code generator for flex boxes.
