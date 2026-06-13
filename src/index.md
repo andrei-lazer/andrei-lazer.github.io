@@ -4,10 +4,10 @@ title: andrei lazer
 header: andrei lazer
 ---
 
-This is my website! I'm a UK-based student and soon-to-be quantitative developer. Check out
-[about](/about) for more info, [now](/now) for what I'm up to now, or [posts](/posts) to see
-some of my projects. I prefer to be contacted via [email](/email), since I rarely check anything
-else.
+This is my website! I am a master's student in maths interested in software engineering and
+language learning. Check out [about](/about) for more info, [now](/now) for what I'm up to now,
+or [posts](/posts) to see some of my projects. I prefer to be contacted via [email](/email),
+since I rarely check anything else.
 
 This website has had <span id="visitorCount">an unknown number of</span> visitors, and is part
 of 2 [webrings](/misc#webrings). Sign my 

@@ -20,6 +20,16 @@ A list of links to other places on the internet. Basically my bookmarks.
 
 ## coding
 - [Logging in Python](https://www.dash0.com/guides/logging-in-python)
+- [Networking with WSL](https://learn.microsoft.com/en-us/windows/wsl/networking#mirrored-mode-networking)
+
+## git
+- [Git tutorial/reference](https://jdsalaro.com/tutorial/git/)
+- [Visual reference](https://marklodato.github.io/visual-git-guide/index-en.html)
+
+## retro gaming
+- [ROM patching](https://www.marcrobledo.com/RomPatcher.js/)
+- [Vimm's Lair](https://vimm.net/)
+- [CHD creator](https://chd.emulationonline.com/)
 
 ## study music
 - [Entomongaku - Chypho](https://www.youtube.com/watch?v=GPZYeLzDE-Y)
