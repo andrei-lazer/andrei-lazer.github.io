@@ -28,9 +28,11 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [Visual reference](https://marklodato.github.io/visual-git-guide/index-en.html)
 
 ## retro gaming
-- [ROM patching](https://www.marcrobledo.com/RomPatcher.js/)
+- [ROM Patcher JS](https://www.marcrobledo.com/RomPatcher.js/)
 - [Vimm's Lair](https://vimm.net/)
 - [CHD creator](https://chd.emulationonline.com/) - chdman client in the browser
+- [ROM hack list](https://docs.google.com/spreadsheets/d/1dvVDYdju7NNjqwAR9o9FP4X2cAxnDzuPefNPfXq7V7Y/edit?gid=0#gid=0)
+- [Shaders and overlays on retro handhelds](https://retrogamecorps.com/2024/09/01/guide-shaders-and-overlays-on-retro-handhelds)
 
 ## study music
 - [Entomongaku - Chypho](https://www.youtube.com/watch?v=GPZYeLzDE-Y)

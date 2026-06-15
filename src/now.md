@@ -5,29 +5,30 @@ title: andrei now
 header: now
 ---
 
-This is my "[now page](https://nownownow.com/about)". Last updated 20 February 2026.
+This is my "[now page](https://nownownow.com/about)". Last updated 15 June 2026.
 
 ## reading
 
-I've been zooming through the [Mistborn Trilogy](https://www.librarything.com/work/9190082/t/The-Mistborn-Trilogy)
-by Brandon Sanderson. It's quickly become one of my favourite fantasy series.
+- finished [The Farseer Trilogy](https://www.librarything.com/work/3851288/t/The-Farseer-Trilogy-Assassins-Apprentice-%25252F-Royal-Assassin-%25252F-Assassins-Quest)
+  by Robin Hobb.
+- now reading the [Liveship Traders Trilogy](https://www.librarything.com/work/3810435/t/Liveship-Traders-Trilogy)
+  by the same author
 
 ## uni
 
-I did a research project on the [cutting stock
-problem](https://en.wikipedia.org/wiki/Cutting_stock_problem) for my [Integer
-Programming](https://courses.maths.ox.ac.uk/course/view.php?id=6068) class, and I've posted it
-[here](/posts/cutting-stock/).
+Finished all of my coursework and exams. Now working on my disseration on numerical linear algebra and
+high performance computing.
 
-This term I'm doing a few more projects.
-- Another project similar to the integer programming one, this time on [deep Q-learning](https://en.wikipedia.org/wiki/Q-learning#Function_approximation)
-  as part of an [Optimal Control module](https://courses.maths.ox.ac.uk/course/view.php?id=6131).
-- Two group projects: one on stochastic modelling of infectious diseases, and one on
-  [PINNs](https://en.wikipedia.org/wiki/Physics-informed_neural_networks).
+## games
+I've been on a retro gaming spree recently.
 
-## languages
+playing:
+- [Pokémon Unbound](https://www.pokecommunity.com/threads/pok%C3%A9mon-unbound-completed.382178/)
+- [Brave Fencer Musashi](https://en.wikipedia.org/wiki/Brave_Fencer_Musashi)
+- [Castlevania: Aria of Sorrow](https://en.wikipedia.org/wiki/Castlevania:_Aria_of_Sorrow)
 
-I've been on a bit of a language learning hiatus since I started my master's. From January 2025 to
-July 2025, I averaged >2hrs of active (Mandarin) Chinese immersion + 7 new Anki cards per day, and I
-made a loooot of progress. However, with studying and interview prep taking up a lot of
-time, I've put that on the back burner.
+next:
+- Final Fantasy VI (or III depending on who you ask).
+- Chrono Trigger
+
+
