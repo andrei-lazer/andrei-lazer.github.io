@@ -144,8 +144,7 @@ h1, h2, h3 {
     display: flex;
     justify-items: space-between; 
     flex-wrap: wrap;
-    /* justify-content: center; */
-    gap: 3vw;
+    gap: 2.2rem;
 }
 
 #navbar a {

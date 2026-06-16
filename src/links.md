@@ -18,10 +18,12 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [Percia Verlin](https://www.youtube.com/@percish)
 - [F.D Signifier](https://www.youtube.com/@FDSignifire)
 - [Horses](https://www.youtube.com/@HorsesOnYT)
+- [ArjanCodes](https://www.youtube.com/@ArjanCodes)
 
 ## coding
 - [Logging in Python](https://www.dash0.com/guides/logging-in-python)
 - [Networking with WSL](https://learn.microsoft.com/en-us/windows/wsl/networking#mirrored-mode-networking)
+- [Speeding up zsh](https://scottspence.com/posts/speeding-up-my-zsh-shell)
 
 ## git
 - [Git tutorial/reference](https://jdsalaro.com/tutorial/git/)
