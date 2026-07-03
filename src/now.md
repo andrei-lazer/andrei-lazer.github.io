@@ -9,9 +9,9 @@ This is my "[now page](https://nownownow.com/about)". Last updated 15 June 2026.
 
 ## reading
 
-- finished [The Farseer Trilogy](https://www.librarything.com/work/3851288/t/The-Farseer-Trilogy-Assassins-Apprentice-%25252F-Royal-Assassin-%25252F-Assassins-Quest)
+- Finished [The Farseer Trilogy](https://www.librarything.com/work/3851288/t/The-Farseer-Trilogy-Assassins-Apprentice-%25252F-Royal-Assassin-%25252F-Assassins-Quest)
   by Robin Hobb.
-- now reading the [Liveship Traders Trilogy](https://www.librarything.com/work/3810435/t/Liveship-Traders-Trilogy)
+- Now reading the [Liveship Traders Trilogy](https://www.librarything.com/work/3810435/t/Liveship-Traders-Trilogy)
   by the same author
 
 ## uni
@@ -23,12 +23,11 @@ high performance computing.
 I've been on a retro gaming spree recently.
 
 playing:
-- [Pokémon Unbound](https://www.pokecommunity.com/threads/pok%C3%A9mon-unbound-completed.382178/)
-- [Brave Fencer Musashi](https://en.wikipedia.org/wiki/Brave_Fencer_Musashi)
-- [Castlevania: Aria of Sorrow](https://en.wikipedia.org/wiki/Castlevania:_Aria_of_Sorrow)
+- Pokémon Unbound
+- Chrono Trigger
+- Castlevania: Aria of Sorrow
 
 next:
 - Final Fantasy VI (or III depending on who you ask).
-- Chrono Trigger
 
 

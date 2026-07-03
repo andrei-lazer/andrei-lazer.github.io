@@ -24,6 +24,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [Logging in Python](https://www.dash0.com/guides/logging-in-python)
 - [Networking with WSL](https://learn.microsoft.com/en-us/windows/wsl/networking#mirrored-mode-networking)
 - [Speeding up zsh](https://scottspence.com/posts/speeding-up-my-zsh-shell)
+- [How to export Typst to HTML](https://1024th.top/posts/typst/typst-html-export)
 
 ## git
 - [Git tutorial/reference](https://jdsalaro.com/tutorial/git/)
@@ -35,6 +36,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [CHD creator](https://chd.emulationonline.com/) - chdman client in the browser
 - [ROM hack list](https://docs.google.com/spreadsheets/d/1dvVDYdju7NNjqwAR9o9FP4X2cAxnDzuPefNPfXq7V7Y/edit?gid=0#gid=0)
 - [Shaders and overlays on retro handhelds](https://retrogamecorps.com/2024/09/01/guide-shaders-and-overlays-on-retro-handhelds)
+- [Free game data API](https://gamesdb.launchbox-app.com/)
 
 ## study music
 - [Entomongaku - Chypho](https://www.youtube.com/watch?v=GPZYeLzDE-Y)
@@ -75,10 +77,10 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [A.N. Lucas](https://anlucas.neocities.org/88x31Buttons)
 - [Yesterweb](https://yesterweb.org/graphics/buttons)
 
-
 ## uncategorised
 - [Marginalia Search](https://marginalia-search.com/) - a "small web" search engine
-- [Free game data API](https://gamesdb.launchbox-app.com/)
+- [Excalidraw](https://excalidraw.com/) - browser drawing
 - [Wallpapers](https://wallhaven.cc/)
 - [fmhy](https://fmhy.net/)
-- [How to export Typst to HTML](https://1024th.top/posts/typst/typst-html-export)
+- [A short materialist case for generative AI](https://writings.hongminhee.org/2026/02/acting-materialistically-in-an-imperfect-world/)
+- [LLMs and alienation](https://writings.hongminhee.org/2026/03/craft-alienation-llm/)
