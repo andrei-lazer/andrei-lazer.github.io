@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
 
-
-#main {
-    font-family: "Ovo", serif;
-    font-size: 0.8em;
-}
-
 #goback {
     font-family: var(--body-font);
     font-size: 1.25em;
