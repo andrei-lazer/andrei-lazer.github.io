@@ -24,6 +24,7 @@
 #shring {
     border: var(--border-thickness) dashed var(--border-color);
     color: var(--text-color);
+    font-family: var(--code-font);
 }
 
 #shring a {
