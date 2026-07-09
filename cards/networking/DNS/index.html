@@ -1,0 +1,81 @@
+
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/andrei-lazer.github.io/andrei-lazer.github.io/assets/quill.gif">
+        
+
+        <link href="/andrei-lazer.github.io/andrei-lazer.github.io/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href=".">
+
+        <title>DNS</title>
+    </head>
+
+
+
+
+
+
+<body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/posts.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/markdown.css">
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/andrei-lazer.github.io/andrei-lazer.github.io/scripts/themeSwitch.js"></script>
+
+
+    <div id="main">
+
+        <p>
+        
+            
+            </p><nav id="breadcrumb">
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/">Cards</a>
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/networking/DNS/">DNS</a>
+            </nav>
+        
+        <p></p>
+
+
+        
+        <h1 style="display: inline;">DNS</h1>
+        
+        <h1>Intro</h1>
+<p><strong>Domain Name System</strong> is the most well-known lookup service. A <strong>lookup service</strong> is something that maps domain names (google.com) to IP addresses.</p>
+<h1>DNS Namespaces</h1>
+<p>The parts of a url (the bits separated by full stops) roughly map to DNS servers, which exist in a heirarchy. Here's an example:</p>
+<picture><source type="image/webp" srcset="/andrei-lazer.github.io/andrei-lazer.github.io/img/J9V_MqDiPn-837.webp 837w"><img src="/andrei-lazer.github.io/andrei-lazer.github.io/img/J9V_MqDiPn-837.gif" alt="Pasted image 20250918105936.png" width="837" height="301"></picture>
+<h2>Root DNS Servers</h2>
+<p>Root servers are the first point of contact for a DNS query. This redirects the query to a <strong>top-level domain</strong> (TLD), such as .io or .com. There are somewhere around 2000 instances of root servers around the world, operated by 12 different organisations - see https://root-servers.org for more info.</p>
+<h1>Local DNS Cache</h1>
+<ul>
+<li>DNS mappings are often cached locally to save time.</li>
+<li>This is done using a <strong>local resolver library</strong>, which is part of the OS.</li>
+<li>The local resolver library automatically makes a call to a local DNS server if the requested query is not cached.</li>
+</ul>
+
+
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
+    </div>
+</body>

@@ -1,0 +1,82 @@
+
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/andrei-lazer.github.io/andrei-lazer.github.io/assets/quill.gif">
+        
+
+        <link href="/andrei-lazer.github.io/andrei-lazer.github.io/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href=".">
+
+        <title>TCP IP</title>
+    </head>
+
+
+
+
+
+
+<body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/posts.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/markdown.css">
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/andrei-lazer.github.io/andrei-lazer.github.io/scripts/themeSwitch.js"></script>
+
+
+    <div id="main">
+
+        <p>
+        
+            
+            </p><nav id="breadcrumb">
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/">Cards</a>
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/networking/TCP IP/">TCP IP</a>
+            </nav>
+        
+        <p></p>
+
+
+        
+        <h1 style="display: inline;">TCP IP</h1>
+        
+        <h1>What is TCP/IP?</h1>
+<p>It's a networking model made up of two widely used Internet protocols: <strong>Transmission Control Protocol</strong> (TCP) and <strong>Internet Protocol</strong> (IP). It's also known as the Internet protocol suite [Wikipedia](https://en.wikipedia.org/wiki/Internet_protocol_suite.</p>
+<h1>End-to-end argument</h1>
+<p>Implementing complex functionality into the core of the network is expensive and hard to fix in the long term, so the <em>end-to-end</em> argument was used: intelligent and complex end devices with a dumb and fast core network.</p>
+<h1>Packet switching</h1>
+<p>The core was made <strong>packet-switched</strong>, which means discrete, small packets of data are delivered separately. Also, they're routed <em>per-hop</em>, so that they can circumvent failures at each step.</p>
+<p>This is in contrast to <strong>circuit-switched</strong> networks, which involves allocating a dedicated channel (circuit) with a fixed bandwidth. The downside is that if this circuit breaks, the information sent is lost.</p>
+<h1>Layers</h1>
+<blockquote>
+<picture><source type="image/webp" srcset="/andrei-lazer.github.io/andrei-lazer.github.io/img/sebwh7HAN3-286.webp 286w"><img src="/andrei-lazer.github.io/andrei-lazer.github.io/img/sebwh7HAN3-286.gif" alt="Pasted image 20250917135853.png" width="286" height="265"></picture>
+One example of the TCP/IP network stack - this isn't always unanimous.
+</blockquote>
+<p><a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/networking/Application Layer/">Application Layer</a>
+<a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/networking/Transport Layer/">Transport Layer</a></p>
+
+
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
+    </div>
+</body>

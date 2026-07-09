@@ -1,0 +1,91 @@
+
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/andrei-lazer.github.io/andrei-lazer.github.io/assets/quill.gif">
+        
+
+        <link href="/andrei-lazer.github.io/andrei-lazer.github.io/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href=".">
+
+        <title>Reliable Data Transfer</title>
+    </head>
+
+
+
+
+
+
+<body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/posts.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/markdown.css">
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/andrei-lazer.github.io/andrei-lazer.github.io/scripts/themeSwitch.js"></script>
+
+
+    <div id="main">
+
+        <p>
+        
+            
+            </p><nav id="breadcrumb">
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/">Cards</a>
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/networking/Reliable Data Transfer/">Reliable Data Transfer</a>
+            </nav>
+        
+        <p></p>
+
+
+        
+        <h1 style="display: inline;">Reliable Data Transfer</h1>
+        
+        <p>There are three types of errors caused by network imperfections:</p>
+<ol>
+<li>Segments can be <strong>corrupted</strong></li>
+<li>Segments can be <strong>lost</strong></li>
+<li>Segments can be <strong>reordered</strong> or <strong>duplicated</strong></li>
+</ol>
+<h1>Checksums</h1>
+<p>A checksum is appended to the end of the data send, and is then verified at the end. This tries to fix issue number 1 (corruption).</p>
+<h1>Retransmission timers</h1>
+<p>This tries to fix issue number 2 (loss). Since a receiver sends an acknowledgement message after every data segment, the simplest solution is to re-send the message if a retransmission timer runs out before the acknowledgement.</p>
+<p>This timer needs to be larger than the round-trip time</p>
+
+<div class="callout" data-callout="warning">
+<div class="callout-title">
+<div class="callout-title-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-alert-triangle"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>
+</div>
+<div class="callout-title-inner">Warning</div>
+</div>
+<div class="callout-content"><p>The acknowledgement can be lost, resulting in <strong>message duplication</strong>. This is fixed by appending a unique-per-message sequence number to each segment, allowing the receiver to detect duplicates.</p>
+</div></div><h1>Pipelining</h1>
+<p>Applications often generate data faster than the network can transport it. Therefore, it's more efficient to <strong>pipeline</strong> the delivery process. I.e. instead of waiting for the receiver to acknowledge every message, the sender keeps transmitting messages without waiting.</p>
+<p>This may cause the receiver to become <strong>overloaded</strong>, since the sender might produce faster than the receiver can consume.</p>
+
+
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
+    </div>
+</body>

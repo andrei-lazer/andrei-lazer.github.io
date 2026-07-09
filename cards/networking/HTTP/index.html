@@ -1,0 +1,97 @@
+
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/andrei-lazer.github.io/andrei-lazer.github.io/assets/quill.gif">
+        
+
+        <link href="/andrei-lazer.github.io/andrei-lazer.github.io/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href=".">
+
+        <title>HTTP</title>
+    </head>
+
+
+
+
+
+
+<body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/posts.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/markdown.css">
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/andrei-lazer.github.io/andrei-lazer.github.io/scripts/themeSwitch.js"></script>
+
+
+    <div id="main">
+
+        <p>
+        
+            
+            </p><nav id="breadcrumb">
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/">Cards</a>
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/networking/HTTP/">HTTP</a>
+            </nav>
+        
+        <p></p>
+
+
+        
+        <h1 style="display: inline;">HTTP</h1>
+        
+        <h1>Intro</h1>
+<p>This is a client-server protocol used to send requests and receive responses. It is stateless (the server doesn't remember the client).</p>
+<p>HTTP relies on lower levels being reliable</p>
+<ul>
+<li>HTTP uses TCP as its transport protocol, since it ensures packets are always delivered <strong>correctly</strong> and <strong>in order</strong>, as opposed to UDP.</li>
+<li>TCP is <strong>connection-oriented</strong>, i.e. it needs a connection to be established before messages can be sent.</li>
+</ul>
+<h1>Objects</h1>
+<ul>
+<li>An object is a file like a HTML file, PNG file, MP3, etc.</li>
+<li>Each object has a <strong>URL</strong>.</li>
+<li>The <strong>base object</strong> of a web page is usually an HTML file that has references to other objects.</li>
+</ul>
+<h1>URL</h1>
+<p>A <strong>Universal Resource Locator</strong> (URL) is used to locate files that exist on servers. They have the following parts:</p>
+<ul>
+<li>Protocol in use</li>
+<li>Hostname of the server</li>
+<li>location of the file</li>
+<li>Arguments to the file
+<picture><source type="image/webp" srcset="/andrei-lazer.github.io/andrei-lazer.github.io/img/BRCgmkLVlU-721.webp 721w"><img src="/andrei-lazer.github.io/andrei-lazer.github.io/img/BRCgmkLVlU-721.gif" alt="Pasted image 20250917143437.png" width="721" height="106"></picture></li>
+</ul>
+<h1>Non-persistent HTTP</h1>
+<p>Non-persistent connections involve one TCP connection per HTTP request. Once a response has been sent by the server, the HTTP connection is closed.</p>
+<p>The main downside is that a whole TCP session has to be built up and torn down every time a single HTTP request is sent. For example, if the client receives a file with several JavaScript elements and images, it will have to open many more TCP connections, which is slow.</p>
+<h1>Persistent HTTP</h1>
+<p>This uses a single client-server TCP connection for all the HTTP requests and responses.</p>
+<h1>HTTP Messages</h1>
+<p>There are two types of HTTP message: <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/networking/HTTP Requests/">HTTP Requests</a>, and <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/networking/HTTP Responses/">HTTP Responses</a></p>
+
+
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
+    </div>
+</body>

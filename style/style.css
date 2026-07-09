@@ -56,6 +56,7 @@ a:hover img {
 ul {
   list-style: none;
   padding-left: 1em;
+  margin-top: 0px;
 }
 
 ul li::before {
@@ -125,6 +126,7 @@ footer {
 h1, h2, h3 {
     color: var(--text-color);
     font-family: var(--header-font);
+    margin-bottom: 0.5rem;
 }
 
 .box {

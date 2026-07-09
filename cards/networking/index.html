@@ -1,0 +1,100 @@
+
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/andrei-lazer.github.io/andrei-lazer.github.io/assets/quill.gif">
+        
+
+        <link href="/andrei-lazer.github.io/andrei-lazer.github.io/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href=".">
+
+        <title>Networking</title>
+    </head>
+
+
+
+
+
+
+<body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/posts.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/markdown.css">
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/andrei-lazer.github.io/andrei-lazer.github.io/scripts/themeSwitch.js"></script>
+
+
+    <div id="main">
+
+        <p>
+        
+            
+            </p><nav id="breadcrumb">
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/">Cards</a>
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/networking/">Networking</a>
+            </nav>
+        
+        <p></p>
+
+
+        
+        <h1 style="display: inline;">Networking</h1>
+        
+        <p>These are mainly notes on the course <a href="https://www.educative.io/courses/grokking-computer-networking" target="_blank" rel="noopener" class="external">Grokking Computer Networking for Software
+Engineers</a>. It taught me a lot about
+computer networking, and the notes I took mean I don't have to pay for it again.</p>
+<h2>Fundamentals</h2>
+<ul>
+<li><a href="TCP%20IP">TCP IP</a> — the Internet protocol suite: the end-to-end argument, packet switching, and the layered model.</li>
+<li><a href="Network%20Topology">Network Topology</a> — bus, ring, and star layouts.</li>
+<li><a href="Extras">Extras</a> — types of networks by geography (LAN, MAN, WAN, SONET/SDH).</li>
+</ul>
+<h2>Application Layer</h2>
+<ul>
+<li><a href="Application%20Layer">Application Layer</a> — responsibilities, and client-server vs peer-to-peer architectures.</li>
+<li><a href="How%20processes%20communicate">How processes communicate</a> — programs vs processes vs threads, sockets, ports, and addressing.</li>
+<li><a href="HTTP">HTTP</a> — objects, URLs, persistent vs non-persistent connections.
+<ul>
+<li><a href="HTTP%20Requests">HTTP Requests</a> — the request line, HTTP methods, URIs, and header lines.</li>
+<li><a href="HTTP%20Responses">HTTP Responses</a> — the status line, status codes, and header lines.</li>
+</ul>
+</li>
+<li><a href="DNS">DNS</a> — the domain name lookup service, namespace hierarchy, and local caching.</li>
+</ul>
+<h2>Transport Layer</h2>
+<ul>
+<li><a href="Transport%20Layer">Transport Layer</a> — segmentation, multiplexing, and congestion control.</li>
+<li><a href="Reliable%20Data%20Transfer">Reliable Data Transfer</a> — checksums, retransmission timers, and pipelining.</li>
+<li><a href="TCP">TCP</a> — reliable, connection-oriented transport and the three-way handshake.
+<ul>
+<li><a href="TCP%20Segment%20Header">TCP Segment Header</a> — header fields and flags in detail.</li>
+</ul>
+</li>
+<li><a href="UDP">UDP</a> — connectionless transport: the datagram header and when to prefer it over TCP.</li>
+</ul>
+
+
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
+    </div>
+</body>

@@ -1,0 +1,101 @@
+
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/andrei-lazer.github.io/andrei-lazer.github.io/assets/quill.gif">
+        
+
+        <link href="/andrei-lazer.github.io/andrei-lazer.github.io/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href=".">
+
+        <title>HTTP Responses</title>
+    </head>
+
+
+
+
+
+
+<body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/posts.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/markdown.css">
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/andrei-lazer.github.io/andrei-lazer.github.io/scripts/themeSwitch.js"></script>
+
+
+    <div id="main">
+
+        <p>
+        
+            
+            </p><nav id="breadcrumb">
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/">Cards</a>
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/networking/HTTP Responses/">HTTP Responses</a>
+            </nav>
+        
+        <p></p>
+
+
+        
+        <h1 style="display: inline;">HTTP Responses</h1>
+        
+        <p>Here's an example of a HTTP response:</p>
+<pre><code>HTTP/1.1 200 OK
+Connection: close
+Date: Tue, 18 Aug 2015 15: 44 : 04 GMT
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Tue, 18 Aug 2015 15:11:03 GMT 
+Content-Length: 6821
+Content-Type: text/html
+
+[The object that was requested]
+</code></pre>
+<picture><source type="image/webp" srcset="/andrei-lazer.github.io/andrei-lazer.github.io/img/6mdFWnUutN-646.webp 646w"><img src="/andrei-lazer.github.io/andrei-lazer.github.io/img/6mdFWnUutN-646.gif" alt="Pasted image 20250917151035.png" width="646" height="242"></picture>
+<p>There are 3 parts: the <strong>status line</strong>, <strong>header lines</strong>, and the <strong>object line</strong></p>
+<h1>Status line</h1>
+<p>The HTTP response also has a HTTP version.</p>
+<h2>Status code</h2>
+<p>The status code is one of a bunch of different codes which tell the client the status of their request.</p>
+<ul>
+<li>1XX is informational</li>
+<li>2XX is success</li>
+<li>3XX is redirection</li>
+<li>4XX is client error</li>
+<li>5XX is server error</li>
+</ul>
+<h1>Header lines</h1>
+<ul>
+<li><code>Connection</code>: same thing as the request - in this case, means that the TCP connection will be closed after this response.</li>
+<li><code>Date</code> time of response</li>
+<li><code>Server</code>: Similar to the <code>user-agent</code> in the request.</li>
+<li><code>Last-Modified</code>: Time when the object requested was last modified.</li>
+<li><code>Content-Length</code>: size of the object in bytes</li>
+<li><code>Content-Type</code>: type of content being sent.</li>
+</ul>
+
+
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
+    </div>
+</body>
