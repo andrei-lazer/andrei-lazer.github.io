@@ -57,6 +57,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [blog.darylsun.page](https://blog.darylsun.page/)
 - [brennan.day](https://brennan.day/)
 - [elswhere.neocities.org](https://elswhere.neocities.org/home/)
+- [ratfactor.com](https://ratfactor.com/)
 
 ## website resources
 - [Sadgirl's Layout Builder](https://codepen.io/sadness97/full/XJbLxNj) - starting layout for this

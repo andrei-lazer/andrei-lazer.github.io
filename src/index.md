@@ -5,8 +5,8 @@ header: andrei lazer
 ---
 
 This is my website! I am a master's student in maths interested in software engineering and language
-learning. Check out [now](/now) for what I'm up to now, or [posts](/posts) to see some of my
-projects. I prefer to be contacted via [email](/email), since I rarely check anything else.
+learning. Check out [now](/now) for what I'm up to now, or [cards](/cards) for a collection of notes
+and projects. I prefer to be contacted via [email](/email), since I rarely check anything else.
 
 This website has had <span id="visitorCount">an unknown number of</span> visitors, and is part
 of 2 [webrings](/misc#webrings). Sign my 

@@ -4,7 +4,7 @@ link: https://github.com/andrei-lazer/order-book
 date: 2025-08-10
 tags:
     - posts
-    - fun
+    - finance
 ---
 
 In {{ date | formatDate }}, I started seriously aiming for quantitative finance roles, and so

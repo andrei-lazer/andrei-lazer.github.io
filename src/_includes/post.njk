@@ -1,9 +1,10 @@
 ---
 icon: quill.gif
 eleventyComputed:
-  eleventyNavigation:
-    key: "{{ key | default(title) }}"
-    parent: "{{ parent }}"
+    title: "{{ title or page.fileSlug }}"
+    eleventyNavigation:
+        key: "{{ key | default(title) }}"
+        parent: "{{ parent }}"
 ---
 
 {% from "macros.njk" import navbar, gif_header, theme_switcher, head %}
@@ -18,6 +19,7 @@ eleventyComputed:
 
 <body>
     <link id="theme-stylesheet" rel="stylesheet" href="/style/posts.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="/style/markdown.css">
 
     {{ theme_switcher() }}
 

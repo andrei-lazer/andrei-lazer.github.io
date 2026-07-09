@@ -1,10 +1,21 @@
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
-import footnote_plugin from 'markdown-it-footnote';
-import mila from "markdown-it-link-attributes";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
+import footnote_plugin from 'markdown-it-footnote';
+import mila from "markdown-it-link-attributes";
+import markdownItGitHubAlerts from "markdown-it-github-alerts";
+import markdownItMathjax3 from "markdown-it-mathjax3";
+
+import interlinker from "@photogabble/eleventy-plugin-interlinker";
+import callouts from "markdown-it-obsidian-callouts";
+
+
+
+
 export default async function(eleventyConfig) {
+
+
     // Order matters, put this at the top of your configuration file.
     eleventyConfig.setInputDirectory("src");
     eleventyConfig.setQuietMode(true);
@@ -23,8 +34,15 @@ export default async function(eleventyConfig) {
     });
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
+    eleventyConfig.addPlugin(interlinker, {
+        defaultLayout: "layouts/embed.liquid", // only needed if you use ![[note]] transclusion
+        deadLinkReport: "none"
+    });
+    eleventyConfig.amendLibrary("md", (md) => md.use(callouts));
+
     eleventyConfig.amendLibrary("md", (mdLib) => mdLib
         .use(footnote_plugin)
+        .use(markdownItMathjax3)
         .use(mila, {
             matcher(href, config) {
                 return href.startsWith("https:");
@@ -37,8 +55,8 @@ export default async function(eleventyConfig) {
         })
     );
 
-    eleventyConfig.addCollection("posts", function(collectionApi) {
-        return collectionApi.getFilteredByGlob("src/posts/**/*.md");
+    eleventyConfig.addCollection("cards", function(collectionApi) {
+        return collectionApi.getFilteredByGlob("src/cards/**/*.md");
     })
 
 
@@ -47,6 +65,7 @@ export default async function(eleventyConfig) {
         const month = d.toLocaleString("en-US", { month: "long" });
         const year = d.getFullYear();
         return `${month} ${year}`;
+        return d.toISOString().slice(0, 10);
     });
 
     // RSS config
@@ -54,13 +73,12 @@ export default async function(eleventyConfig) {
 		type: "atom", // or "rss", "json"
 		outputPath: "/feed.xml",
 		collection: {
-			name: "posts", // iterate over `collections.posts`
+			name: "cards", // iterate over `collections.posts`
 			limit: 0,     // 0 means no limit
 		},
 		metadata: {
 			language: "en",
-			title: "andrei's posts",
-			subtitle: "blog posts and projects abound maths, computer science, and languages.",
+			title: "andrei's cards",
 			base: "https://andreilazer.me/",
 			author: {
 				name: "Andrei Lazer",
@@ -68,6 +86,20 @@ export default async function(eleventyConfig) {
 			}
 		}
 	});
+
+    // render images from wikilinks properly (find and replace, may be fragile)
+    eleventyConfig.addPreprocessor("obsidianImages", "md", (data, content) =>
+        content.replace(
+            /!\[\[([^\]|]+?\.(?:png|jpe?g|gif|svg|webp|avif|bmp))(?:\|([^\]]+))?\]\]/gi,
+            (_, file, opt) => {
+                const width = /^\d+$/.test(opt ?? "") ? opt : null;
+                const alt = (width ? "" : opt?.trim()) || file.trim();
+                return `<img src="/assets/${encodeURIComponent(file.trim())}" alt="${alt}"${width ? ` width="${width}"` : ""}>`;
+            }
+        )
+    );
+
+
 
 
     return {

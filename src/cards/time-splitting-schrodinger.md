@@ -6,7 +6,7 @@ link: /assets/docs/sta-diss.pdf
 date: 2025-06-01
 tags:
     - posts
-    - academic
+    - maths
 ---
 
 This is my dissertation for my [BSc in Mathematics at the University of St

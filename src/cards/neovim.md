@@ -3,7 +3,7 @@ title: Thoughts on Neovim
 date: 2025-12-26 
 tags:
     - posts
-    - fun
+    - computing
 ---
 
 I use [Neovim](https://neovim.io/) btw, and this is a blog post about it.

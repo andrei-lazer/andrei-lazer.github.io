@@ -4,7 +4,7 @@ date: 2026-01-23
 link: ./report.html
 tags:
     - posts
-    - academic
+    - maths
 ---
 
 This is a report I wrote for [B6.3 Integer

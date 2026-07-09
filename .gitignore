@@ -4,5 +4,5 @@ _site
 **/old_*
 *.env
 CNAME
-src/posts/WIP-*
+src/cards/WIP-*
 todo.md

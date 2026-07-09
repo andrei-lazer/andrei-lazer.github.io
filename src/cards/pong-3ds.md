@@ -4,7 +4,7 @@ link: https://github.com/andrei-lazer/pong-3ds
 date: 2025-08-15
 tags:
     - posts
-    - fun
+    - computing
 ---
 
 Important: This code does not represent my current abilities, but I thought I would include this
