@@ -2,7 +2,7 @@
 eleventyNavigation:
     key: Networking
 parent: Cards
-title: Networking
+title: Notes on networking
 date: 2026-07-09
 tags:
     - posts
