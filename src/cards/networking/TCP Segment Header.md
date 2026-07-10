@@ -1,4 +1,5 @@
 The TCP header is a lot more complex than UDP. It is flexibly sized between **20 and 40 bytes**.
+
 ![[Pasted image 20250922135400.png]]
 
 ## Source and destination ports
@@ -12,7 +13,9 @@ Every byte of the TCP segment is labelled with a sequence number, and the one in
 ## Reserved Field
 Padding so that the header is a multiple of 4 bytes long.
 ## Header flags
+
 ![[Pasted image 20250922135925.png]]
+
 These make up the 8 bits of flags in the middle of the header.
 
 ### ACK

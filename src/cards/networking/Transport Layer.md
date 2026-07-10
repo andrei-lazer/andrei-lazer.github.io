@@ -26,7 +26,9 @@ Bandwidth is therefore usually allocated **per connection**
 ## Efficiency and Power
 ### Bursts of traffic
 In the real world, messages tend to not be uniformly distributed.
+
 ![[Pasted image 20250920113740.png]]
+
 Packets are often sent in bursts, which means that statically and evenly allocating bandwidth amongst end-systems is not effective.
 
 ### Transmission Threshold
@@ -34,6 +36,7 @@ Packets are often sent in bursts, which means that statically and evenly allocat
 Below are some graphs of _received transmission rate_ and _delay_ as functions of _sent transmission rate_. We can see a critical point (transmission threshold) where these quantities do not plateau, but actually get worse.
 
 ![[Pasted image 20250920114026.png]]
+
 ![[Pasted image 20250920114041.png]]
 
 This worsening might be surprising for the transmission rate case (we would expect for the received rate to plateau towards the limit). This is due to **spurious retransmissions**, which occur when a message is re-sent after a transmission timer times out, even though the message is on the way but slowly. This results in a small number of packets being re-transmitting and hogging all of the bandwidth.

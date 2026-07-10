@@ -12,6 +12,7 @@ This is in contrast to **circuit-switched** networks, which involves allocating 
 # Layers
 
 > ![[Pasted image 20250917135853.png]]
+
 > One example of the TCP/IP network stack - this isn't always unanimous.
 
 [[Application Layer]]

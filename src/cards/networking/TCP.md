@@ -54,3 +54,4 @@ This is often called a **SYN+ACK** segment.
 3. Acknowledgement number = server sequence number + 1.
 
 ![[Pasted image 20250922152823.png]]
+

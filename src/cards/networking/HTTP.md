@@ -16,6 +16,7 @@ A **Universal Resource Locator** (URL) is used to locate files that exist on ser
 - Hostname of the server
 - location of the file
 - Arguments to the file
+
 ![[Pasted image 20250917143437.png]]
 
 # Non-persistent HTTP

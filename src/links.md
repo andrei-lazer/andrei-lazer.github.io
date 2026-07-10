@@ -26,10 +26,6 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [Speeding up zsh](https://scottspence.com/posts/speeding-up-my-zsh-shell)
 - [How to export Typst to HTML](https://1024th.top/posts/typst/typst-html-export)
 
-## git
-- [Git tutorial/reference](https://jdsalaro.com/tutorial/git/)
-- [Visual reference](https://marklodato.github.io/visual-git-guide/index-en.html)
-
 ## retro gaming
 - [ROM Patcher JS](https://www.marcrobledo.com/RomPatcher.js/)
 - [Vimm's Lair](https://vimm.net/)

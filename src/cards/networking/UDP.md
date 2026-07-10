@@ -39,3 +39,4 @@ UDP prepends **four 2-byte fields** as a header to every datagram, so the header
 `tcpdump` captures packets. Here is an example from the output of `tcpdump udp -X -c 1`.
 
 ![[Pasted image 20250922133351.png]]
+
