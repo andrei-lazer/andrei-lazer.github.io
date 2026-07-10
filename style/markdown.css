@@ -1,11 +1,12 @@
 /* Obsidian-style callouts (markdown-it-obsidian-callouts), using only site theme variables */
 
-.callout {
-  margin: 1rem 0;
-  padding: 0.5rem 0 0.5rem 1rem;
-  color: var(--text-color);
-  background: transparent;
-  border-left: 0.2em solid var(--border-color);
+/* also applies to regular markdown blockquotes */
+.callout, blockquote {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    color: var(--text-color);
+    background: transparent;
+    border-left: 0.2em solid var(--border-color);
 }
 
 .callout-content > :first-child {

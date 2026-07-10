@@ -1,0 +1,101 @@
+
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/andrei-lazer.github.io/andrei-lazer.github.io/assets/quill.gif">
+        
+
+        <link href="/andrei-lazer.github.io/andrei-lazer.github.io/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href=".">
+
+        <title>Merging</title>
+    </head>
+
+
+
+
+
+
+<body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/posts.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/markdown.css">
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/andrei-lazer.github.io/andrei-lazer.github.io/scripts/themeSwitch.js"></script>
+
+
+    <div id="main">
+
+        <p>
+        
+            
+            </p><nav id="breadcrumb">
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/">Cards</a>
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/git/">Git</a>
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/git/Merging/">Merging</a>
+            </nav>
+        
+        <p></p>
+
+
+        
+        <h1 style="display: inline;">Merging</h1>
+        
+        <p>Merging is one way of combining two divergent branches. It create a new commit that is an ancestor of the two commits from different branches, and attempts to resolve any conflicts.</p>
+<h1>Fast-forward merges</h1>
+<picture><source type="image/webp" srcset="/andrei-lazer.github.io/andrei-lazer.github.io/img/9EvrHP_hI0-908.webp 908w"><img src="/andrei-lazer.github.io/andrei-lazer.github.io/img/9EvrHP_hI0-908.gif" alt="Pasted image 20260710142045.png" width="908" height="463"></picture>
+<blockquote>
+<p>Fast-forward merge</p>
+</blockquote>
+<p>These are the simplest merges, and happen most often when pushing/pulling from a remote. In these cases, the head pointer has to simply be able to reach the other pointer by following the history (such as when you've made some commits on the remote, and you pull it down to a different machine). Since there is nothing to &quot;combine&quot;, the head pointer just moves forwards, and this is called a fast-forward merge.</p>
+<h1>Merge commits</h1>
+<picture><source type="image/webp" srcset="/andrei-lazer.github.io/andrei-lazer.github.io/img/YRgP30kBRe-500.webp 500w"><img src="/andrei-lazer.github.io/andrei-lazer.github.io/img/YRgP30kBRe-500.gif" alt="Pasted image 20260710140829.png" width="500" height="285"></picture>
+<blockquote>
+<p>Merge conflict diagram from <a href="https://marklodato.github.io/visual-git-guide/index-en.html#merge" target="_blank" rel="noopener" class="external">visual-git-guide</a>. Every change that has been made on the &quot;other&quot; branch and the &quot;main&quot; branch is combined into one commit with hash <code>f8bc5</code>.</p>
+</blockquote>
+<p>This happens when a fast-forward can't be done.</p>
+<h1>Basic merge conflicts</h1>
+<p>When a simple merge conflict happens, <code>git merge</code> will print</p>
+<pre><code>Auto-merging &lt;file&gt;
+CONFLICT (content): Merge conflict in &lt;file&gt;
+Automatic merge failed; fix conflict and then commit the result.
+</code></pre>
+<p>The file will contain something like this:</p>
+<pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD:&lt;file&gt;
+&lt;stuff that was on the current checked-out branch&gt;
+=======
+&lt;stuff that was on the branch you're trying to merge in&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; &lt;branch&gt;:&lt;file&gt;
+</code></pre>
+<p>To resolve this, you pick a side (or combine them), and remove the markers that Git has introduced.</p>
+<p>Alternatively, you could use a graphical tool by running</p>
+<pre><code>git mergetool
+</code></pre>
+<p>which will, unless you've changed your settings, prompt you to pick a diff tool. For a list of diff tools, see <a href="https://github.com/mmueller2012/awesome-diff-tools" target="_blank" rel="noopener" class="external">awesome-diff-tools</a>.</p>
+<p>Then, when you're done, run <code>git add</code> to stage those files, and you can then commit them. The commit you then make is a merge commit, and it might be worth adding a message explaining how you decided to merge everything. However, if it's a simple merge, that might not be necessary.</p>
+
+
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
+    </div>
+</body>

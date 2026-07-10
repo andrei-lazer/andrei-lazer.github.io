@@ -1,0 +1,83 @@
+
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/andrei-lazer.github.io/andrei-lazer.github.io/assets/quill.gif">
+        
+
+        <link href="/andrei-lazer.github.io/andrei-lazer.github.io/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href=".">
+
+        <title>Undoing things</title>
+    </head>
+
+
+
+
+
+
+<body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/posts.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/markdown.css">
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/andrei-lazer.github.io/andrei-lazer.github.io/scripts/themeSwitch.js"></script>
+
+
+    <div id="main">
+
+        <p>
+        
+            
+            </p><nav id="breadcrumb">
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/">Cards</a>
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/git/">Git</a>
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/git/Undoing things/">Undoing things</a>
+            </nav>
+        
+        <p></p>
+
+
+        
+        <h1 style="display: inline;">Undoing things</h1>
+        
+        <ul>
+<li><code>git commit --amend</code> adds a patch to a commit. Can be viewed in things like gerrit which supports microcommits, but usually just modifies a previous commit. Should be used when you forget stuff, not for large changes.</li>
+</ul>
+<h1>reset and restore</h1>
+<p>In older versions of Git, <code>git reset</code> is used for two very common undo operations.</p>
+<ul>
+<li><code>git reset HEAD &lt;file&gt;</code> unstages a file. No changes are made to the file, this is just in Git.</li>
+<li><code>git checkout -- &lt;file&gt;</code> discards changes made to <em>unstaged</em> files since the last commit. This is a destructive operation that cannot be undone.</li>
+</ul>
+<p>In newer versions of Git, <code>git restore</code> replaces both of these functionalities.</p>
+<ul>
+<li><code>git restore --staged &lt;file&gt;</code> unstages a file.</li>
+<li><code>git restore &lt;file&gt;</code> discards changes made to unstaged files since the last commit.</li>
+</ul>
+
+
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
+    </div>
+</body>

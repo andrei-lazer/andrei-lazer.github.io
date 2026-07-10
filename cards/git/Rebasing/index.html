@@ -1,0 +1,91 @@
+
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="math,coding,quant,development,languages">
+
+        <script>
+            // Determine initial theme
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const theme = savedTheme || (prefersDark ? "/style/dark.css" : "/style/light.css");
+
+            // Immediately write the correct link
+            document.write('<link id="theme-stylesheet" rel="stylesheet" href="' + theme + '">');
+        </script>
+
+        
+        <link rel="icon" type="image/x-icon" eleventy:formats="gif" width="50px" href="/andrei-lazer.github.io/andrei-lazer.github.io/assets/quill.gif">
+        
+
+        <link href="/andrei-lazer.github.io/andrei-lazer.github.io/style/style.css" rel="stylesheet" type="text/css" media="all">
+
+        <link id="theme-stylesheet" rel="stylesheet" href=".">
+
+        <title>Rebasing</title>
+    </head>
+
+
+
+
+
+
+<body>
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/posts.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="/andrei-lazer.github.io/andrei-lazer.github.io/style/markdown.css">
+
+    
+    <div style="display: inline-block; padding:1vmin 2vmin;">
+        <button id="theme-toggle">switch theme</button>
+    </div>
+    <script src="/andrei-lazer.github.io/andrei-lazer.github.io/scripts/themeSwitch.js"></script>
+
+
+    <div id="main">
+
+        <p>
+        
+            
+            </p><nav id="breadcrumb">
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/">Cards</a>
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/git/">Git</a>
+                    > <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/git/Rebasing/">Rebasing</a>
+            </nav>
+        
+        <p></p>
+
+
+        
+        <h1 style="display: inline;">Rebasing</h1>
+        
+        <p>Rebasing is the one way of combining divergent branches (the other being <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/git/Merging/">Merging</a>). It attempts to sequentially apply every commit <em>from the checked out branch</em> to the other branch. This is distinct from merging because multiple commits are created. After a rebase, the head of the checked out branch points to the newest commit, and the head of the other branch (usually main) is in the same place. A simple <a href="/andrei-lazer.github.io/andrei-lazer.github.io/cards/git/Merging/#Fast-forward merges">fast-forward merge</a> can then be done to get <code>main</code> up to <code>topic</code>.</p>
+<picture><source type="image/webp" srcset="/andrei-lazer.github.io/andrei-lazer.github.io/img/KLuRCaLhhO-800.webp 800w"><img src="/andrei-lazer.github.io/andrei-lazer.github.io/img/KLuRCaLhhO-800.gif" alt="Pasted image 20260710141201.png" width="800" height="428"></picture>
+<blockquote>
+<p>Rebase diagram from <a href="https://marklodato.github.io/visual-git-guide/index-en.html" target="_blank" rel="noopener" class="external">visual git guide</a> . Every commit that is in &quot;topic&quot; and not in &quot;main&quot; is recreated at the end of main.</p>
+</blockquote>
+<p>It's important to note that there is no difference between the end result (as long as you deal with merge conflicts in the same way). The difference is that the history of the rebased branch looks cleaner and like it happened in series. This is often done when you're trying to make sure your local commits apply cleanly to a remote branch, for example when contributing to someone else's project. This means the maintainer doesn't have to deal with merging the patches - they can just do a fast-forward.</p>
+<h1><code>git rebase --onto</code></h1>
+<p>This command allows you to do some strange rebasing. Suppose you have a situation like the image below, and you want to merge the <code>client</code> branch into <code>master</code> before merging <code>server</code>. The <code>--onto</code> flag helps here.</p>
+<picture><source type="image/webp" srcset="/andrei-lazer.github.io/andrei-lazer.github.io/img/L6BsihbWM8-800.webp 800w"><img src="/andrei-lazer.github.io/andrei-lazer.github.io/img/L6BsihbWM8-800.gif" alt="Pasted image 20260710142819.png" width="800" height="451"></picture>
+<p><code>git rebase --onto master server client</code> turns the figure above into the figure below.</p>
+<picture><source type="image/webp" srcset="/andrei-lazer.github.io/andrei-lazer.github.io/img/gB9mZifAYF-800.webp 800w"><img src="/andrei-lazer.github.io/andrei-lazer.github.io/img/gB9mZifAYF-800.gif" alt="Pasted image 20260710142936.png" width="800" height="312"></picture>
+<p>In English, this is equivalent to &quot;Take the <code>client</code> branch, figure out some patches since it has diverged from <code>server</code>, then make it look like <code>client</code> was based directly off of <code>master</code>.&quot;</p>
+<h1>Perils of rebasing</h1>
+<p>I got confused at <a href="https://git-scm.com/book/en/v2/Git-Branching-Rebasing" target="_blank" rel="noopener" class="external">this part</a>.</p>
+<h1>Commands</h1>
+<ul>
+<li><code>git rebase &lt;base-branch&gt; &lt;topic-branch&gt;</code> checks out <code>&lt;topic-branch&gt;</code>, replays it onto <code>&lt;base-branch&gt;</code>, and moves the <code>&lt;topic-branch&gt;</code> pointer to the end of that rebase. <code>&lt;base-branch&gt;</code> is unaffected.
+<ul>
+<li>If you're on <code>&lt;topic-branch&gt;</code>, <code>git rebase &lt;base-branch&gt;</code> is equivalent to the above.</li>
+</ul>
+</li>
+</ul>
+
+
+        <a href="#" id="goback" onclick="history.go(-1)">go back</a>
+    </div>
+</body>
