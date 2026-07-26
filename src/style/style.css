@@ -167,8 +167,9 @@ h1, h2, h3 {
 
 .gif-icon {
     display: inline-block;
-    height: 50px;
-    width: 50px;
+    height: 2.2em;
+    width: 2.2em;
+    transform: translateY(0.2em);
 }
 
 .grid {

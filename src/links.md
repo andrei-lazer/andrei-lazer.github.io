@@ -25,6 +25,13 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [Networking with WSL](https://learn.microsoft.com/en-us/windows/wsl/networking#mirrored-mode-networking)
 - [Speeding up zsh](https://scottspence.com/posts/speeding-up-my-zsh-shell)
 - [How to export Typst to HTML](https://1024th.top/posts/typst/typst-html-export)
+- [Practical Common Lisp](https://gigamonkeys.com/book/)
+
+## maths
+- [Glossary of NLA and floating point stuff](https://nhigham.com/index-of-what-is-articles/)
+
+## neovim
+- [luasnip for LaTeX](https://ejmastnak.com/tutorials/vim-latex/luasnip/#keymaps)
 
 ## retro gaming
 - [ROM Patcher JS](https://www.marcrobledo.com/RomPatcher.js/)
@@ -66,6 +73,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [Someone in a lot of webrings](https://baccyflap.com/rsp/)
 - [Flexbox labs](https://flexboxlabs.netlify.app/) - code generator for flex boxes
 - [What's wrong with your code](https://web.archive.org/web/20240324055049/https://cutcodedown.com/article/whats_wrong_with_YOUR_website_index)
+- [static site generator in Common Lisp](https://sta6.vercel.app/)
 
 ## 88x31 buttons
 - [The 88x31 Button Database](https://88x31db.com/)

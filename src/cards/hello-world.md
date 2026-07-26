@@ -4,7 +4,7 @@ link: /
 date: 2025-12-01
 tags:
     - posts
-    - websites
+    - computing
 ---
 
 I started this website to have a place to put anything I want, as well as challenge me to learn
