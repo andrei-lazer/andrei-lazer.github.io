@@ -83,3 +83,4 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [fmhy](https://fmhy.net/)
 - [A short materialist case for generative AI](https://writings.hongminhee.org/2026/02/acting-materialistically-in-an-imperfect-world/)
 - [LLMs and alienation](https://writings.hongminhee.org/2026/03/craft-alienation-llm/)
+- [Make your website immortal](https://keepsite.org/)

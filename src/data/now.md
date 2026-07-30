@@ -1,5 +1,12 @@
 This is my "[now page](https://nownownow.com/about)". Last updated 30 July 2026.
 
+## coding
+
+I've recently rewritten this website in Common Lisp! I'm using the [sta6](https://sta6.vercel.app/)
+static site generator. I wanted to learn a new programming language and I know Lisp is supposed to
+be quite strange, so I gave it a go. I haven't migrated everything over - I had quite a complicated
+/misc page that used a lot of JavaScript to generate, but I'm working on moving that over to Lisp.
+
 ## reading
 
 I'm reading the [Liveship Traders

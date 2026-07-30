@@ -27,7 +27,8 @@ deploy: build
 	git add -A; \
 	if ! git diff --cached --quiet; then \
 		git commit -m "Deploy site"; \
-	fi;
+	fi; \
+	git push; 
 
 clean:
 	rm -rf build
