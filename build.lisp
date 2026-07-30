@@ -1,0 +1,5 @@
+(require :asdf)
+(load "~/quicklisp/setup.lisp")
+(push #p"./" asdf:*central-registry*)
+(ql:quickload :app)
+(app:main)
