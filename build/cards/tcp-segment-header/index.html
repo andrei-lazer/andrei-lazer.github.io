@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang=en><head><title>TCP segment header</title><meta charset=UTF-8><link rel=stylesheet href="/styles/style.css"><link rel=icon href="/assets/quill.gif" type="image/gif"></head><body><nav><a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a href="/links">links</a><a href="/email">email</a></nav><h1>TCP segment header</h1><p>The TCP header is a lot more complex than UDP. It is flexibly sized between <strong>20 and 40 bytes</strong>.</p>
+
+<p><img src="/assets/Pasted%20image%2020250922135400.png" alt="" /></p>
+
+<h2>Source and destination ports</h2>
+
+<p>These are self-explanatory</p>
+
+<h2>Sequence Number</h2>
+
+<p>Every byte of the TCP segment is labelled with a sequence number, and the one in the header is the number of the first byte in this packet. It&apos;s used for ordering the packets on arrival.</p>
+
+<h2>Acknowledgement Number</h2>
+
+<p>4-byte field containing the sequence number of the next expected segment. Used to check for out-of-order segments.</p>
+
+<h2>Header Length</h2>
+
+<p>4-bit (half a byte) about the length of the TCP header. It&apos;s actually the number of <strong>4-byte words</strong> in the header, since there are only 4 bits, so 16 possibilites.</p>
+
+<h2>Reserved Field</h2>
+
+<p>Padding so that the header is a multiple of 4 bytes long.</p>
+
+<h2>Header flags</h2>
+
+<p><img src="/assets/Pasted%20image%2020250922135925.png" alt="" /></p>
+
+<p>These make up the 8 bits of flags in the middle of the header.</p>
+
+<h3>ACK</h3>
+
+<p>Used to acknowledge a previous segment that was recieved.</p>
+
+<h3>RST</h3>
+
+<p><strong>Reset</strong> flag. Immediately terminates a connection based on refused connections, confusion, or crashes.</p>
+
+<h3>SYN</h3>
+
+<p><strong>Synchronization</strong> flag initiates a connection with a new host.</p>
+
+<h3>FIN</h3>
+
+<p>Terminates a connection normally.</p>
+
+<h3>CWR &amp; ECN</h3>
+
+<p><strong>Congestion window reduced</strong> and <strong>Explicit Congestion Notification</strong> are used to handle congestion.</p>
+
+<h3>PSH</h3>
+
+<p>Short for <strong>push</strong>. Used to stop the receiving end from bundling messages together before handing them to the application layer. The PSH flag will force the receiving TCP handler to flush the buffer after the message arrives.</p>
+
+<h3>URG</h3>
+
+<p>Marks a message as urgent, so that it is processed first on the host. An example if it being useful is for cancelling a file transfer.</p>
+
+<h2>Window Size</h2>
+
+<p>This is the remaining size of the aforementioned buffer. It is used to let the sender know how much space is currently left in the buffer, and is used for flow control.</p>
+
+<h2>Checksum</h2>
+
+<p>Standard checksum</p>
+
+<h2>Urgent Pointer</h2>
+
+<p>Used to point at the byte which contains the urgent data, since one segment can send both urgent and non-urgent data. Irrelevant if the urgent flag is not set.</p>
+
+<h1>Options and padding</h1>
+
+<p>An extra 40 bytes to implement other things that are not supported by the stock header. A <strong>timestamp</strong> is an example of something in this section.</p>
+</body></html>

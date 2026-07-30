@@ -1,0 +1,4 @@
+---
+title: Detached head
+---
+The detached head state happens usually when you pull down a specific commit. In this state, you can make changes and commit them, but the commit will not be visible to anyone unless they have the exact commit hash. This is because, as the name implies, the current head is not descended from any branch or other commit.

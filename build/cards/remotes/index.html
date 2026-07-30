@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang=en><head><title>Remotes</title><meta charset=UTF-8><link rel=stylesheet href="/styles/style.css"><link rel=icon href="/assets/quill.gif" type="image/gif"></head><body><nav><a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a href="/links">links</a><a href="/email">email</a></nav><h1>Remotes</h1><p>One local git repo can have multiple remotes. These are essentially version of the repo in other places. A repo stored on GitHub is a good example of a remote repo. </p>
+
+<h1>Facts</h1>
+
+<ul>
+<li><code>origin</code> is the default name of the remote server you clone the repo from.</li>
+</ul>
+
+<h1>Commands</h1>
+
+<ul>
+<li><code>git remote</code> shows your remotes.</li>
+<li><code>git remote show &lt;remote&gt;</code> shows information about a specific remote.</li>
+<li><code>git remote add &lt;shortname&gt; &lt;url&gt;</code> adds the remote repo at <code>&lt;url&gt;</code> as a remote with the nickname <code>&lt;shortname&gt;</code></li>
+<li><code>git fetch &lt;shortname|url&gt;</code> fetches new data from the remote. It doesn&apos;t make any changes to your local repo, it just updates git with what the remote repo looks like</li>
+<li><code>git pull</code> attempts to merge the remote with the local</li>
+<li><code>git push &lt;remote&gt; &lt;branch&gt;</code> pushes the local branch called <code>&lt;branch&gt;</code> to the remote server called <code>&lt;remote&gt;</code>.</li>
+</ul>
+</body></html>

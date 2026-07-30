@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang=en><head><title>Undoing things</title><meta charset=UTF-8><link rel=stylesheet href="/styles/style.css"><link rel=icon href="/assets/quill.gif" type="image/gif"></head><body><nav><a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a href="/links">links</a><a href="/email">email</a></nav><h1>Undoing things</h1><ul>
+<li><code>git commit --amend</code> adds a patch to a commit. Can be viewed in things like gerrit which supports microcommits, but usually just modifies a previous commit. Should be used when you forget stuff, not for large changes.</li>
+</ul>
+
+<h1>reset and restore</h1>
+
+<p>In older versions of Git, <code>git reset</code> is used for two very common undo operations.
+- <code>git reset HEAD &lt;file&gt;</code> unstages a file. No changes are made to the file, this is just in Git.
+- <code>git checkout -- &lt;file&gt;</code> discards changes made to <em>unstaged</em> files since the last commit. This is a destructive operation that cannot be undone.</p>
+
+<p>In newer versions of Git, <code>git restore</code> replaces both of these functionalities.
+- <code>git restore --staged &lt;file&gt;</code> unstages a file.
+- <code>git restore &lt;file&gt;</code> discards changes made to unstaged files since the last commit.</p>
+</body></html>

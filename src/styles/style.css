@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+
+
+:root {
+    /* old ashen theme */
+    /* --bg-color: #f1ebe6; */
+    /* --text-color: #191A19; */
+    /* --link-color: #6f2b2b; */
+
+    /* sage green */
+    /* --bg-color: #C5D1AD; */
+    /* --text-color: #1A242F; */
+    /* --link-color: #1C4F59; */
+
+    /* ashen but green */
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #1C4F59;
+
+    --border-color: #000000;
+    --border-thickness: 2px;
+    --font-family: "Ovo", serif;
+    --header-font: var(--body-font);
+    --code-font: "Fira Mono", monospace;
+    --transition: color, background 0.2s ease-in-out;
+}
+
+body {
+    font-family: var(--body-font);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: clamp(20px, 2vmin, 30px);
+    margin: 0;
+    background-size: 65px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: var(--transition);
+
+
+    flex: 1;
+    padding: 1em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--link-color);
+    display: inline;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--bg-color);
+    background-clip: content-box;
+    background-color: var(--link-color);
+}
+
+
+nav {
+    display: flex;
+    justify-items: space-between; 
+    flex-wrap: wrap;
+    gap: 2.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+nav a {
+    margin-bottom: 10px;
+    display: inline;
+}
+
+/* change text selection styling */
+::-moz-selection {
+  color: var(--bg-color);
+  background: var(--link-color);
+}
+
+::selection {
+  color: var(--bg-color);
+  background: var(--link-color);
+} 
+
+
+ul {
+  list-style: none;
+  padding-left: 1em;
+  margin-top: 0px;
+}
+
+ul li::before {
+  content: "– ";
+  margin-left: -1em;
+}
+
+p img {
+    max-width: 90%
+}
+
+.gif {
+    display: inline-block;
+    height: 2.2em;
+    width: 2.2em;
+    transform: translateY(0.2em);
+}
+
+#header-text {
+    font-family: var(--header-font);
+    font-weight: 400;
+    font-size: max(1.2em, 7vmin);
+    margin-left: 0.5em;
+}
+
+#gif-header {
+    width: 100%;
+    padding-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    transition: var(--transition);
+}

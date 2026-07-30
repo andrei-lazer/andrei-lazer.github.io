@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang=en><head><title>Floating point arithmetic</title><meta charset=UTF-8><script id=MathJax-script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><link rel=stylesheet href="/styles/style.css"><link rel=icon href="/assets/quill.gif" type="image/gif"></head><body><nav><a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a href="/links">links</a><a href="/email">email</a></nav><h1>Floating point arithmetic</h1><p>The more bits we have, the more numbers we can represent. However, the less we have, the more we can fit into cache lines and CPU registers, allowing for more simultaneous operations using SIMD. This is especially important in NLA applications which tend to be <a href="https://en.wikipedia.org/wiki/Embarrassingly_parallel" >embarrassingly parallelizable</a>.</p>
+<table >
+<thead>
+<tr><th>
+<strong>Precision</strong></th><th>
+<strong>Exponent</strong></th><th>
+Significand/Mantissa</th></tr>
+</thead>
+<tbody>
+<tr><td>
+fp16</td><td>
+5</td><td>
+10</td></tr>
+<tr><td>
+bfloat16</td><td>
+8</td><td>
+7</td></tr>
+<tr><td>
+fp32</td><td>
+8</td><td>
+23</td></tr>
+<tr><td>
+fp64</td><td>
+11</td><td>
+52</td></tr>
+</tbody>
+</table>
+
+<p>The general notation will be <code>eXmY</code>, where <code>X</code> is the length of the exponent, and <code>Y</code> is the length of the mantissa. So fp16 may also be written e5m10. The actual bits will be written</p>\[
+(s)(e_1 \dots e_X)(m_1 \dots m_Y)
+\]
+
+<p>which evaluates to</p>\[
+(-1)^s (1.m_1m_2...m_Y)_2 2^{E-b}
+\]
+
+<p>where \(E = (e_1 e_2 e_2)_2\) and \(b = 2^{X-1} - 1\) is the bias (centralises the exponent on 0 to allow for negative and positive exponents).</p>
+
+<h1>dynamic range vs. precision trade-off</h1>
+
+<p>The dynamic range of a floating point format is the range of representable numbers. Due to the existence of subnormals and infs (see <a href="#subnormals" >subnormals</a>), the exponent for normal numbers can only take values between 1 and \(2^{X} - 2\) inclusive. The largest representable finite number is therefore</p>\[
+(2 - 2^{-Y})(2^{2^{X} - 2 - b}) = (2 - 2^{-Y})(2^{2^{X-1} - 1})
+\]
+
+<p>Then, the smallest represententable normal positive number is</p>\[
+1 \times 2^{1 - b} = 2^{2 - 2^{X-1}}
+\]
+
+<p>So, the difference and/or ratio between these two is almost entirely up to the value of \(X\), since \(Y\) only appears in \(2 - 2^{-Y}\), a value which moves very little with increasing \(Y\). The gap between these two (whether measured as a ratio or difference) is often called the <em>dynamic range</em>.</p>
+
+<p>We define the <em>unit roundoff</em> \(u\) as half the gap between 1.0 and the next representable floating point number. Equivalently, it&apos;s the smallest number greater than 1 that wouldn&apos;t round down to 1 using nearest neighbour rounding.</p>\[
+u = \frac{(1 + 2^{-Y}) - 1}{2} = 2^{-1 - Y}
+\]
+
+<p>The unit roundoff is a relative precision bound that tells us how inaccurate rounding is. Essentially, \(\operatorname{fl}(x) = (1 + \delta)x, |\delta| < u\). This is wholly dependent on Y, the length of the mantissa. The machine epsilon \(\varepsilon = 2u\).</p>
+
+<p>What this shows is that larger exponent &rarr; larger dynamic range, larger mantissa &rarr; better precision. This is the dynamic range vs precision tradeoff, since for a fixed format length, there has to be a balance between the two.</p>
+
+<p>The comparison between fp16 and bfloat16 is an interesting case study. The IEEE fp16 precision has 5 exponent bits and 10 mantissa bits, while fp32 has 8 exponent bits and 23 mantissa bits. bfloat16 combines the two by preserving the same number of exponent bits as fp32, but with a much smaller mantissa (7 bits). This was developed by Google in order to preserve dynamic range and prevent overflow in machine learning applications while still benefiting from the increased speed of less bits per number.</p>
+
+<h1>subnormals</h1>
+</body></html>
