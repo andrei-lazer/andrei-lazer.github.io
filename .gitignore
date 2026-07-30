@@ -1,8 +1,0 @@
-.cache
-_site
-**/node_modules/**
-**/old_*
-*.env
-CNAME
-src/cards/WIP-*
-todo.md
