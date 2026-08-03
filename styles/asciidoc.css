@@ -1,0 +1,205 @@
+/* Supplements style.css on card pages (see layouts/main:card). Asciidoctor
+   wraps every block in a <div class="..."> and puts a <p> inside every list
+   item, so most of the work here is undoing that extra structure to land back
+   on the same shapes 3bmd produces for the markdown pages (see links.md).
+   Anything asciidoc has but markdown doesn't (tables, admonitions, block
+   titles) is styled minimally, using the variables from style.css. */
+
+/* ---- lists ---- */
+
+/* the marker in style.css is a ::before on the li, so the item's first
+   paragraph has to be inline or the dash ends up on its own line */
+.ulist li > p:first-child,
+.olist li > p:first-child,
+.colist li > p:first-child {
+    display: inline;
+}
+
+/* markdown list items are bare text, so no margins between them */
+.ulist li > p,
+.olist li > p,
+.colist li > p,
+.dlist dd > p {
+    margin: 0;
+}
+
+/* ...unless an item really does have several paragraphs */
+.ulist li > p + p,
+.olist li > p + p {
+    margin-top: 0.6em;
+}
+
+/* nested lists sit in their own wrapper div, so pull them back up against
+   the item they belong to */
+.ulist .ulist,
+.ulist .olist,
+.olist .ulist,
+.olist .olist {
+    margin-top: 0;
+}
+
+/* asciidoctor's stylesheet normally supplies these */
+ol.arabic { list-style-type: decimal; }
+ol.loweralpha { list-style-type: lower-alpha; }
+ol.upperalpha { list-style-type: upper-alpha; }
+ol.lowerroman { list-style-type: lower-roman; }
+ol.upperroman { list-style-type: upper-roman; }
+
+/* checklists bring their own markers, so drop the dash from style.css */
+.checklist li::before {
+    content: none;
+}
+
+.checklist {
+    padding-left: 0;
+}
+
+/* description lists */
+.dlist dt {
+    font-weight: 700;
+    margin-top: 0.6em;
+}
+
+.dlist dd {
+    margin-left: 1em;
+}
+
+/* ---- images ---- */
+
+/* style.css only reaches images inside a <p>; asciidoc puts them in a block */
+.imageblock img,
+.image img {
+    max-width: 90%;
+    height: auto;
+}
+
+.imageblock {
+    margin: 1em 0;
+}
+
+/* ---- code ---- */
+
+code,
+pre {
+    font-family: var(--code-font);
+    font-size: 0.85em;
+}
+
+.listingblock .content,
+.literalblock .content {
+    margin: 1em 0;
+}
+
+.listingblock pre,
+.literalblock pre {
+    margin: 0;
+    padding: 0.6em 0.8em;
+    border: var(--border-thickness) solid var(--border-color);
+    /* long lines scroll rather than widening the page */
+    overflow-x: auto;
+}
+
+/* ---- tables ---- */
+
+table.tableblock {
+    border-collapse: collapse;
+    max-width: 100%;
+    margin: 1em 0;
+}
+
+table.stretch {
+    width: 100%;
+}
+
+.tableblock th,
+.tableblock td {
+    border: var(--border-thickness) solid var(--border-color);
+    padding: 0.3em 0.6em;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* cell contents are wrapped in <p> the same way list items are */
+p.tableblock {
+    margin: 0;
+}
+
+p.tableblock + p.tableblock {
+    margin-top: 0.6em;
+}
+
+/* ---- maths ---- */
+
+/* display maths, rendered by mathjax when a card sets mathjax in its frontmatter */
+.stemblock {
+    margin: 1em 0;
+    text-align: center;
+    overflow-x: auto;
+}
+
+/* ---- quotes and admonitions ---- */
+
+.quoteblock {
+    margin: 1em 0;
+}
+
+.quoteblock blockquote {
+    margin: 0;
+    padding-left: 0.8em;
+    border-left: var(--border-thickness) solid var(--border-color);
+}
+
+.quoteblock .attribution {
+    font-size: 0.85em;
+}
+
+.admonitionblock {
+    margin: 1em 0;
+}
+
+.admonitionblock table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.admonitionblock td.icon {
+    padding-right: 0.6em;
+    white-space: nowrap;
+    vertical-align: top;
+    font-weight: 700;
+}
+
+.admonitionblock td.content {
+    border-left: var(--border-thickness) solid var(--border-color);
+    padding-left: 0.8em;
+    vertical-align: top;
+}
+
+.admonitionblock .title {
+    text-transform: lowercase;
+}
+
+/* ---- odds and ends ---- */
+
+/* block titles/captions */
+.title {
+    font-style: italic;
+}
+
+/* bare urls can be longer than the page is wide */
+a.bare {
+    overflow-wrap: anywhere;
+}
+
+.footnotes {
+    font-size: 0.85em;
+    border-top: var(--border-thickness) solid var(--border-color);
+    margin-top: 2em;
+    padding-top: 0.5em;
+}
+
+.footnotes hr {
+    display: none;
+}
+
+.nobreak { white-space: nowrap; }

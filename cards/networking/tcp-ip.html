@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <title>TCP-IP</title>
+  <meta charset=UTF-8>
+  <link rel=stylesheet href="/styles/style.css">
+  <link rel=icon href="/assets/computer.gif"
+        type="image/gif">
+ </head>
+ <link rel=stylesheet
+       href="/styles/asciidoc.css">
+ <nav>
+  <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
+  href="/links">links</a><a href="/email">email</a>
+ </nav>
+ <body>
+  <h1>TCP-IP</h1>
+  <hr><h2 id="what_is_tcp/ip?">What is TCP/IP?</h2>
+
+<p>It&apos;s a networking model made up of two widely used Internet protocols: <strong>Transmission Control Protocol</strong> (TCP) and <strong>Internet Protocol</strong> (IP). It&apos;s also known as the Internet protocol suite <a href="https://en.wikipedia.org/wiki/Internet_protocol_suite" >Wikipedia</a>.</p>
+
+<h2 id="end-to-end_argument">End-to-end argument</h2>
+
+<p>Implementing complex functionality into the core of the network is expensive and hard to fix in the long term, so the <em>end-to-end</em> argument was used: intelligent and complex end devices with a dumb and fast core network.</p>
+
+<h2 id="packet_switching">Packet switching</h2>
+
+<p>The core was made <strong>packet-switched</strong>, which means discrete, small packets of data are delivered separately. Also, they&apos;re routed <em>per-hop</em>, so that they can circumvent failures at each step.</p>
+
+<p>This is in contrast to <strong>circuit-switched</strong> networks, which involves allocating a dedicated channel (circuit) with a fixed bandwidth. The downside is that if this circuit breaks, the information sent is lost.</p>
+
+<h2 id="layers">Layers</h2>
+
+<blockquote>
+<p><img src="/cards/assets/Pasted%20image%2020250917135853.png" alt="" /></p>
+
+<p>One example of the TCP/IP network stack - this isn&apos;t always unanimous.</p>
+</blockquote>
+
+<ul>
+<li><a href="/cards/networking/application-layer.html" >Application Layer</a></li>
+<li><a href="/cards/networking/transport-layer.html" >Transport Layer</a></li>
+</ul>
+
+ </body>
+</html>

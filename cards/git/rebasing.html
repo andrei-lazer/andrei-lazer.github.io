@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <title>Rebasing</title>
+  <meta charset=UTF-8>
+  <link rel=stylesheet href="/styles/style.css">
+  <link rel=icon href="/assets/computer.gif"
+        type="image/gif">
+ </head>
+ <link rel=stylesheet
+       href="/styles/asciidoc.css">
+ <nav>
+  <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
+  href="/links">links</a><a href="/email">email</a>
+ </nav>
+ <body>
+  <h1>Rebasing</h1>
+  <hr><p>Rebasing is the one way of combining divergent branches (the other being
+<a href="/cards/git/merging.html" >Merging</a>). It attempts to sequentially apply every commit <em>from the checked out
+branch</em> to the other branch. This is distinct from merging because multiple commits are created.
+After a rebase, the head of the checked out branch points to the newest commit, and the head of the
+other branch (usually main) is in the same place. A simple
+<a href="/cards/git/merging.html" >fast-forward merge</a> can then be done to get <code>main</code> up to
+<code>topic</code>.</p>
+
+<p><img src="/cards/assets/Pasted%20image%2020260710141201.png" alt="" /></p>
+
+<blockquote>
+<p>Rebase diagram from <a href="https://marklodato.github.io/visual-git-guide/index-en.html" >visual git guide</a> . Every commit that is in &ldquo;topic&rdquo; and not in &ldquo;main&rdquo; is recreated at the end of main.</p>
+</blockquote>
+
+<p>It&apos;s important to note that there is no difference between the end result (as long as you deal with merge conflicts in the same way). The difference is that the history of the rebased branch looks cleaner and like it happened in series. This is often done when you&apos;re trying to make sure your local commits apply cleanly to a remote branch, for example when contributing to someone else&apos;s project. This means the maintainer doesn&apos;t have to deal with merging the patches - they can just do a fast-forward.</p>
+
+<h2 id="git_rebase_--onto"><code>git rebase --onto</code></h2>
+
+<p>This command allows you to do some strange rebasing. Suppose you have a situation like the image below, and you want to merge the <code>client</code> branch into <code>master</code> before merging <code>server</code>. The <code>--onto</code> flag helps here.</p>
+
+<p><img src="/cards/assets/Pasted%20image%2020260710142819.png" alt="" /></p>
+
+<p><code>git rebase --onto master server client</code> turns the figure above into the figure below.</p>
+
+<p><img src="/cards/assets/Pasted%20image%2020260710142936.png" alt="" /></p>
+
+<p>In English, this is equivalent to &ldquo;Take the <code>client</code> branch, figure out some patches since it has diverged from <code>server</code>, then make it look like <code>client</code> was based directly off of <code>master</code>.&rdquo;</p>
+
+<h2 id="perils_of_rebasing">Perils of rebasing</h2>
+
+<p>I got confused at <a href="https://git-scm.com/book/en/v2/Git-Branching-Rebasing" >this part</a>.</p>
+
+<h2 id="commands">Commands</h2>
+
+<ul>
+<li><code>git rebase &lt;base-branch&gt; &lt;topic-branch&gt;</code> checks out <code>&lt;topic-branch&gt;</code>, replays it onto <code>&lt;base-branch&gt;</code>, and moves the <code>&lt;topic-branch&gt;</code> pointer to the end of that rebase. <code>&lt;base-branch&gt;</code> is unaffected.</li>
+<li>If you&apos;re on <code>&lt;topic-branch&gt;</code>, <code>git rebase &lt;base-branch&gt;</code> is equivalent to the above.</li>
+</ul>
+
+ </body>
+</html>

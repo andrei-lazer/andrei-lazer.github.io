@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <title>git bisect</title>
+  <meta charset=UTF-8>
+  <link rel=stylesheet href="/styles/style.css">
+  <link rel=icon href="/assets/computer.gif"
+        type="image/gif">
+ </head>
+ <link rel=stylesheet
+       href="/styles/asciidoc.css">
+ <nav>
+  <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
+  href="/links">links</a><a href="/email">email</a>
+ </nav>
+ <body>
+  <h1>git bisect</h1>
+  <hr><p>Used to do binary search backwards to detect a regression</p>
+
+<ol>
+<li><code>git bisect start</code></li>
+<li>Assuming the current commit is bad, <code>git bisect bad</code></li>
+<li>Then, <code>git bisect good &lt;last good sha1&gt;</code> with the SHA1 of the last commit you know works</li>
+<li>Git will keep checking out commits using binary search. Run your tests and run <code>git bisect good/bad</code> every time</li>
+<li>Once you figure out the issue, run <code>git bisect reset</code> so you&apos;re not in a weird state.</li>
+</ol>
+
+<p>This can also be automated! See the Pro Git book for more details.</p>
+
+ </body>
+</html>

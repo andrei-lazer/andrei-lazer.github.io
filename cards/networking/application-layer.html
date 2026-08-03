@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <title>Application layer</title>
+  <meta charset=UTF-8>
+  <link rel=stylesheet href="/styles/style.css">
+  <link rel=icon href="/assets/computer.gif"
+        type="image/gif">
+ </head>
+ <link rel=stylesheet
+       href="/styles/asciidoc.css">
+ <nav>
+  <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
+  href="/links">links</a><a href="/email">email</a>
+ </nav>
+ <body>
+  <h1>Application layer</h1>
+  <hr><h2 id="intro">Intro</h2>
+
+<ul>
+<li>Exists ENTIRELY on end systems, like PCs or phones.</li>
+</ul>
+
+<h3 id="responsibilities">Responsibilities</h3>
+
+<ul>
+<li>Writing data to the network in the correct format</li>
+<li>Reading data</li>
+<li>Providing an application to users</li>
+<li>Error handling and recovery</li>
+</ul>
+
+<h2 id="network_application_architectures">Network Application Architectures</h2>
+
+<h3 id="client-server_architecture">Client-Server Architecture</h3>
+
+<p>Split into client-side and server-side processes, which communicate using messages.</p>
+
+<h4 id="servers">Servers</h4>
+
+<ol>
+<li>Generally, the server should be available all the time.</li>
+<li>They have at least one reliable IP address with which they can be reached.</li>
+</ol>
+
+<h4 id="clients">Clients</h4>
+
+<p>Clients use the internet to use services and consume content. Clients always initiate connections to servers, and servers wait on clients.</p>
+
+<p>The web is a client-server architecture.</p>
+
+<h4 id="data_centres">Data Centres</h4>
+
+<p>These are buildings which store servers.</p>
+
+<h3 id="peer-to-peer_architecture">Peer-to-Peer Architecture</h3>
+
+<p>No dedicated server is involved, and all devices involved are peers that communicate with each other. This can scale rapidly, since every machine is capable of being both a client and a server. This is used a lot for torrenting.</p>
+
+ </body>
+</html>

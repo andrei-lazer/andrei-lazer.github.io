@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <title>TCP</title>
+  <meta charset=UTF-8>
+  <link rel=stylesheet href="/styles/style.css">
+  <link rel=icon href="/assets/computer.gif"
+        type="image/gif">
+ </head>
+ <link rel=stylesheet
+       href="/styles/asciidoc.css">
+ <nav>
+  <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
+  href="/links">links</a><a href="/email">email</a>
+ </nav>
+ <body>
+  <h1>TCP</h1>
+  <hr><h2 id="intro">Intro</h2>
+
+<ul>
+<li><strong>Transmission control protocol</strong></li>
+<li>Requires a connection to be set up first (handshakes)</li>
+<li>Delivers messages (also called &ldquo;segments&rdquo;) reliably and in order.</li>
+<li>Detects errors and can fix them</li>
+<li>Handles volumes of traffic by modulating the amount of data.</li>
+<li>Examples: HTTP, e-mail, file transfers</li>
+</ul>
+
+<h2 id="responsibilites">Responsibilites</h2>
+
+<ol>
+<li>Send data at an appropriate transmission rate (to avoid congestion or inefficiency).</li>
+<li>Segment data.</li>
+<li>End-to-end flow control.</li>
+<li>This means not overwhelming the receiver.</li>
+<li>Identify and re-transmit messages that weren&apos;t delivered</li>
+<li>Identify when messages arrive out of order and reassemble them.</li>
+</ol>
+
+<h2 id="examples">Examples</h2>
+
+<ol>
+<li>File transfer</li>
+<li>SSH</li>
+<li>Email</li>
+<li>Web browsing</li>
+</ol>
+
+<h2 id="features">Features</h2>
+
+<ol>
+<li><strong>Connection-oriented</strong>. It creates a long-term connection between hosts.</li>
+<li><strong>Full-duplex</strong>, which means that both hosts can send eachother messages at the same time.</li>
+<li><strong>Point-to-point</strong>. Broadcasting and multi-casting is not possible with TCP - there are exactly two endpoints.</li>
+<li><strong>Error control</strong>. TCP both detects and fixes errors.</li>
+<li><strong>Flow control</strong>. TCP adjusts the amount of data being sent based on the receiver&apos;s stated capacity to process it.</li>
+<li><strong>Congestion control</strong>. TCP has built-in congestion control mechanisms.</li>
+</ol>
+
+<h2 id="segment_header">Segment Header</h2>
+
+<p>This is much more complicated than the UDP case, so see <a href="/cards/networking/tcp-segment-header.html" >TCP Segment Header</a>.</p>
+
+<h2 id="three-way_handshake">Three-way handshake</h2>
+
+<p>This is how connections are established. They use the <strong>sequence number</strong>, <strong>acknowledgement number</strong>, and <strong>SYN</strong> flag. (See the header section for definitions).</p>
+
+<h3 id="client_initial_message">Client initial message</h3>
+
+<p>The client sends a TCP message with:</p>
+
+<ol>
+<li>the SYN flag set</li>
+<li>the sequence number set to a random value
+This is often called the <strong>SYN segment</strong>.</li>
+</ol>
+
+<h3 id="server_response">Server response</h3>
+
+<p>Upon receiving this message, the server replies with:</p>
+
+<ol>
+<li>the SYN flag set</li>
+<li>the sequence number set to a random value</li>
+<li>the ACK flag set</li>
+<li>The acknowledgement number is set to the client&apos;s sequence number + 1.</li>
+</ol>
+
+<p>This is often called a <strong>SYN+ACK</strong> segment.</p>
+
+<h3 id="client_acknowledgement">Client acknowledgement</h3>
+
+<ol>
+<li>ACK flag set</li>
+<li>Sequence number = previous <em>client</em> sequence number + 1.</li>
+<li>Acknowledgement number = server sequence number + 1.</li>
+</ol>
+
+<p><img src="/cards/assets/Pasted%20image%2020250922152823.png" alt="" /></p>
+
+ </body>
+</html>

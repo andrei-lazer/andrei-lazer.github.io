@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <title>Reliable data transfer</title>
+  <meta charset=UTF-8>
+  <link rel=stylesheet href="/styles/style.css">
+  <link rel=icon href="/assets/computer.gif"
+        type="image/gif">
+ </head>
+ <link rel=stylesheet
+       href="/styles/asciidoc.css">
+ <nav>
+  <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
+  href="/links">links</a><a href="/email">email</a>
+ </nav>
+ <body>
+  <h1>Reliable data transfer</h1>
+  <hr><p>There are three types of errors caused by network imperfections:</p>
+
+<ol>
+<li>Segments can be <strong>corrupted</strong></li>
+<li>Segments can be <strong>lost</strong></li>
+<li>Segments can be <strong>reordered</strong> or <strong>duplicated</strong></li>
+</ol>
+
+<h2 id="checksums">Checksums</h2>
+
+<p>A checksum is appended to the end of the data send, and is then verified at the end. This tries to fix issue number 1 (corruption).</p>
+
+<h2 id="retransmission_timers">Retransmission timers</h2>
+
+<p>This tries to fix issue number 2 (loss). Since a receiver sends an acknowledgement message after every data segment, the simplest solution is to re-send the message if a retransmission timer runs out before the acknowledgement.</p>
+
+<p>This timer needs to be larger than the round-trip time</p>
+
+<p>The acknowledgement can be lost, resulting in <strong>message duplication</strong>. This is fixed by appending a unique-per-message sequence number to each segment, allowing the receiver to detect duplicates.</p>
+
+<h2 id="pipelining">Pipelining</h2>
+
+<p>Applications often generate data faster than the network can transport it. Therefore, it&apos;s more efficient to <strong>pipeline</strong> the delivery process. I.e. instead of waiting for the receiver to acknowledge every message, the sender keeps transmitting messages without waiting.</p>
+
+<p>This may cause the receiver to become <strong>overloaded</strong>, since the sender might produce faster than the receiver can consume.</p>
+
+ </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <title>HTTP responses</title>
+  <meta charset=UTF-8>
+  <link rel=stylesheet href="/styles/style.css">
+  <link rel=icon href="/assets/computer.gif"
+        type="image/gif">
+ </head>
+ <link rel=stylesheet
+       href="/styles/asciidoc.css">
+ <nav>
+  <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
+  href="/links">links</a><a href="/email">email</a>
+ </nav>
+ <body>
+  <h1>HTTP responses</h1>
+  <hr><p>Here&apos;s an example of a HTTP response:</p>
+
+<pre><code>HTTP/1.1 200 OK
+Connection: close
+Date: Tue, 18 Aug 2015 15: 44 : 04 GMT
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Tue, 18 Aug 2015 15:11:03 GMT
+Content-Length: 6821
+Content-Type: text/html
+
+[The object that was requested]</code></pre>
+
+<p><img src="/cards/assets/Pasted%20image%2020250917151035.png" alt="" /></p>
+
+<p>There are 3 parts: the <strong>status line</strong>, <strong>header lines</strong>, and the <strong>object line</strong></p>
+
+<h2 id="status_line">Status line</h2>
+
+<p>The HTTP response also has a HTTP version.</p>
+
+<h3 id="status_code">Status code</h3>
+
+<p>The status code is one of a bunch of different codes which tell the client the status of their request.</p>
+
+<ul>
+<li>1XX is informational</li>
+<li>2XX is success</li>
+<li>3XX is redirection</li>
+<li>4XX is client error</li>
+<li>5XX is server error</li>
+</ul>
+
+<h2 id="header_lines">Header lines</h2>
+
+<ul>
+<li><code>Connection</code>: same thing as the request - in this case, means that the TCP connection will be closed after this response.</li>
+<li><code>Date</code> time of response</li>
+<li><code>Server</code>: Similar to the <code>user-agent</code> in the request.</li>
+<li><code>Last-Modified</code>: Time when the object requested was last modified.</li>
+<li><code>Content-Length</code>: size of the object in bytes</li>
+<li><code>Content-Type</code>: type of content being sent.</li>
+</ul>
+
+ </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <title>How processes communicate</title>
+  <meta charset=UTF-8>
+  <link rel=stylesheet href="/styles/style.css">
+  <link rel=icon href="/assets/computer.gif"
+        type="image/gif">
+ </head>
+ <link rel=stylesheet
+       href="/styles/asciidoc.css">
+ <nav>
+  <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
+  href="/links">links</a><a href="/email">email</a>
+ </nav>
+ <body>
+  <h1>How processes communicate</h1>
+  <hr><h2 id="program_vs_process_vs_thread">Program vs Process vs Thread</h2>
+
+<ul>
+<li><strong>Program</strong>: an application or executable file, such as Word</li>
+<li><strong>Process</strong>: An instance of a process</li>
+<li><strong>Thread</strong>: A separate part of a process that shares memory with it, but is run concurrently using virtual or real cores on the CPU.</li>
+</ul>
+
+<h2 id="sockets">Sockets</h2>
+
+<p>Processes on separate machines communicate using a computer network. The <strong>software interface</strong> between the process and the network is called a socket. It&apos;s made up of an <strong>IP address</strong> and a <strong>port</strong>. When one process sends information to another process, it sends it to the socket, and doesn&apos;t worry about it afterwards.</p>
+
+<h2 id="addressing">Addressing</h2>
+
+<p>Messages are addressed to an end system using IP addresses and ports.</p>
+
+<h3 id="ports">Ports</h3>
+
+<p>Used to address specific processes on a machine. Some ports are reserved, like port 80 for HTTP requests, and 443 for HTTPS.</p>
+
+ </body>
+</html>

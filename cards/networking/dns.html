@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <title>DNS</title>
+  <meta charset=UTF-8>
+  <link rel=stylesheet href="/styles/style.css">
+  <link rel=icon href="/assets/computer.gif"
+        type="image/gif">
+ </head>
+ <link rel=stylesheet
+       href="/styles/asciidoc.css">
+ <nav>
+  <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
+  href="/links">links</a><a href="/email">email</a>
+ </nav>
+ <body>
+  <h1>DNS</h1>
+  <hr><h2 id="intro">Intro</h2>
+
+<p><strong>Domain Name System</strong> is the most well-known lookup service. A <strong>lookup service</strong> is something that maps domain names (google.com) to IP addresses.</p>
+
+<h2 id="dns_namespaces">DNS Namespaces</h2>
+
+<p>The parts of a url (the bits separated by full stops) roughly map to DNS servers, which exist in a heirarchy. Here&apos;s an example:</p>
+
+<p><img src="/cards/assets/Pasted%20image%2020250918105936.png" alt="" /></p>
+
+<h3 id="root_dns_servers">Root DNS Servers</h3>
+
+<p>Root servers are the first point of contact for a DNS query. This redirects the query to a <strong>top-level domain</strong> (TLD), such as .io or .com. There are somewhere around 2000 instances of root servers around the world, operated by 12 different organisations - see https://root-servers.org for more info.</p>
+
+<h2 id="local_dns_cache">Local DNS Cache</h2>
+
+<ul>
+<li>DNS mappings are often cached locally to save time.</li>
+<li>This is done using a <strong>local resolver library</strong>, which is part of the OS.</li>
+<li>The local resolver library automatically makes a call to a local DNS server if the requested query is not cached.</li>
+</ul>
+
+ </body>
+</html>

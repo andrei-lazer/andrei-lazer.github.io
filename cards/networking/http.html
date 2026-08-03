@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <title>HTTP</title>
+  <meta charset=UTF-8>
+  <link rel=stylesheet href="/styles/style.css">
+  <link rel=icon href="/assets/computer.gif"
+        type="image/gif">
+ </head>
+ <link rel=stylesheet
+       href="/styles/asciidoc.css">
+ <nav>
+  <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
+  href="/links">links</a><a href="/email">email</a>
+ </nav>
+ <body>
+  <h1>HTTP</h1>
+  <hr><h2 id="intro">Intro</h2>
+
+<p>This is a client-server protocol used to send requests and receive responses. It is stateless (the server doesn&apos;t remember the client).</p>
+
+<p>HTTP relies on lower levels being reliable</p>
+
+<ul>
+<li>HTTP uses TCP as its transport protocol, since it ensures packets are always delivered <strong>correctly</strong> and <strong>in order</strong>, as opposed to UDP.</li>
+<li>TCP is <strong>connection-oriented</strong>, i.e. it needs a connection to be established before messages can be sent.</li>
+</ul>
+
+<h2 id="objects">Objects</h2>
+
+<ul>
+<li>An object is a file like a HTML file, PNG file, MP3, etc.</li>
+<li>Each object has a <strong>URL</strong>.</li>
+<li>The <strong>base object</strong> of a web page is usually an HTML file that has references to other objects.</li>
+</ul>
+
+<h2 id="url">URL</h2>
+
+<p>A <strong>Universal Resource Locator</strong> (URL) is used to locate files that exist on servers. They have the following parts:</p>
+
+<ul>
+<li>Protocol in use</li>
+<li>Hostname of the server</li>
+<li>location of the file</li>
+<li>Arguments to the file</li>
+</ul>
+
+<p><img src="/cards/assets/Pasted%20image%2020250917143437.png" alt="" /></p>
+
+<h2 id="non-persistent_http">Non-persistent HTTP</h2>
+
+<p>Non-persistent connections involve one TCP connection per HTTP request. Once a response has been sent by the server, the HTTP connection is closed.</p>
+
+<p>The main downside is that a whole TCP session has to be built up and torn down every time a single HTTP request is sent. For example, if the client receives a file with several JavaScript elements and images, it will have to open many more TCP connections, which is slow.</p>
+
+<h2 id="persistent_http">Persistent HTTP</h2>
+
+<p>This uses a single client-server TCP connection for all the HTTP requests and responses.</p>
+
+<h2 id="http_messages">HTTP Messages</h2>
+
+<p>There are two types of HTTP message: <a href="/cards/networking/http-requests.html" >HTTP Requests</a>, and <a href="/cards/networking/http-responses.html" >HTTP Responses</a></p>
+
+ </body>
+</html>
