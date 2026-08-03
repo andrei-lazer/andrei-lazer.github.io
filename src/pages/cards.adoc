@@ -1,0 +1,21 @@
+---
+title: cards
+icon: quill.gif
+---
+
+This is a collection of notes and projects. Calling them cards is inspired by
+https://ratfactor.com/cards["Dave's Virtual Box of Cards"]. Many of these will be incomplete and
+full of dead ends.
+
+== notes
+* link:/cards/git/index.html[git]
+* link:/cards/networking/index.html[networking]
+* link:/cards/floating-point-arithmetic.html[floating point arithmetic]
+
+== projects
+* link:/cards/time-splitting-schrodinger.html[undergrad dissertation]
+* link:/cards/pong-3ds.html[pong for the 3DS]
+
+== other stuff
+* link:/cards/hello-world.html[hello world]
+* link:/cards/neovim.html[thoughts on neovim]

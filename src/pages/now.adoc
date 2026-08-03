@@ -1,0 +1,39 @@
+---
+title: now
+icon: jellyfish.gif
+---
+This is my "https://nownownow.com/about[now page]". Last updated 30 July 2026.
+
+== coding
+
+I've recently rewritten this website in Common Lisp! I've rolled my own (very basic) static site
+generator. Besides making these pages, I write notes in asciidoc, and it converts the ones
+marked for publication into link:/cards[cards] for this website.
+
+I haven't migrated everything over -- I had quite a complicated [.nobreak]#`/misc`# page that used a
+lot of JavaScript to generate, but I'm working on moving that over to Lisp.
+
+== reading
+
+I'm reading the
+https://www.librarything.com/work/3810435/t/Liveship-Traders-Trilogy[Lineship
+Traders Trilogy]. Almost done -- it's
+really good. I might start Game of Thrones next, since I've always been curious.
+
+== games
+I've been playing all sorts of stuff, but mainly Rimworld. This game has been an absolute nuke for
+my productivity.
+
+
+As for retro gaming:
+
+* Pokémon Unbound
+* Chrono Trigger
+* Racing Gears Advance
+
+I'm not sure why but most retro games I enjoy happen to be GBA games. I've also heard good things
+about the development scene on GBA, which might be a fun project eventually.
+
+== uni
+
+Finished all of my coursework and exams. Now working on my disseration on numerical linear algebra.

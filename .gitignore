@@ -1,6 +1,8 @@
 build/
+tmp/
 .cache
 **/old_*
 *.env
 CNAME
-todo.md
+todo.*
+TODO.*
