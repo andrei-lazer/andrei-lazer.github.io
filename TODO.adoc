@@ -1,8 +1,0 @@
-= TODO
-
-* Write function that takes regular (non-card) asciidoc file and turns it into a html file
-* Go through src/ recursively and apply that to all .adoc files
-* Also establish a system for .lisp files to be run as well. Either ones that generate html, or just
-  regular ones that generate more complicated stuff. Will have to see if I want to split these off
-  into their own seperate directories. 
-* Write lisp file that turns wiki into html files and wraps the files with my template.
