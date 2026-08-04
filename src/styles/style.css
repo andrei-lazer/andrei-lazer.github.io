@@ -20,7 +20,7 @@
 
     --border-color: #000000;
     --border-thickness: 2px;
-    --font-family: "Ovo", serif;
+    --body-font: "Ovo", serif;
     --header-font: var(--body-font);
     --code-font: "Fira Mono", monospace;
     --transition: color, background 0.2s ease-in-out;
@@ -66,7 +66,7 @@ nav {
     display: flex;
     justify-items: space-between; 
     flex-wrap: wrap;
-    gap: 2.2rem;
+    gap: clamp(0px, 10vw, 20vw);
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
