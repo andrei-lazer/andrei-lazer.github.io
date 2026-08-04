@@ -18,7 +18,9 @@ full of dead ends.
 - [undergrad dissertation](/cards/time-splitting-schrodinger.html)
 - [pong for the 3DS](/cards/pong-3ds.html)
 
-## other stuff
+## other stuff, stubs
 
 - [hello world](/cards/hello-world.html)
 - [thoughts on neovim](/cards/neovim.html)
+- [linux](/cards/linux)
+- [crypto](/cards/crypto.html)

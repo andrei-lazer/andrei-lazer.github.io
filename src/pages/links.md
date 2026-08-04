@@ -33,6 +33,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 ## neovim
 
 - [luasnip for LaTeX](https://ejmastnak.com/tutorials/vim-latex/luasnip/#keymaps)
+- [minimal themes](https://github.com/mcchrish/vim-no-color-collections)
 
 ## retro gaming
 
