@@ -9,6 +9,7 @@
     (:head 
       (:title title) 
       (:meta :charset "UTF-8")
+      (:meta :name "viewport" :content "width=device-width, initial-scale=1")
       (when mathjax
         (:script :id "MathJax-script" :async t
          :src "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"))
