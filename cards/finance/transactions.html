@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <title>transactions</title>
+  <meta charset=UTF-8>
+  <link rel=stylesheet href="/styles/style.css">
+  <link rel=icon href="/assets/computer.gif"
+        type="image/gif">
+ </head>
+ <link rel=stylesheet
+       href="/styles/asciidoc.css">
+ <nav>
+  <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
+  href="/links">links</a><a href="/email">email</a>
+ </nav>
+ <body>
+  <h1>transactions</h1>
+  <hr><p>All of the mechanics listed below are automated by most wallets. This is just the underlying logic.</p>
+
+<p>When moving bitcoin around, you are always restricted to spending whole <a href="/cards/finance/finance/utxos.html" >UTXOs</a> as inputs.</p>
+
+<h2 id="example">Example</h2>
+
+<p>Alice has one UTXO: 1.0BTC
+ She pays Bob 0.4 BTC</p>
+
+<pre><code>Input: UTXO_A = 1.0 BTC (Alice)
+
+Outputs: 
+    0.4 BTC -&gt; Bob (new UTXO)
+    0.5990 BTC -&gt; Alice (change, new UTXO)
+    fee: 0.001 BTC (implicit, = 1.0 - 0.4 - 0.599)</code></pre>
+
+<p><code>UTXO_A</code> is spent (kind of destroyed), and two new UTXOs exist and are unspent. Bob&apos;s wallet balance is now whatever UTXOs he holds, including this new 0.4BTC one. If he wants to transfer Carol 0.2BTC, he must spend the whole 0.4BTC UTXO as an input.</p>
+
+<p>Transaction diagram:</p>
+
+<pre><code>UTXO_A (1.0 BTC, Alice)
+        │
+        ▼
+   ┌─────────────┐
+   │     Tx1     │
+   └─────────────┘
+        │
+   ┌────┴────┐
+   ▼         ▼
+0.4 BTC   0.599 BTC
+ → Bob     → Alice
+(new UTXO) (new UTXO, change)
+   │
+   ▼
+┌─────────────┐
+│     Tx2     │   (Bob spends his 0.4 BTC UTXO)
+└─────────────┘
+   │
+┌──┴───┐
+▼      ▼
+0.1    0.2999
+→Carol  →Bob
+(new)   (change)
+
+fee(Tx1) = 1.0 - 0.4 - 0.599 = 0.001 BTC
+fee(Tx2) = 0.4 - 0.1 - 0.2999 = 0.0001 BTC</code></pre>
+
+<h1 id="common_transaction_forms">Common transaction forms</h1>
+
+<ul>
+<li>Simple transaction
+
+<ul>
+<li>Exactly what&apos;s shown in the example above. Alice spends a UTXO into a payment and change. The payment goes to Bob, and the change goes back to Alice.</li>
+</ul></li>
+<li>Consolidation transaction
+
+<ul>
+<li>Where multiple UTXOs are spent on one transaction. Often, the transaction is reflexive (back to the spender), and is done in order to clean up lots of smaller UTXOs.</li>
+</ul></li>
+<li>Payment batching
+
+<ul>
+<li>The inverse of a consolidation transaction. Where one big UTXO is spent on multiple smaller transactions. Often done by commercial entities to distribute funds.</li>
+</ul></li>
+</ul>
+
+ </body>
+</html>

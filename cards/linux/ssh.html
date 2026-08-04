@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <title>ssh</title>
+  <meta charset=UTF-8>
+  <link rel=stylesheet href="/styles/style.css">
+  <link rel=icon href="/assets/computer.gif"
+        type="image/gif">
+ </head>
+ <link rel=stylesheet
+       href="/styles/asciidoc.css">
+ <nav>
+  <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
+  href="/links">links</a><a href="/email">email</a>
+ </nav>
+ <body>
+  <h1>ssh</h1>
+  <hr><h1 id="tunnels">Tunnels</h1>
+
+<p><em>Usecase</em>: I am running a local http server on a remote machine, and I want to connect to it from my local browser.
+<em>Steps</em>:
+1. Local: <code>ssh -L &lt;local-port&gt;:localhost:&lt;remote-port&gt; maths-cpu</code> (sets up a forward tunnel)
+2. Remote: <code>python -m http.server -p &lt;remote-port&gt;</code>
+3. Done! Connect to <code>http://localhost:&lt;local-port&gt;/</code> from your local browser.</p>
+
+ </body>
+</html>
