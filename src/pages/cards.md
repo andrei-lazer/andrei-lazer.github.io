@@ -21,6 +21,5 @@ full of dead ends.
 ## other stuff, stubs
 
 - [hello world](/cards/hello-world.html)
-- [thoughts on neovim](/cards/neovim.html)
 - [linux](/cards/linux)
 - [crypto](/cards/crypto.html)
