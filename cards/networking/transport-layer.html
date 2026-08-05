@@ -58,7 +58,7 @@ This is also another example of the <a href="/cards/networking/tcp-ip.html" >end
 
 <p>In the real world, messages tend to not be uniformly distributed.</p>
 
-<p><img src="/cards/assets/Pasted%20image%2020250920113740.png" alt="" /></p>
+<p><img src="/cards/assets/transport-layer.png" alt="" /></p>
 
 <p>Packets are often sent in bursts, which means that statically and evenly allocating bandwidth amongst end-systems is not effective.</p>
 
@@ -66,9 +66,9 @@ This is also another example of the <a href="/cards/networking/tcp-ip.html" >end
 
 <p>Below are some graphs of <em>received transmission rate</em> and <em>delay</em> as functions of <em>sent transmission rate</em>. We can see a critical point (transmission threshold) where these quantities do not plateau, but actually get worse.</p>
 
-<p><img src="/cards/assets/Pasted%20image%2020250920114026.png" alt="" /></p>
+<p><img src="/cards/assets/transport-layer-1.png" alt="" /></p>
 
-<p><img src="/cards/assets/Pasted%20image%2020250920114041.png" alt="" /></p>
+<p><img src="/cards/assets/transport-layer-2.png" alt="" /></p>
 
 <p>This worsening might be surprising for the transmission rate case (we would expect for the received rate to plateau towards the limit). This is due to <strong>spurious retransmissions</strong>, which occur when a message is re-sent after a transmission timer times out, even though the message is on the way but slowly. This results in a small number of packets being re-transmitting and hogging all of the bandwidth.</p>
 

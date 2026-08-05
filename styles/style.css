@@ -64,9 +64,9 @@ a:hover {
 
 nav {
     display: flex;
-    justify-items: space-between; 
+    justify-content: flex-start;
     flex-wrap: wrap;
-    gap: clamp(0px, 10vw, 20vw);
+    gap: clamp(1em, 5vw, 2em);
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
