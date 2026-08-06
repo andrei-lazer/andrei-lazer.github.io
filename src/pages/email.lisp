@@ -1,10 +1,5 @@
 (layouts:simple
-  (:head 
-    (:title "email") 
-    (:meta :charset "UTF-8")
-    (:link :rel "stylesheet" :href "/styles/style.css")
-    (:link :rel "stylesheet" :href "/styles/email.css")
-    (:link :rel "icon" :href "/assets/mail.gif" :type "image/gif"))
+  (components:head :title "email" :mathjax nil :icon-path "/assets/mail.gif" :extra-styles '("/styles/email.css"))
   (:div :id "email" 
         (:img :class "gif" :src "/assets/mail.gif" :alt "mail.gif")
         (:a :href "mailto:andrei.lucian.lazer@gmail.com" "andrei.lucian.lazer@gmail.com"))
