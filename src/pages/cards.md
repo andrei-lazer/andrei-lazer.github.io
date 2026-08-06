@@ -16,6 +16,7 @@ full of dead ends.
 ## projects
 
 - [undergrad dissertation](/cards/time-splitting-schrodinger.html)
+- [a research paper on fluid dynamics](/cards/predicting-turbulent-flows.html)
 - [pong for the 3DS](/cards/pong-3ds.html)
 
 ## other stuff, stubs

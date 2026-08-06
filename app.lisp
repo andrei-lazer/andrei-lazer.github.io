@@ -1,18 +1,16 @@
 (defpackage #:app
   (:use #:cl)
-  (:export #:main))
+  (:export #:main #:*build-dir* #:*src-dir* #:*page-dir* #:*script-dir*))
 (in-package #:app)
 
 
-(let ((rel-build-dir #p"build/"))
-  (ensure-directories-exist rel-build-dir)
-  (defparameter *build-dir* (truename rel-build-dir)))
-  
-
-(defparameter *pwd* (uiop:getcwd))
-(defparameter *src-dir* (truename #p"src/"))
-(defparameter *page-dir* (truename #p"src/pages/"))
-(defparameter *script-dir* (truename #p"src/scripts"))
+;; all four are relative to the working directory the build is started from, and are
+;; resolved (and created) in main rather than at load time, so that merely loading the
+;; system has no effect on the filesystem. rebind them to build somewhere else
+(defparameter *build-dir* #p"build/")
+(defparameter *src-dir* #p"src/")
+(defparameter *page-dir* #p"src/pages/")
+(defparameter *script-dir* #p"src/scripts/")
 
 (defparameter *asciidoctor-stub* 
   (format nil "asciidoctor -a skip-front-matter -a relfileprefix=/ -e -o -"))
@@ -79,12 +77,18 @@
     ((equal (pathname-type path) "lisp") (convert-lisp-file path))))
   
 (defun walk-and-convert ()
-  (utils:walk *page-dir* `dispatch))
+  (utils:walk *page-dir* 'dispatch))
 
 (defun run-all-scripts ()
-  (mapc 'load (uiop:directory-files *script-dir*)))
-  
-(defun main ()
-  (walk-and-convert)
-  (run-all-scripts))
+  ;; only source files, so that a stale .fasl sitting next to a script is not loaded
+  (mapc 'load (remove-if-not (lambda (p) (equal (pathname-type p) "lisp"))
+                             (uiop:directory-files *script-dir*))))
 
+(defun main ()
+  (let* ((*build-dir* (ensure-directories-exist
+                        (uiop:ensure-absolute-pathname *build-dir* #'uiop:getcwd)))
+         (*src-dir* (uiop:ensure-absolute-pathname *src-dir* #'uiop:getcwd))
+         (*page-dir* (uiop:ensure-absolute-pathname *page-dir* #'uiop:getcwd))
+         (*script-dir* (uiop:ensure-absolute-pathname *script-dir* #'uiop:getcwd)))
+        (walk-and-convert)
+        (run-all-scripts)))

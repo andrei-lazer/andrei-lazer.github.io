@@ -1,0 +1,5 @@
+(require :asdf)
+(load "~/quicklisp/setup.lisp")
+(push #p"./" asdf:*central-registry*)
+(ql:quickload :app/tests)
+(uiop:quit (if (uiop:symbol-call :app-tests :run-tests) 0 1))

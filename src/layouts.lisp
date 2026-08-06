@@ -15,10 +15,10 @@
          (icon-path (format nil "/assets/~a" icon-file))
          (header (or ,header ,title)))
         (layouts:simple
-               (components:head :title ,title :mathjax ,mathjax :icon-path icon-path)
-               (:link :rel "stylesheet" :href "/styles/asciidoc.css")
-               (components:navbar)
+               (components:head :title ,title :mathjax ,mathjax :icon-path icon-path
+                                :extra-styles '("/styles/asciidoc.css"))
                (:body 
+                 (components:navbar)
                  (:h1 header)
                  (:hr)
                  ,@body))))
@@ -28,8 +28,9 @@
          (icon-path (format nil "/assets/~a" icon-file))
          (header (or ,header ,title)))
         (layouts:simple
-               (components:head :title ,title :icon-path icon-path)
-               (:link :rel "stylesheet" :href "/styles/asciidoc.css")
-               (components:navbar)
-               (components:gif-header header icon-path)
-               (:body ,@body))))
+               (components:head :title ,title :icon-path icon-path
+                                :extra-styles '("/styles/asciidoc.css"))
+               (:body
+                 (components:navbar)
+                 (components:gif-header header icon-path)
+                 ,@body))))

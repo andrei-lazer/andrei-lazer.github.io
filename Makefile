@@ -4,7 +4,7 @@ REPO_ROOT := $(shell git rev-parse --show-toplevel)
 DEPLOY_DIR := $(REPO_ROOT)/../website-deploy
 DEPLOY_BRANCH := deploy
 
-.PHONY: build clean
+.PHONY: build test clean
 
 export WIKI := $(HOME)/wiki
 
@@ -14,6 +14,9 @@ build:
 	sbcl --noinform --noprint --non-interactive --load build.lisp; \
 	cp -r src/styles build/; \
 	cp -r src/assets build/
+
+test:
+	@sbcl --noinform --non-interactive --load run-tests.lisp
 
 deploy: build
 	@set -euo pipefail; \

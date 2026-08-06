@@ -14,4 +14,23 @@
    (:file "src/markdown")
    (:file "src/components")
    (:file "src/layouts")
-   (:file "app")))
+   (:file "src/cards")
+   (:file "app"))
+  :in-order-to ((asdf:test-op (asdf:test-op "app/tests"))))
+
+(asdf:defsystem
+  "app/tests"
+  :depends-on ("app" "fiveam" "cl-ppcre")
+  :serial t
+  :components
+  ((:module "tests"
+    :serial t
+    :components
+    ((:file "package")
+     (:file "utils")
+     (:file "markdown")
+     (:file "components")
+     (:file "layouts")
+     (:file "cards"))))
+  :perform (asdf:test-op (op system)
+             (uiop:symbol-call :app-tests :run-all-tests!)))

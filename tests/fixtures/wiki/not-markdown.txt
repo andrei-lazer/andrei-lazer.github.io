@@ -1,0 +1,5 @@
+---
+publish: t
+title: Not Markdown
+---
+This file is marked for publication but is not a markdown note, so it must be skipped.

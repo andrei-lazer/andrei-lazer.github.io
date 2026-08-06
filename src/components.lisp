@@ -4,7 +4,9 @@
 
 (in-package #:components)
 
-(defun head (&key title mathjax icon-path)
+(defun head (&key title mathjax icon-path extra-styles)
+  ;; extra-styles is a list of stylesheet urls loaded after the site wide one, for pages
+  ;; that need something on top of it
   (spinneret:with-html 
     (:head 
       (:title title) 
@@ -14,6 +16,8 @@
         (:script :id "MathJax-script" :async t
          :src "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"))
       (:link :rel "stylesheet" :href "/styles/style.css")
+      (dolist (href extra-styles)
+        (:link :rel "stylesheet" :href href))
       (:link :rel "icon" :href icon-path :type "image/gif"))))
   
 
