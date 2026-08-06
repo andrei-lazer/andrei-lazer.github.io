@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <title>Semantic commit messages</title>
+  <meta charset=UTF-8>
+  <meta name=viewport
+        content="width=device-width, initial-scale=1">
+  <link rel=stylesheet href="/styles/style.css">
+  <link rel=stylesheet
+        href="/styles/asciidoc.css">
+  <link rel=icon href="/assets/computer.gif"
+        type="image/gif">
+ </head>
+ <body>
+  <nav>
+   <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
+   href="/links">links</a><a href="/email">email</a>
+  </nav>
+  <h1>Semantic commit messages</h1>
+  <hr><p>Based off of <a href="https://sparkbox.com/foundry/semantic_commit_messages" >this blog post</a>.</p>
+
+<p>It proposes a strict commit message structure:</p>
+
+<pre><code>feat: add hat wobble
+
+^--^ ^------------^
+| |
+| +-&gt; Summary in present tense.
+|
++-------&gt; Type: chore, docs, feat, fix, refactor, style, or test.</code></pre>
+
+<p>Types:
+<code>
+chore: add Oyster build script
+docs: explain hat wobble
+feat: add beta sequence
+fix: remove broken confirmation message
+refactor: share logic between 4d3d3d3 and flarhgunnstow
+style: convert tabs to spaces
+test: ensure Tayne retains clothing
+</code></p>
+
+<p>More examples:</p>
+
+<ul>
+<li><code>feat</code>: (new feature for the user, not a new feature for build script)</li>
+<li><code>fix</code>: (bug fix for the user, not a fix to a build script)</li>
+<li><code>docs</code>: (changes to the documentation)</li>
+<li><code>style</code>: (formatting, missing semi colons, etc; no production code change)</li>
+<li><code>refactor</code>: (refactoring production code, eg. renaming a variable)</li>
+<li><code>test</code>: (adding missing tests, refactoring tests; no production code change)</li>
+<li><code>chore</code>: (updating grunt tasks etc; no production code change)</li>
+</ul>
+
+ </body>
+</html>
