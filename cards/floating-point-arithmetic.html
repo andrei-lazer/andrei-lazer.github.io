@@ -8,16 +8,16 @@
   <script id=MathJax-script async
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <link rel=stylesheet href="/styles/style.css">
+  <link rel=stylesheet
+        href="/styles/asciidoc.css">
   <link rel=icon href="/assets/computer.gif"
         type="image/gif">
  </head>
- <link rel=stylesheet
-       href="/styles/asciidoc.css">
- <nav>
-  <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
-  href="/links">links</a><a href="/email">email</a>
- </nav>
  <body>
+  <nav>
+   <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
+   href="/links">links</a><a href="/email">email</a>
+  </nav>
   <h1>Floating point arithmetic</h1>
   <hr><p>The more bits we have, the more numbers we can represent. However, the less we have, the more we can
 fit into cache lines and CPU registers, allowing for more simultaneous operations using SIMD. This
