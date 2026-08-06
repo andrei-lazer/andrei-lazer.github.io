@@ -34,11 +34,11 @@ deploy: build
 	fi; \
 	git push; 
 
-serve: build
+serve:
 	@python3 -m http.server 8080 --directory ./build & \
 	server_pid=$$!; \
 	trap "kill $$server_pid" EXIT; \
-	find src build.lisp -type f | entr -r make build
+	find src build.lisp -type f | entr -cr make build
 
 clean:
 	rm -rf build

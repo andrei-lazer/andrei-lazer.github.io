@@ -12,15 +12,6 @@
 (defparameter *page-dir* #p"src/pages/")
 (defparameter *script-dir* #p"src/scripts/")
 
-(defparameter *asciidoctor-stub* 
-  (format nil "asciidoctor -a skip-front-matter -a relfileprefix=/ -e -o -"))
-
-(defun generate-asciidoctor-file (in-path)
-  (format nil "~a ~a" *asciidoctor-stub* in-path))
-
-(defun asciidoc-file->html-embed (file-path)
-  (uiop:run-program (generate-asciidoctor-file file-path) :output :string))
-
 (defun file->html (file-path body->html-embed)
   ;; body->html-embed turns the file's body (frontmatter stripped) into a html fragment,
   ;; which is then wrapped in the page layout using the yaml frontmatter as metadata
@@ -33,12 +24,6 @@
                :header (gethash "header" meta)
                :icon-file (gethash "icon" meta "computer.gif"))
               (:raw html-embed))))))
-
-(defun asciidoc-file->html (file-path)
-  ;; asciidoctor reads the file itself and skips the frontmatter, so the body is ignored here
-  (file->html file-path (lambda (body)
-                          (declare (ignore body))
-                          (asciidoc-file->html-embed file-path))))
 
 (defun markdown-file->html (file-path)
   ;; pages link to each other by their final url already, so no link rewriting here
@@ -54,9 +39,6 @@
     (let ((spinneret:*html* out))
       (funcall render-fn path))))
 
-(defun convert-asciidoc-file (path)
-  (write-html-file path #'asciidoc-file->html))
-
 (defun convert-markdown-file (path)
   (write-html-file path #'markdown-file->html))
 
@@ -71,7 +53,6 @@
 (defun dispatch (path)
   (format t "dispatching ~a~%" (uiop:enough-pathname path *page-dir*))
   (cond
-    ((equal (pathname-type path) "adoc") (convert-asciidoc-file path))
     ((equal (pathname-type path) "md") (convert-markdown-file path))
     ((equal (pathname-type path) "html") (convert-html-file path))
     ((equal (pathname-type path) "lisp") (convert-lisp-file path))))
