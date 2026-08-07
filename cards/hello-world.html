@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang=en>
  <head>
-  <title>Hello World</title>
+  <title>this website</title>
   <meta charset=UTF-8>
   <meta name=viewport
         content="width=device-width, initial-scale=1">
@@ -16,7 +16,7 @@
    <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
    href="/links">links</a><a href="/email">email</a>
   </nav>
-  <h1>Hello World</h1>
+  <h1>this website</h1>
   <hr><p>I started this website to have a place to put anything I want, as well as challenge me to learn
 something new. While I&apos;m unlikely to ever pivot into web development, front end development is very
 rewarding. There&apos;s nothing else with quite the same visual feedback loop.</p>
@@ -46,6 +46,17 @@ inspiration from.</p>
 <p>Because I wanted to enjoy updating my website, and JavaScript has never been particularly fun for
 me. JS is absolutely a better tool for the job (especially given how horrendous I am at Lisp), but
 writing and learning Lisp is 100x more fun.</p>
+
+<h2 id="next_steps_for_the_ssg">Next steps for the SSG</h2>
+
+<p>I have quite a few next steps.</p>
+
+<ul>
+<li>i need to split it off from my website, since currently it&apos;s in the same repo.</li>
+<li>some sort of dependency-based rebuilding, so that edits to a markdown file don&apos;t cause a 10s rebuild. i&apos;d have to somehow build a dependency DAG which is new for me.</li>
+<li>the current implementation is quite slow, likely because everything is done in series and requires a lot of IO. i&apos;m using a very generic &ldquo;walk&rdquo; function which recursively searches through directories and dispatches functions to each file, so parallelizing that shouldn&apos;t be impossible.</li>
+<li>snapshot testing &ndash; where you set up snapshots or &ldquo;golden files&rdquo; and make sure outputs match those. kind of like KATs in cryptography but for generation-based software.</li>
+</ul>
 
  </body>
 </html>
