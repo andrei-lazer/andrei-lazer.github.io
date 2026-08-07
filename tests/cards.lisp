@@ -86,8 +86,10 @@
 (defun render-fixture-card (rel-path)
   "publishes one fixture note into a temp directory and returns the html written"
   (with-temp-dir (out)
-    (let ((card (fixture-card rel-path)))
-      (uiop:read-file-string (cards:card->page (pathname rel-path) card out)))))
+    (let* ((card (fixture-card rel-path))
+           (out-path (cards:card-out-path (pathname rel-path) out)))
+      (ensure-directories-exist out-path)
+      (uiop:read-file-string (cards:card->page (pathname rel-path) card out-path)))))
 
 (test card->page-writes-a-whole-document
   (let ((html (render-fixture-card "published-simple.md")))
@@ -96,12 +98,13 @@
     (is (contains "<h1>A Simple Note</h1>" html))
     (is (contains "both a title and a separate header" html))))
 
-(test card->page-creates-missing-directories
+(test card->page-does-not-create-missing-directories
+  "making directories is generate-cards' job; a lone renderer must not"
   (with-temp-dir (out)
     (let* ((card (fixture-card "links/relative.md"))
-           (written (cards:card->page #p"links/relative.md" card out)))
-      (is-true (uiop:file-exists-p written))
-      (is (contains "links" (namestring written))))))
+           (out-path (cards:card-out-path #p"links/relative.md" out)))
+      (signals (error) (cards:card->page #p"links/relative.md" card out-path))
+      (is-false (uiop:file-exists-p out-path)))))
 
 (test card->page-turns-on-mathjax-for-notes-that-ask-for-it
   (is (contains "MathJax" (render-fixture-card "mathjax.md")))

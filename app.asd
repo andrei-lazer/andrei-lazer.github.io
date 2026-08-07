@@ -7,7 +7,8 @@
                "3bmd-ext-math"
                "3bmd-ext-tables"
                "cl-yaclyaml"
-               "spinneret")
+               "spinneret"
+               "bordeaux-threads")
   :serial t
   :components
   ((:file "src/utils")

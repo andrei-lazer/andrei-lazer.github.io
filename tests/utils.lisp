@@ -71,6 +71,26 @@
     (is (null yaml))
     (is (string= "" body))))
 
+;;; read-document
+
+(defun read-fixture-document (name)
+  (utils:read-document (merge-pathnames name (fixture-wiki))))
+
+(test read-document-parses-the-yaml-into-meta
+  (multiple-value-bind (meta body) (read-fixture-document "published-simple.md")
+    (is (string= "Simple Note" (gethash "title" meta)))
+    (is (contains "both a title and a separate header" body))))
+
+(test read-document-handles-a-file-with-no-frontmatter
+  (with-temp-dir (dir)
+    (let ((path (merge-pathnames "bare.txt" dir)))
+      (with-open-file (s path :direction :output :if-exists :supersede)
+        (write-string "just a body" s))
+      (multiple-value-bind (meta body) (utils:read-document path)
+        (is (zerop (hash-table-count meta)))
+        (is (eq (hash-table-test meta) 'equal))
+        (is (string= "just a body" body))))))
+
 ;;; out-path
 
 (defun out-path-string (name)
@@ -107,13 +127,6 @@
       (is (not (uiop:file-exists-p out)))
       (is (not (uiop:directory-exists-p (uiop:pathname-directory-pathname out)))))))
 
-(test generate-out-path-creates-the-directory
-  "the effectful wrapper makes the parent directory, but still not the file"
-  (with-temp-dir (dir)
-    (let ((out (utils:generate-out-path #p"/src/pages/deep/page.md" #p"/src/pages/" dir)))
-      (is (uiop:directory-exists-p (uiop:pathname-directory-pathname out)))
-      (is (not (uiop:file-exists-p out))))))
-
 ;;; walk
 
 (test walk-visits-every-file-recursively
@@ -129,3 +142,32 @@
   (let ((count 0))
     (utils:walk (fixture-wiki) (lambda (p) (declare (ignore p)) (incf count)))
     (is (= 9 count) "the fixture wiki has nine files in it")))
+
+;;; write-html
+
+(test write-html-writes-the-rendered-output
+  "the file's directory has to exist already; write-html is a renderer, not a plumber"
+  (with-temp-dir (dir)
+    (let* ((path (merge-pathnames "nested/sample.html" dir)))
+      (ensure-directories-exist path)
+      (utils:write-html path (lambda () (spinneret:with-html (:p "hello"))))
+      (is-true (uiop:file-exists-p path))
+      (is (contains "hello" (uiop:read-file-string path))))))
+
+(test write-html-baulks-at-a-missing-directory
+  "written pages must have their directory made for them first"
+  (with-temp-dir (dir)
+    (let ((path (merge-pathnames "deep/nested/sample.html" dir)))
+      (signals (error) (utils:write-html path (lambda ())))
+      (is-false (uiop:file-exists-p path)))))
+
+;;; index-directory
+
+(test index-directory-keys-results-by-relative-path
+  (let ((index (utils:index-directory (fixture-wiki) #'pathname-name)))
+    (is (string= "published-simple" (gethash #p"published-simple.md" index)))
+    (is (string= "relative" (gethash #p"links/relative.md" index)))))
+
+(test index-directory-skips-nil-results
+  (let ((index (utils:index-directory (fixture-wiki) (lambda (p) (declare (ignore p)) nil))))
+    (is (zerop (hash-table-count index)))))
