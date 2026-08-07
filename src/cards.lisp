@@ -70,13 +70,25 @@
 (defparameter *errors* '())
 (defparameter *errors-lock* (bt:make-lock))
 
-(defun try-job (job)
-  "wraps error handling around the job so that all errors aren't asynchronously
-  printed to stdout. assumes the job is passed as '(fn arg1 arg2 ... argn)"
-  (handler-case (apply (first job) (rest job))
-    (error (e)
-      (bt:with-lock-held (*errors-lock*)
-        (push e *errors*)))))
+(defmacro dispatch (queue lock)
+  "keeps popping jobs off of the queue and doing them. has to be a macro
+  so that the queue isn't copied."
+  `(loop
+    (let ((job (bt:with-lock-held (,lock) (pop ,queue))))
+      (when (null job)
+        (return))
+      (handler-case 
+        (apply (first job) (rest job))
+        (error (e)
+               (bt:with-lock-held (*errors-lock*)
+                                  (push e *errors*)))))))
+              
+(defun run-job-pool (jobs n-workers)
+   (let* ((queue (copy-list jobs))
+          (lock (bt:make-lock))
+          (workers (loop repeat n-workers
+                         collect (bt:make-thread (lambda () (dispatch queue lock))))))
+       (mapc #'bt:join-thread workers)))
 
 (defun generate-cards (wiki-dir out-dir)
   "the only place in the build that creates directories. every note's output
@@ -85,15 +97,11 @@
   (let* ((index (index-wiki wiki-dir))
          (out-paths (loop for rel-path being each hash-key of index
                           collect (card-out-path rel-path out-dir))))
-    (ensure-directories-exist out-dir)
     (let* ((jobs (loop for rel-path being each hash-key of index using (hash-value card)
                        for out-path in out-paths
-                       collect `(do-job ,rel-path ,card ,out-path)))
-           (handles (mapcar (lambda (job)
-                              (bt:make-thread (lambda () (try-job job))))
-                            jobs)))
+                       collect `(do-job ,rel-path ,card ,out-path))))
         
-      (mapc #'bt:join-thread handles))
+      (run-job-pool jobs 16))
 
     (dolist (e *errors*)
       (format *error-output* "~&~a~%" e))
