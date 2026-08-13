@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <meta charset=UTF-8>
+  <link rel=stylesheet href="/style/style.css">
+  <title></title>
+ </head>
+ <body>
+  <nav>
+   <a href="/">home</a><a href="/now">now</a><a href="/cards">cards</a><a
+   href="/links">links</a><a href="/email">email</a>
+  </nav>
+  <h1></h1>
+  <hr><p>aerc is a TUI email client.</p>
+
+<h1 id="gmail_setup">Gmail setup</h1>
+
+<ol>
+<li>in the password spot, put in an app password from <a href="https://myaccount.google.com/apppasswords" >here</a>.</li>
+<li>use IMAP and SMTP</li>
+<li>go to <code>~/XDG_CONFIG_HOME/aerc/accounts.conf</code>. at the end of the outgoing address, there&apos;s a port number. Remove it and the colon.</li>
+<li>add this to the end of the account:</li>
+</ol>
+
+<pre><code>default       = INBOX
+folders-sort  = INBOX
+postpone      = [Gmail]/Drafts
+cache-headers = true</code></pre>
+
+<h1 id="keybinds/commands">Keybinds/commands</h1>
+
+<ul>
+<li>use <code>?</code> to see keybinds</li>
+<li><code>:mv</code> moves selected emails</li>
+<li><code>v</code> and <code>V</code> are used to select emails</li>
+</ul>
+
+ </body>
+</html>
