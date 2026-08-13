@@ -126,3 +126,7 @@ p img {
     vertical-align: middle;
     transition: var(--transition);
 }
+
+mjx-container {
+  font-size: 100% !important;
+}
