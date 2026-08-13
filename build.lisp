@@ -3,7 +3,6 @@
 (push #p"./" asdf:*central-registry*)
 (ql:quickload :cl-ssg)
 
-
 (in-package cl-ssg)
 
 (defparameter *base-path* "")

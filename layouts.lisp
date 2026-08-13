@@ -64,7 +64,8 @@
          (header (or (gethash "header" meta) title)))
         (simple
           (:head 
-            (:link :rel "stylesheet" :href "/style/style.css"))
+            (:link :rel "stylesheet" :href "/style/style.css")
+            (:title title))
           (:body 
             (navbar)
             (:h1 header)
@@ -79,7 +80,9 @@
          (header (or (gethash "header" meta) title)))
         (simple
           (:head 
-            (:link :rel "stylesheet" :href "/style/style.css"))
+            (:link :rel "stylesheet" :href "/style/style.css")
+            (:link :rel "icon" :href icon-path :type "image/gif")
+            (:title title))
           (:body 
             (navbar)
             (gif-header header icon-path)
