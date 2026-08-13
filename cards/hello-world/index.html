@@ -45,16 +45,12 @@ writing and learning Lisp is 100x more fun.</p>
 <p>I have quite a few next steps.</p>
 
 <ul>
-<li>[ ] i need to split it off from my website, since currently it&apos;s in the same repo.</li>
-<li>[x] some sort of dependency-based rebuilding, so that edits to a markdown file don&apos;t cause a 10s rebuild. i&apos;d have to somehow build a dependency DAG which is new for me.
+<li>[x] i need to split it off from my website, since currently it&apos;s in the same repo.</li>
+<li>[-] some sort of dependency-based rebuilding, so that edits to a markdown file don&apos;t cause a 10s rebuild. i&apos;d have to somehow build a dependency DAG which is new for me.</li>
+<li>[-] the current implementation is quite slow, likely because everything is done in series and requires a lot of IO. i&apos;m using a very generic &ldquo;walk&rdquo; function which recursively searches through directories and dispatches functions to each file, so parallelizing that shouldn&apos;t be impossible.
 
 <ul>
-<li>Done, but needs work: a hashmap is stored with hashes (digests) of the input files.</li>
-</ul></li>
-<li>[x] the current implementation is quite slow, likely because everything is done in series and requires a lot of IO. i&apos;m using a very generic &ldquo;walk&rdquo; function which recursively searches through directories and dispatches functions to each file, so parallelizing that shouldn&apos;t be impossible.
-
-<ul>
-<li>Done by doing the walk function in series and adding all files to a job queue, which is then consumed by a thread pool.</li>
+<li>both features above were done, but I&apos;m reimplementing them</li>
 </ul></li>
 <li>[ ] snapshot testing &ndash; where you set up snapshots or &ldquo;golden files&rdquo; and make sure outputs match those. kind of like KATs in cryptography but for generation-based software.</li>
 </ul>
