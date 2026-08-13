@@ -16,7 +16,7 @@
       (when mathjax
         (:script :id "MathJax-script" :async t
          :src "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"))
-      (:link :rel "stylesheet" :href "/styles/style.css")
+      (:link :rel "stylesheet" :href "/style/style.css")
       (dolist (href extra-styles)
         (:link :rel "stylesheet" :href href))
       (:link :rel "icon" :href icon-path :type "image/gif"))))
@@ -45,44 +45,30 @@
        (:html
          ,@body))))
 
-; (defun card (html meta)
-;   (layouts:simple
-;     (:head
-;       (:link :rel "stylesheet" :href "/style/style.css")
-;       (:link :rel "stylesheet" :href "/style/card.css"))
-;     (:body 
-;       (:h1 (gethash "title" meta))
-;       (:hr)
-;       (:raw html))))
-
-
-
 (defun card (&key html meta)
   (let* ((title (or (gethash "title" meta) ""))
          (icon-file (or (gethash "icon" meta) "computer.gif"))
          (icon-path (format nil "/assets/~a" icon-file))
-         (header (or (gethash "header" meta) title)))
+         (header (or (gethash "header" meta) title))
+         (mathjax (gethash "mathjax" meta)))
         (simple
-          (:head 
-            (:link :rel "stylesheet" :href "/style/style.css")
-            (:title title))
+          (head
+            :title title :mathjax mathjax :icon-path icon-path :extra-styles '("style/markdown.css"))
           (:body 
             (navbar)
             (:h1 header)
             (:hr)
             (:raw html)))))
 
-
 (defun page (&key html meta)
   (let* ((title (or (gethash "title" meta) ""))
          (icon-file (or (gethash "icon" meta) "computer.gif"))
          (icon-path (format nil "/assets/~a" icon-file))
-         (header (or (gethash "header" meta) title)))
+         (header (or (gethash "header" meta) title))
+         (mathjax (gethash "mathjax" meta)))
         (simple
-          (:head 
-            (:link :rel "stylesheet" :href "/style/style.css")
-            (:link :rel "icon" :href icon-path :type "image/gif")
-            (:title title))
+          (head
+            :title title :mathjax mathjax :icon-path icon-path :extra-styles nil)
           (:body 
             (navbar)
             (gif-header header icon-path)
