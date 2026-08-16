@@ -26,6 +26,7 @@ A list of links to other places on the internet. Basically my bookmarks.
 - [How to export Typst to HTML](https://1024th.top/posts/typst/typst-html-export)
 - [Practical Common Lisp](https://gigamonkeys.com/book/)
 - [Parse, don't validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/) and [constructive data modelling](https://www.youtube.com/watch?v=0BXuYlNrUmE)
+- [Docker for AI sandboxing](https://docs.docker.com/ai/sandboxes/install/)
 
 ## maths
 
